@@ -1,0 +1,55 @@
+{
+  "status": "V24_MEAN_ONLY_MATRICES_NUMERICAL_VECTOR_FONT_GEOMETRY_PASS_VISUAL_PENDING",
+  "pass_": true,
+  "recipe_sha256": "476dd0e51e2a25f8de5918cb1e90da03f7be6cb11f35e928a33520a534c4fc81",
+  "source_v23_plotrows_sha256": "3275be29a38cc0e8ad7a5eaf2624dc72c8280f789fed00919704b17ba17fe821",
+  "endpoint_groups": 60,
+  "original_paired_endpoint_values": 240,
+  "all_v23_plot_data_exactly_equal": true,
+  "all_original_pair_contrasts_independently_recomputed": 240,
+  "all_source_pair_endpoint_ratios_independently_recomputed": 480,
+  "shared_TwoSlopeNorm_log2": [
+    -6,
+    0,
+    2
+  ],
+  "cmap_colours": [
+    "#3D789E",
+    "#EEF5F8",
+    "#FFFFFF",
+    "#F6EDDE",
+    "#B78342"
+  ],
+  "source_data_changed": false,
+  "algorithm_changed": false,
+  "new_GPU_services": 0,
+  "main_points_or_range_or_dotted_cell_glyphs": 0,
+  "all_fonts_at_least_8pt": true,
+  "all_text_9pt": true,
+  "SI_baseline_rows": 18,
+  "SI_14B_rows": 12,
+  "SI_table_data_in_public_CSV": true,
+  "SI_range_labels": [
+    "tab:matrix-baseline-ranges-v24",
+    "tab:matrix-14b-ranges-v24"
+  ],
+  "data_sha256": {
+    "all_four_paired_ratios.csv": "98e171d57260eee62623b7da00621d5c814ce5716ba912527b563263a007d0fb",
+    "baselines_GM_observed_ranges.csv": "59b76339b9157422202c064265335acb77308fbf607368677f7f952a4a726ddc",
+    "scale14b_GM_observed_ranges.csv": "06029f6462a9ce8b97e78bd77c48eadf8dd4aa5f899b274b8d795762e0f18fd8",
+    "endpoint_groups.json": "22303692b4dd6757cbde535634b040e2a3d95061152a578603b6992f00767838"
+  },
+  "figure_sha256": {
+    "fig_fair_baselines_v24": {
+      "pdf": "c6626397120e1af2a5ff9ae7b4fa79ce8ca8b717764eee109988d0afd88e88de",
+      "svg": "9fad38c70b8239b9819d9aab9347d0a048193f7a8642919844b43c35f997dddb",
+      "png": "589a15033e805e94ad7c9d711c374df241d6f9e8ef423c1d7b54c9186776f82f"
+    },
+    "fig_scale14b_v24": {
+      "pdf": "d48ee7ddf3c355c6af7e6ccb6e6022bc789b8fa3a3ebf61fdb51642888471b10",
+      "svg": "b385070d66fcccfc87b70ce7408f92af7b2501a1ce97690cf7e154b15325d06a",
+      "png": "c9e414fa1417e7ade973f04c2f51f3f0db21835e5ce4dfd4183e56329fe958b4"
+    }
+  },
+  "visual_signoff": false
+}

@@ -21,6 +21,8 @@ python -m pip install -r requirements-figures.txt
 python scripts/reproduce_figures.py
 ```
 
+The current main matrices show geometric means only, on a shared equality-centred ratio scale from 1/64 to 4. All four paired observations and observed minimum/maximum ranges remain in [the companion CSVs](source_data/v24_checks/matrices/README.txt).
+
 Computer Modern is used for mathematics. A machine without Times New Roman can produce fallback-font figures, which do not claim identical typography.
 
 ## Repository contents

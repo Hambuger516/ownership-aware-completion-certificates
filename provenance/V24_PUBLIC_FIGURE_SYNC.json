@@ -1,0 +1,84 @@
+{
+  "status": "LOCAL_V24_PUBLIC_FIGURE_SYNC_CPU_NUMERIC_AND_VISUAL_PASS_NOT_PUBLISHED",
+  "base_commit": "ac0663f4a7b18c43553ed0fd45002ca5cea33778",
+  "runtime_source_changed": false,
+  "scientific_measurements_changed": false,
+  "protected_existing_files_exact_count": 222,
+  "existing_source_data_files_exact_count": 69,
+  "existing_84_runtime_test_Python_files_unchanged": true,
+  "original_53_numeric_source_records_preserved": true,
+  "public_35_source_plus_3_derived_trajectory_boundary_preserved": true,
+  "new_recipe": {
+    "path": "figure_source/redesign_main_matrices_v24.py",
+    "sha256": "476dd0e51e2a25f8de5918cb1e90da03f7be6cb11f35e928a33520a534c4fc81",
+    "W24_recipe_sha256": "f51beb24d46c2d652cd38b76a909f895cdce95da1ca817261bb92a75bfef9011",
+    "adaptation": "Public export excludes manuscript TeX output; figure construction and all paired numeric reconstruction are unchanged."
+  },
+  "numeric_rebuild": {
+    "endpoint_groups": 60,
+    "paired_endpoint_values": 240,
+    "source_contrasts_recomputed": 240,
+    "source_endpoint_ratios_recomputed": 480,
+    "all_60_GM_min_max_and_240_raw_values_exactly_equal_W24_and_v23": true,
+    "all_4_new_numeric_data_files_byte_equal_W24": true,
+    "full_reproduced_numbers_exact_equal_base": true
+  },
+  "display": {
+    "current_main_matrices": "v24; both mean-only",
+    "both_shared_ratio_scale": [
+      0.015625,
+      1,
+      4
+    ],
+    "all_text_pt": 9,
+    "column_width_in": 3.16697799916978,
+    "height_in": 3.25,
+    "all_source_values_retained": "Companion CSVs preserve four ratios and observed min/max, not confidence intervals.",
+    "visual_review": "Both actual PNGs inspected; no overlap, clipping, or illegible matrix values.",
+    "PDF_fonts_embedded_noType3": true,
+    "whole_plot_raster": false
+  },
+  "asset_comparison": [
+    {
+      "file": "figs/fig_fair_baselines_v24.pdf",
+      "sha256": "c6626397120e1af2a5ff9ae7b4fa79ce8ca8b717764eee109988d0afd88e88de",
+      "W24_sha256": "b0184eda37c3ddeb152fa6bd808c3af8882a98c42f448d7a18326d6ff07b80bf",
+      "byte_equal_to_W24": false
+    },
+    {
+      "file": "figs/fig_fair_baselines_v24.svg",
+      "sha256": "9fad38c70b8239b9819d9aab9347d0a048193f7a8642919844b43c35f997dddb",
+      "W24_sha256": "b74767a1a122d9f29f6f88c38d6c98482ceddeb87f7f5e146d4ed1b1ee5133d5",
+      "byte_equal_to_W24": false
+    },
+    {
+      "file": "figs/fig_fair_baselines_v24.png",
+      "sha256": "589a15033e805e94ad7c9d711c374df241d6f9e8ef423c1d7b54c9186776f82f",
+      "W24_sha256": "589a15033e805e94ad7c9d711c374df241d6f9e8ef423c1d7b54c9186776f82f",
+      "byte_equal_to_W24": true
+    },
+    {
+      "file": "figs/fig_scale14b_v24.pdf",
+      "sha256": "d48ee7ddf3c355c6af7e6ccb6e6022bc789b8fa3a3ebf61fdb51642888471b10",
+      "W24_sha256": "0c897a453e832274604adfc8d610713257cbe6f01714ef184110af660fd1489d",
+      "byte_equal_to_W24": false
+    },
+    {
+      "file": "figs/fig_scale14b_v24.svg",
+      "sha256": "b385070d66fcccfc87b70ce7408f92af7b2501a1ce97690cf7e154b15325d06a",
+      "W24_sha256": "ea2412377a71e70a3b6a954c34fe1649d9041f269d818049ba7a2588fed63061",
+      "byte_equal_to_W24": false
+    },
+    {
+      "file": "figs/fig_scale14b_v24.png",
+      "sha256": "c9e414fa1417e7ade973f04c2f51f3f0db21835e5ce4dfd4183e56329fe958b4",
+      "W24_sha256": "c9e414fa1417e7ade973f04c2f51f3f0db21835e5ce4dfd4183e56329fe958b4",
+      "byte_equal_to_W24": true
+    }
+  ],
+  "GPU_runs": 0,
+  "core_CPU_tests_repeated": false,
+  "core_CPU_test_basis": "Runtime, tests, frozen benchmark inputs/configs and measured records are byte-identical to the reviewed base commit; this update repeats numerical/figure/privacy verification only.",
+  "licenses_and_disclosure_preserved": true,
+  "publication": "No push, merge, tag, or remote modification performed."
+}

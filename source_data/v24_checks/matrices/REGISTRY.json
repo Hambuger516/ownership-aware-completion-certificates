@@ -1,0 +1,133 @@
+{
+  "version": "v24",
+  "figures": [
+    {
+      "old_stem": "fig_fair_baselines_v23",
+      "new_stem": "fig_fair_baselines_v24",
+      "rows": 2,
+      "cols": 2,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.25,
+      "minimum_font_pt": 9.0,
+      "caption_plain": "7B Adaptive/comparator ratios: cells show geometric means of four matched process pairs. Blue/ochre indicate below/above one. Both matrices share the equality-centred log2 colour scale (1/64, 1, 4), with half the colour range on each side. The outlined instruction 4x cohort ratio is 1.031. Observed repeat ranges and paired values accompany the supplementary baseline-range table.",
+      "caption_tex": "7B Adaptive/comparator ratios: cells show geometric means of four matched process pairs. Blue/ochre indicate below/above one. Both matrices share the equality-centred $\\log_2$ colour scale $(1/64,1,4)$, with half the colour range on each side. The outlined instruction $4\\times$ cohort ratio is 1.031. Observed repeat ranges: Supplementary Table~\\ref{tab:matrix-baseline-ranges-v24}.",
+      "SI_range_label": "tab:matrix-baseline-ranges-v24",
+      "shared_log2_ratio_limits": [
+        -6,
+        0,
+        2
+      ],
+      "shared_ratio_limits": [
+        0.015625,
+        1,
+        4
+      ],
+      "cmap_colours": [
+        "#3D789E",
+        "#EEF5F8",
+        "#FFFFFF",
+        "#F6EDDE",
+        "#B78342"
+      ],
+      "ink_luminance_threshold": 0.23,
+      "ink_colours": [
+        "white",
+        "#172F3E"
+      ],
+      "normalization": "TwoSlopeNorm(log2(ratio),vmin=-6,vcenter=0,vmax=2); each side of equality occupies half of colour range",
+      "main_raw_points": 0,
+      "main_range_segments": 0,
+      "main_dotted_cell_markers": 0,
+      "all_cell_values_centred": true,
+      "main_cell_gm_font_pt": 9.0,
+      "cell_glyphs_removed": true,
+      "all_original_process_values_retained_in_companion_data": true,
+      "source_sha256": {
+        "source_data/v18_verified/baselines/all_services.csv": "f75294e4bd324f535c3326053d8099787aac0548c765bda87ddd6ac075219952",
+        "source_data/v18_verified/baselines/all_pairs.csv": "6c3ba01fe3240dd52f91bfd3e075b0903aa26f853561a99f6f3fb369a89f3ee2",
+        "source_data/v18_verified/baselines/FINAL_NUMERIC_READOUT.json": "a4b272afdf590ca988bac870667d5fc9a14997530e555d19428867e9e92781a4",
+        "source_data/v18_verified/baselines/PROTOCOL.json": "d59a8ecf750a1169482bcb47d224af66b21d39e82b298355d4dbabb108a98ec0"
+      },
+      "plot_data_path": "source_data/v24_checks/matrices/endpoint_groups.json",
+      "figure_sha256": {
+        "pdf": "c6626397120e1af2a5ff9ae7b4fa79ce8ca8b717764eee109988d0afd88e88de",
+        "svg": "9fad38c70b8239b9819d9aab9347d0a048193f7a8642919844b43c35f997dddb",
+        "png": "589a15033e805e94ad7c9d711c374df241d6f9e8ef423c1d7b54c9186776f82f"
+      },
+      "fonts_embedded": [
+        "/GHBUSP+TimesNewRomanPSMT"
+      ],
+      "Type3_fonts": false,
+      "whole_plot_raster": false,
+      "svg_live_text_count": 65,
+      "all_visible_text_inside_canvas": true,
+      "visual_signoff": false,
+      "observed_range_csv": "source_data/v24_checks/matrices/baselines_GM_observed_ranges.csv"
+    },
+    {
+      "old_stem": "fig_scale14b_v23",
+      "new_stem": "fig_scale14b_v24",
+      "rows": 2,
+      "cols": 2,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.25,
+      "minimum_font_pt": 9.0,
+      "caption_plain": "14B method/Native geometric-mean ratios over four matched process pairs per cell. The colour direction and shared equality-centred log2 scale (1/64, 1, 4) match the baseline matrix. Observed repeat ranges and paired values accompany the supplementary 14B-range table.",
+      "caption_tex": "14B method/Native geometric-mean ratios over four matched process pairs per cell. The colour direction and shared equality-centred $\\log_2$ scale $(1/64,1,4)$ match Fig.~\\ref{fig:quota-main}. Observed repeat ranges: Supplementary Table~\\ref{tab:matrix-14b-ranges-v24}.",
+      "SI_range_label": "tab:matrix-14b-ranges-v24",
+      "shared_log2_ratio_limits": [
+        -6,
+        0,
+        2
+      ],
+      "shared_ratio_limits": [
+        0.015625,
+        1,
+        4
+      ],
+      "cmap_colours": [
+        "#3D789E",
+        "#EEF5F8",
+        "#FFFFFF",
+        "#F6EDDE",
+        "#B78342"
+      ],
+      "ink_luminance_threshold": 0.23,
+      "ink_colours": [
+        "white",
+        "#172F3E"
+      ],
+      "normalization": "TwoSlopeNorm(log2(ratio),vmin=-6,vcenter=0,vmax=2); each side of equality occupies half of colour range",
+      "main_raw_points": 0,
+      "main_range_segments": 0,
+      "main_dotted_cell_markers": 0,
+      "all_cell_values_centred": true,
+      "main_cell_gm_font_pt": 9.0,
+      "cell_glyphs_removed": true,
+      "all_original_process_values_retained_in_companion_data": true,
+      "source_sha256": {
+        "source_data/v18_verified/scale14b/all_services.csv": "4c9f0fa7e5ad93f1a61c7dc88130312cbe58ef299acf319e4e69ea6adf95737c",
+        "source_data/v18_verified/scale14b/all_pairs.csv": "eca3fc5f0bd17c8a9107a960106c47ae9e0cbd3fcc22e048239e9b1904e6a550",
+        "source_data/v18_verified/scale14b/FINAL_NUMERIC_READOUT.json": "8377712f41245f53d4a7c2de68fe56aa2e8b6684989e4cfeffb3d0aa1361412b",
+        "source_data/v18_verified/scale14b/PROTOCOL.json": "079b6d7876030d90228fdf738dcb1db262f810495b9323b3b5c1be5be3fcc80c"
+      },
+      "plot_data_path": "source_data/v24_checks/matrices/endpoint_groups.json",
+      "figure_sha256": {
+        "pdf": "d48ee7ddf3c355c6af7e6ccb6e6022bc789b8fa3a3ebf61fdb51642888471b10",
+        "svg": "b385070d66fcccfc87b70ce7408f92af7b2501a1ce97690cf7e154b15325d06a",
+        "png": "c9e414fa1417e7ade973f04c2f51f3f0db21835e5ce4dfd4183e56329fe958b4"
+      },
+      "fonts_embedded": [
+        "/BNGVMQ+TimesNewRomanPSMT"
+      ],
+      "Type3_fonts": false,
+      "whole_plot_raster": false,
+      "svg_live_text_count": 49,
+      "all_visible_text_inside_canvas": true,
+      "visual_signoff": false,
+      "observed_range_csv": "source_data/v24_checks/matrices/scale14b_GM_observed_ranges.csv"
+    }
+  ]
+}

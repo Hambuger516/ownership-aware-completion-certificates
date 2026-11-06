@@ -12,6 +12,8 @@
 
 `python scripts/reproduce_figures.py` rebuilds the scientific PDF/SVG/PNG figures using measured data and exact derived trajectories. It does not run an algorithm or generate observations. Figure metadata/output hashes are newly generated build artifacts. The compact two-worker timeline uses exact derived client-observation times and cumulative counts rather than reconstructed or invented raw events. The independent appendix figures keep their historical populations.
 
+The current two main matrices can also be rebuilt alone with `python figure_source/redesign_main_matrices_v24.py --manuscript-root .`. Their 60 endpoint groups and 240 paired ratios are retained in `source_data/v24_checks/matrices/`; observed ranges describe the four process repetitions and are not confidence intervals.
+
 ## 4. New GPU runs
 
 `python scripts/materialize_runtime.py --variant original --output runtime_original` reconstructs the unoptimized serving source. `--variant projection` reconstructs the zero-page reuse source. Do not use the optimized source to retroactively attribute the original fair-baseline or 14B timings.
