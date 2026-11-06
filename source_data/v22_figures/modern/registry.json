@@ -1,0 +1,449 @@
+[
+  {
+    "old_stem": "fig06_a800_confirmation",
+    "new_stem": "fig06_a800_confirmation_v22",
+    "rows": 2,
+    "cols": 1,
+    "span": "single",
+    "width_in": 3.16697799916978,
+    "height_in": 5.3,
+    "minimum_font_pt": 8.0,
+    "caption": "Earlier A800 confirmation, with all nine shared-prefix scenarios and three process pairs per scenario. Rows retain front/interleaved/back arrivals for each document pair. Open points are paired process ratios; diamonds are geometric means, thick segments empirical interquartile ranges and thin segments observed minima/maxima. Right-hand values give geometric means. Shading identifies document-pair groups. The dashed line denotes equal time to production C0; no confidence interval or workload-population inference is shown.",
+    "caption_plain": "Earlier A800 confirmation, with all nine shared-prefix scenarios and three process pairs per scenario. Rows retain front/interleaved/back arrivals for each document pair. Open points are paired process ratios; diamonds are geometric means, thick segments empirical interquartile ranges and thin segments observed minima/maxima. Right-hand values give geometric means. Shading identifies document-pair groups. The dashed line denotes equal time to production C0; no confidence interval or workload-population inference is shown.",
+    "caption_tex": "Earlier A800 confirmation, with all nine shared-prefix scenarios and three process pairs per scenario. Rows retain front/interleaved/back arrivals for each document pair. Open points are paired process ratios; diamonds are geometric means, thick segments empirical interquartile ranges and thin segments observed minima/maxima. Right-hand values give geometric means. Shading identifies document-pair groups. The dashed line denotes equal time to production C0; no confidence interval or workload-population inference is shown.",
+    "plot_data": "source_data/v22_figures/modern/fig06_a800_confirmation_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig06_a800_confirmation_plotrows.json",
+    "plot_data_sha256": "56765d718ac30f9e6fb2d4a99291ae87e8d130c8c55d1f60aa06553c9e466b67",
+    "source_sha256": {
+      "source_data/a800_verified/all36_primary_pairs.csv": "67ae837ce5ec6d83a71f09480e8cdce5d562f5ea26821959030bd5ef177eb470",
+      "source_data/a800_verified/all18_Native_rows.csv": "caf647a10ae4c8e1657299ec3b50db44c4439442f32c46d8f2df09d1ae4edd2c",
+      "source_data/a800_verified/all9_mechanism_pairs.csv": "8ae2cea544d86c6910f3d272512ea68eb1f49da8524ebd87930a2f61bb28a400",
+      "source_data/a800_verified/all108_service_rows.csv": "09c5913f4a0ba2e78c45e85db6a5741a3d4adbc18d01cc80a3db329cefc40892",
+      "source_data/a800_verified/FINAL_NUMERIC_CHECK.json": "c27d8d826398231b28f98c2100c10b15c4cf22c6f8ec2564b8d95de44c863846"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig06_a800_confirmation_v22.pdf",
+        "sha256": "c39c78f0f43a060e763f2e13276725c9065bc8e0ed501fe23fb76548fd94602a"
+      },
+      "svg": {
+        "path": "figs/fig06_a800_confirmation_v22.svg",
+        "sha256": "fb4cfd064e881a24021713a9e360fdedd06ae9a2eed0551998046274b70a7599"
+      },
+      "png": {
+        "path": "figs/fig06_a800_confirmation_v22.png",
+        "sha256": "c6a3121a86eceb9997d8f6fbfd1c7b7ab3de56d5f59d9cdb25a525a03e718e4e"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "c39c78f0f43a060e763f2e13276725c9065bc8e0ed501fe23fb76548fd94602a",
+      "svg": "fb4cfd064e881a24021713a9e360fdedd06ae9a2eed0551998046274b70a7599",
+      "png": "c6a3121a86eceb9997d8f6fbfd1c7b7ab3de56d5f59d9cdb25a525a03e718e4e"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig07_a800_native",
+    "new_stem": "fig07_a800_native_v22",
+    "rows": 2,
+    "cols": 1,
+    "span": "single",
+    "width_in": 3.16697799916978,
+    "height_in": 4.5,
+    "minimum_font_pt": 8.0,
+    "caption": "Earlier A800 Native comparisons. Panel (a) retains all 18 paired observations: circles are shared-prefix inputs and squares instruction inputs; filled markers denote exact agreement for all 16 output sequences. The pale region marks fewer executed model positions than Native; the dashed axes mark equal work and equal cohort time. Saved positions are not FLOPs or GPU-time savings. Panel (b) is a vector matrix of exact matches out of 16, ordered by document pair/arrival for prefix inputs and by cohort/repetition for instructions. Every comparison and adverse time ratio is retained.",
+    "caption_plain": "Earlier A800 Native comparisons. Panel (a) retains all 18 paired observations: circles are shared-prefix inputs and squares instruction inputs; filled markers denote exact agreement for all 16 output sequences. The pale region marks fewer executed model positions than Native; the dashed axes mark equal work and equal cohort time. Saved positions are not FLOPs or GPU-time savings. Panel (b) is a vector matrix of exact matches out of 16, ordered by document pair/arrival for prefix inputs and by cohort/repetition for instructions. Every comparison and adverse time ratio is retained.",
+    "caption_tex": "Earlier A800 Native comparisons. Panel (a) retains all 18 paired observations: circles are shared-prefix inputs and squares instruction inputs; filled markers denote exact agreement for all 16 output sequences. The pale region marks fewer executed model positions than Native; the dashed axes mark equal work and equal cohort time. Saved positions are not FLOPs or GPU-time savings. Panel (b) is a vector matrix of exact matches out of 16, ordered by document pair/arrival for prefix inputs and by cohort/repetition for instructions. Every comparison and adverse time ratio is retained.",
+    "plot_data": "source_data/v22_figures/modern/fig07_a800_native_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig07_a800_native_plotrows.json",
+    "plot_data_sha256": "4dad72a2f6bb512aedea10d46f86ae7b00d0f6061f9f96764b8992ecabf29e3f",
+    "source_sha256": {
+      "source_data/a800_verified/all36_primary_pairs.csv": "67ae837ce5ec6d83a71f09480e8cdce5d562f5ea26821959030bd5ef177eb470",
+      "source_data/a800_verified/all18_Native_rows.csv": "caf647a10ae4c8e1657299ec3b50db44c4439442f32c46d8f2df09d1ae4edd2c",
+      "source_data/a800_verified/all9_mechanism_pairs.csv": "8ae2cea544d86c6910f3d272512ea68eb1f49da8524ebd87930a2f61bb28a400",
+      "source_data/a800_verified/all108_service_rows.csv": "09c5913f4a0ba2e78c45e85db6a5741a3d4adbc18d01cc80a3db329cefc40892",
+      "source_data/a800_verified/FINAL_NUMERIC_CHECK.json": "c27d8d826398231b28f98c2100c10b15c4cf22c6f8ec2564b8d95de44c863846"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig07_a800_native_v22.pdf",
+        "sha256": "cf46fac07879d75fc8d62119255765b331bacf9f352a31759976d0bc11d12e3d"
+      },
+      "svg": {
+        "path": "figs/fig07_a800_native_v22.svg",
+        "sha256": "494659015c580502934b024240bf6d8152d374401ad227a5f33257bb8c7d1804"
+      },
+      "png": {
+        "path": "figs/fig07_a800_native_v22.png",
+        "sha256": "d35bbaba055adffad398a22241ee8b2a0768e092c5829320e0fcc14be8acc48a"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "cf46fac07879d75fc8d62119255765b331bacf9f352a31759976d0bc11d12e3d",
+      "svg": "494659015c580502934b024240bf6d8152d374401ad227a5f33257bb8c7d1804",
+      "png": "d35bbaba055adffad398a22241ee8b2a0768e092c5829320e0fcc14be8acc48a"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig08_a800_mechanism_alpaca",
+    "new_stem": "fig08_a800_mechanism_alpaca_v22",
+    "rows": 2,
+    "cols": 1,
+    "span": "single",
+    "width_in": 3.16697799916978,
+    "height_in": 5.3,
+    "minimum_font_pt": 8.0,
+    "caption": "Earlier matched-information-cost control and instruction-family comparison. Panel (a) reports each single matched full-C1/full-C0 service pair for all nine document/arrival cells, for both cohort and brief completion. Cell colors use one symmetric log2-ratio scale centered at equality at 1 (blue below, ochre above); annotations retain raw ratios. Panel (b) retains three process pairs in each instruction cohort: open points, geometric-mean markers, empirical interquartile segments and observed ranges. Both full views pay the same checking contract; single-pair mechanism cells are not repeated-run distributions.",
+    "caption_plain": "Earlier matched-information-cost control and instruction-family comparison. Panel (a) reports each single matched full-C1/full-C0 service pair for all nine document/arrival cells, for both cohort and brief completion. Cell colors use one symmetric log2-ratio scale centered at equality at 1 (blue below, ochre above); annotations retain raw ratios. Panel (b) retains three process pairs in each instruction cohort: open points, geometric-mean markers, empirical interquartile segments and observed ranges. Both full views pay the same checking contract; single-pair mechanism cells are not repeated-run distributions.",
+    "caption_tex": "Earlier matched-information-cost control and instruction-family comparison. Panel (a) reports each single matched full-C1/full-C0 service pair for all nine document/arrival cells, for both cohort and brief completion. Cell colors use one symmetric log2-ratio scale centered at equality at 1 (blue below, ochre above); annotations retain raw ratios. Panel (b) retains three process pairs in each instruction cohort: open points, geometric-mean markers, empirical interquartile segments and observed ranges. Both full views pay the same checking contract; single-pair mechanism cells are not repeated-run distributions.",
+    "plot_data": "source_data/v22_figures/modern/fig08_a800_mechanism_alpaca_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig08_a800_mechanism_alpaca_plotrows.json",
+    "plot_data_sha256": "ccb56a3ad8f6166562b60c97393cc03bd02ba659116052dbca5e4edc3887e1f2",
+    "source_sha256": {
+      "source_data/a800_verified/all36_primary_pairs.csv": "67ae837ce5ec6d83a71f09480e8cdce5d562f5ea26821959030bd5ef177eb470",
+      "source_data/a800_verified/all18_Native_rows.csv": "caf647a10ae4c8e1657299ec3b50db44c4439442f32c46d8f2df09d1ae4edd2c",
+      "source_data/a800_verified/all9_mechanism_pairs.csv": "8ae2cea544d86c6910f3d272512ea68eb1f49da8524ebd87930a2f61bb28a400",
+      "source_data/a800_verified/all108_service_rows.csv": "09c5913f4a0ba2e78c45e85db6a5741a3d4adbc18d01cc80a3db329cefc40892",
+      "source_data/a800_verified/FINAL_NUMERIC_CHECK.json": "c27d8d826398231b28f98c2100c10b15c4cf22c6f8ec2564b8d95de44c863846"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig08_a800_mechanism_alpaca_v22.pdf",
+        "sha256": "1138d8caa7e988acb757cdc8ebec63978489ccee6a7e2238b69849bfa69e889b"
+      },
+      "svg": {
+        "path": "figs/fig08_a800_mechanism_alpaca_v22.svg",
+        "sha256": "decce402cc983f65edf6a1a9e7c6385849f002d819f5333106bf9b2b7745cd7c"
+      },
+      "png": {
+        "path": "figs/fig08_a800_mechanism_alpaca_v22.png",
+        "sha256": "80dd6e2591b3b84fac3758ab37ae46ffb4beb487395abf970c468ed649cc78ff"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "1138d8caa7e988acb757cdc8ebec63978489ccee6a7e2238b69849bfa69e889b",
+      "svg": "decce402cc983f65edf6a1a9e7c6385849f002d819f5333106bf9b2b7745cd7c",
+      "png": "80dd6e2591b3b84fac3758ab37ae46ffb4beb487395abf970c468ed649cc78ff"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig09_runtime_diagnostics",
+    "new_stem": "fig09_runtime_diagnostics_v22",
+    "rows": 1,
+    "cols": 3,
+    "span": "double",
+    "width_in": 6.500000276740003,
+    "height_in": 2.65,
+    "minimum_font_pt": 8.0,
+    "caption": "Historical diagnosis from separately scoped studies. Panel (a) is an exact empirical cumulative batch-size distribution from the four profiled diagnostic services; P/I denote prefix/instruction inputs. It is not an efficacy timing comparison. Panel (b) shows all six matched process ratios for each full-versus-incremental and refusal-cache control: three pairs in each of two fixed inputs. Geometric means weight the inputs equally; thick segments are empirical interquartile ranges and thin segments observed ranges. Panel (c) retains the single earlier full-C1/full-C0 brief-completion ratio for each interleaved document pair. The three panels are distinct populations and are not pooled or interpreted as a causal CPU/GPU decomposition.",
+    "caption_plain": "Historical diagnosis from separately scoped studies. Panel (a) is an exact empirical cumulative batch-size distribution from the four profiled diagnostic services; P/I denote prefix/instruction inputs. It is not an efficacy timing comparison. Panel (b) shows all six matched process ratios for each full-versus-incremental and refusal-cache control: three pairs in each of two fixed inputs. Geometric means weight the inputs equally; thick segments are empirical interquartile ranges and thin segments observed ranges. Panel (c) retains the single earlier full-C1/full-C0 brief-completion ratio for each interleaved document pair. The three panels are distinct populations and are not pooled or interpreted as a causal CPU/GPU decomposition.",
+    "caption_tex": "Historical diagnosis from separately scoped studies. Panel (a) is an exact empirical cumulative batch-size distribution from the four profiled diagnostic services; P/I denote prefix/instruction inputs. It is not an efficacy timing comparison. Panel (b) shows all six matched process ratios for each full-versus-incremental and refusal-cache control: three pairs in each of two fixed inputs. Geometric means weight the inputs equally; thick segments are empirical interquartile ranges and thin segments observed ranges. Panel (c) retains the single earlier full-C1/full-C0 brief-completion ratio for each interleaved document pair. The three panels are distinct populations and are not pooled or interpreted as a causal CPU/GPU decomposition.",
+    "plot_data": "source_data/v22_figures/modern/fig09_runtime_diagnostics_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig09_runtime_diagnostics_plotrows.json",
+    "plot_data_sha256": "e27e768a9688b581ef3b4026096dcb8a428a6347e73a93843b6d835e315f8e7f",
+    "source_sha256": {
+      "source_data/v15_verified_updates/DIAGNOSTIC_READOUT_INTERPRETED.json": "896ae242e3327343861cd5944d6f7c302990e5b1c6d266302718415cb5039b85",
+      "experiments/new_verified_evidence/study_scripts/W37/all_primary_pairs.csv": "fb9f389e4b97d539fb727d750602a880e0b8f5648f4d5bc8210b61706e425658",
+      "experiments/new_verified_evidence/study_scripts/W40/all_primary_pairs.csv": "981f915d31cb33864c595c0ba84d7f1ea5127fa3cc34844c5f562ccc7345aaff",
+      "source_data/a800_verified/all108_service_rows.csv": "09c5913f4a0ba2e78c45e85db6a5741a3d4adbc18d01cc80a3db329cefc40892"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig09_runtime_diagnostics_v22.pdf",
+        "sha256": "ae792ff37af80fc3911a99ff00a563409b6568207a6692c6daf368abc8066503"
+      },
+      "svg": {
+        "path": "figs/fig09_runtime_diagnostics_v22.svg",
+        "sha256": "9efcc7c4015abc3612a2a3080eaff49b018d39fd16698f757431aa81d016f825"
+      },
+      "png": {
+        "path": "figs/fig09_runtime_diagnostics_v22.png",
+        "sha256": "2758c7e461c2aa364e011abe39b37bd7db8b9b54c0fa5e06628eed3fb1c48c85"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "ae792ff37af80fc3911a99ff00a563409b6568207a6692c6daf368abc8066503",
+      "svg": "9efcc7c4015abc3612a2a3080eaff49b018d39fd16698f757431aa81d016f825",
+      "png": "2758c7e461c2aa364e011abe39b37bd7db8b9b54c0fa5e06628eed3fb1c48c85"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig_sensitivity_v16",
+    "new_stem": "fig_sensitivity_v16_v22",
+    "rows": 2,
+    "cols": 3,
+    "span": "double",
+    "width_in": 6.500000276740003,
+    "height_in": 4.65,
+    "minimum_font_pt": 8.0,
+    "caption": "Historical six-level admission sensitivity on the two exposed inputs. Rows separate prefix and instruction cohorts; columns report cohort time relative to same-block Native, brief completion relative to Native, and actual mean requests per positive model batch. All three process repetitions at each measured gate values 1/2/3/4/6/8 are shown. Ratio centers are geometric means and batch-width centers arithmetic means. Curves connect measured centers only; shading is the observed minimum-to-maximum process range, not a confidence band. Ochre references are the measured gate-off deployment, with its observed range. Dashed equality at 1 applies only to the two ratio columns. No unmeasured parameter optimum or workload-population inference is implied.",
+    "caption_plain": "Historical six-level admission sensitivity on the two exposed inputs. Rows separate prefix and instruction cohorts; columns report cohort time relative to same-block Native, brief completion relative to Native, and actual mean requests per positive model batch. All three process repetitions at each measured gate values 1/2/3/4/6/8 are shown. Ratio centers are geometric means and batch-width centers arithmetic means. Curves connect measured centers only; shading is the observed minimum-to-maximum process range, not a confidence band. Ochre references are the measured gate-off deployment, with its observed range. Dashed equality at 1 applies only to the two ratio columns. No unmeasured parameter optimum or workload-population inference is implied.",
+    "caption_tex": "Historical six-level admission sensitivity on the two exposed inputs. Rows separate prefix and instruction cohorts; columns report cohort time relative to same-block Native, brief completion relative to Native, and actual mean requests per positive model batch. All three process repetitions at each measured gate values 1/2/3/4/6/8 are shown. Ratio centers are geometric means and batch-width centers arithmetic means. Curves connect measured centers only; shading is the observed minimum-to-maximum process range, not a confidence band. Ochre references are the measured gate-off deployment, with its observed range. Dashed equality at 1 applies only to the two ratio columns. No unmeasured parameter optimum or workload-population inference is implied.",
+    "plot_data": "source_data/v22_figures/modern/fig_sensitivity_v16_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig_sensitivity_v16_plotrows.json",
+    "plot_data_sha256": "fcfe4dd6cedada1df380f4bf4ee40524355565abc3c5727d0ec79535623e82c7",
+    "source_sha256": {
+      "source_data/v16_verified/w52_services.csv": "467d54a653e27e7e9abdb59168fe04ef55ee4c0d9b0aeb102ca16b12fa29c64a",
+      "source_data/v16_verified/w52_final.json": "3e76a8daae50317f5a8e19e37874e80ed6fd24f57fc2b1eb430fac6c9aa7824e"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig_sensitivity_v16_v22.pdf",
+        "sha256": "304b9f68fd0ab46213dd0fdac49010a782fe149c8a5d1ae11320e227b2a8b5f5"
+      },
+      "svg": {
+        "path": "figs/fig_sensitivity_v16_v22.svg",
+        "sha256": "0240e744c07c33133e752e6a10ac3f6393e7458a2400bc179fa9b5e309b84685"
+      },
+      "png": {
+        "path": "figs/fig_sensitivity_v16_v22.png",
+        "sha256": "0c7e6777ed6b67132d8cae2b16526f5b08724a59c7fb18f19c1cd3cead8a6ac1"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "304b9f68fd0ab46213dd0fdac49010a782fe149c8a5d1ae11320e227b2a8b5f5",
+      "svg": "0240e744c07c33133e752e6a10ac3f6393e7458a2400bc179fa9b5e309b84685",
+      "png": "0c7e6777ed6b67132d8cae2b16526f5b08724a59c7fb18f19c1cd3cead8a6ac1"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig_quota_v17",
+    "new_stem": "fig_quota_v17_v22",
+    "rows": 2,
+    "cols": 3,
+    "span": "double",
+    "width_in": 6.500000276740003,
+    "height_in": 4.4,
+    "minimum_font_pt": 8.0,
+    "caption": "Earlier adaptive-development operating region, with the three measured quotas as columns and the two exposed inputs as rows. Each marker is one of four same-card process comparisons to Native; larger markers are coordinatewise geometric means. Translucent rectangles bound the observed paired cohort/brief outcomes, not confidence regions or a Pareto frontier. Equality lines identify the Native reference; pale left-hand regions indicate lower cohort time. All methods, raw pairs and adverse outcomes are retained. This development timing population is separate from frozen new-input confirmation and projection-reuse studies.",
+    "caption_plain": "Earlier adaptive-development operating region, with the three measured quotas as columns and the two exposed inputs as rows. Each marker is one of four same-card process comparisons to Native; larger markers are coordinatewise geometric means. Translucent rectangles bound the observed paired cohort/brief outcomes, not confidence regions or a Pareto frontier. Equality lines identify the Native reference; pale left-hand regions indicate lower cohort time. All methods, raw pairs and adverse outcomes are retained. This development timing population is separate from frozen new-input confirmation and projection-reuse studies.",
+    "caption_tex": "Earlier adaptive-development operating region, with the three measured quotas as columns and the two exposed inputs as rows. Each marker is one of four same-card process comparisons to Native; larger markers are coordinatewise geometric means. Translucent rectangles bound the observed paired cohort/brief outcomes, not confidence regions or a Pareto frontier. Equality lines identify the Native reference; pale left-hand regions indicate lower cohort time. All methods, raw pairs and adverse outcomes are retained. This development timing population is separate from frozen new-input confirmation and projection-reuse studies.",
+    "plot_data": "source_data/v22_figures/modern/fig_quota_v17_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig_quota_v17_plotrows.json",
+    "plot_data_sha256": "95114abb7dd18a7204944931fbd035e02174ff2c4bda6a61c8496d854900ba98",
+    "source_sha256": {
+      "source_data/v17_verified/development_all_services.csv": "54743ee35924aefc3a6cbb7563258f65090a8f9a3c27f489afa99bad2181578c"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig_quota_v17_v22.pdf",
+        "sha256": "e96c8d6a5306ce54e2bf29b0b953958143c703148da89320e0b58ca06a547af1"
+      },
+      "svg": {
+        "path": "figs/fig_quota_v17_v22.svg",
+        "sha256": "ea3d8757266e92c2d96faf587e891e9dbf3f621fc7c5a4b0b3e5dc29a36dc464"
+      },
+      "png": {
+        "path": "figs/fig_quota_v17_v22.png",
+        "sha256": "1c50aed4aa4bfdd0c905254b3b9e8bc2db98b22dca81ca2af045e7bde9da7f29"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "e96c8d6a5306ce54e2bf29b0b953958143c703148da89320e0b58ca06a547af1",
+      "svg": "ea3d8757266e92c2d96faf587e891e9dbf3f621fc7c5a4b0b3e5dc29a36dc464",
+      "png": "1c50aed4aa4bfdd0c905254b3b9e8bc2db98b22dca81ca2af045e7bde9da7f29"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig_diagnosis_v17",
+    "new_stem": "fig_diagnosis_v17_v22",
+    "rows": 2,
+    "cols": 1,
+    "span": "single",
+    "width_in": 3.16697799916978,
+    "height_in": 4.6,
+    "minimum_font_pt": 8.0,
+    "caption": "Earlier headroom-development batch counts and wall-time accounting. Panel (a) is a vector matrix of arithmetic mean positive model-batch counts over four process repetitions; P/I and1/2/4 identify input and quota. A shared logarithmic blue scale encodes actual counts, annotated numerically. Panel (b) partitions each measured mean service interval at4-times quota into recorded scheduler time and its nonnegative remainder. Open markers and thin ranges retain all four total-time observations. These components are an accounting identity, not GPU/kernel timers or a causal decomposition. All per-process batch counts and interval components accompany the figure data.",
+    "caption_plain": "Earlier headroom-development batch counts and wall-time accounting. Panel (a) is a vector matrix of arithmetic mean positive model-batch counts over four process repetitions; P/I and1/2/4 identify input and quota. A shared logarithmic blue scale encodes actual counts, annotated numerically. Panel (b) partitions each measured mean service interval at4-times quota into recorded scheduler time and its nonnegative remainder. Open markers and thin ranges retain all four total-time observations. These components are an accounting identity, not GPU/kernel timers or a causal decomposition. All per-process batch counts and interval components accompany the figure data.",
+    "caption_tex": "Earlier headroom-development batch counts and wall-time accounting. Panel (a) is a vector matrix of arithmetic mean positive model-batch counts over four process repetitions; P/I and1/2/4 identify input and quota. A shared logarithmic blue scale encodes actual counts, annotated numerically. Panel (b) partitions each measured mean service interval at4-times quota into recorded scheduler time and its nonnegative remainder. Open markers and thin ranges retain all four total-time observations. These components are an accounting identity, not GPU/kernel timers or a causal decomposition. All per-process batch counts and interval components accompany the figure data.",
+    "plot_data": "source_data/v22_figures/modern/fig_diagnosis_v17_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig_diagnosis_v17_plotrows.json",
+    "plot_data_sha256": "920dac67e6387ced9f8a11612f41126c42c96e08232b4e88130bb76311be0398",
+    "source_sha256": {
+      "source_data/v17_verified/development_all_services.csv": "54743ee35924aefc3a6cbb7563258f65090a8f9a3c27f489afa99bad2181578c"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig_diagnosis_v17_v22.pdf",
+        "sha256": "5dfad3f2a5f303a4fb30e5690421937ecc46d1068b914ca0c1e21dae9b5b4ec2"
+      },
+      "svg": {
+        "path": "figs/fig_diagnosis_v17_v22.svg",
+        "sha256": "3326aea4cdde9d13dd9ddba1dd33f40cd342745304f80e4b80cd8985921b2ccc"
+      },
+      "png": {
+        "path": "figs/fig_diagnosis_v17_v22.png",
+        "sha256": "b6464236882ee92a6e693a9a425bc2c5c6f517d4658b42c28cf4f97182f85161"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "5dfad3f2a5f303a4fb30e5690421937ecc46d1068b914ca0c1e21dae9b5b4ec2",
+      "svg": "3326aea4cdde9d13dd9ddba1dd33f40cd342745304f80e4b80cd8985921b2ccc",
+      "png": "b6464236882ee92a6e693a9a425bc2c5c6f517d4658b42c28cf4f97182f85161"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig_confirmation_v17",
+    "new_stem": "fig_confirmation_v17_v22",
+    "rows": 2,
+    "cols": 3,
+    "span": "double",
+    "width_in": 6.500000276740003,
+    "height_in": 5.2,
+    "minimum_font_pt": 8.0,
+    "caption": "Frozen eight-scenario adaptive confirmation. Rows separate base and fourfold quotas; the three substantive columns report cohort time, brief completion and positive model-batch counts, each relative to its same-block INC or Fixed INC-Q reference. All four process-pair observations are retained in every cell. Diamonds/triangles give geometric means; thick segments are empirical interquartile ranges and thin segments observed minima/maxima. H1/H2 identify document pairs, F/I/B arrivals and A1/A2 instruction cohorts; shading groups instruction rows. No confidence interval or global throughput bound is inferred from the batch-count comparison.",
+    "caption_plain": "Frozen eight-scenario adaptive confirmation. Rows separate base and fourfold quotas; the three substantive columns report cohort time, brief completion and positive model-batch counts, each relative to its same-block INC or Fixed INC-Q reference. All four process-pair observations are retained in every cell. Diamonds/triangles give geometric means; thick segments are empirical interquartile ranges and thin segments observed minima/maxima. H1/H2 identify document pairs, F/I/B arrivals and A1/A2 instruction cohorts; shading groups instruction rows. No confidence interval or global throughput bound is inferred from the batch-count comparison.",
+    "caption_tex": "Frozen eight-scenario adaptive confirmation. Rows separate base and fourfold quotas; the three substantive columns report cohort time, brief completion and positive model-batch counts, each relative to its same-block INC or Fixed INC-Q reference. All four process-pair observations are retained in every cell. Diamonds/triangles give geometric means; thick segments are empirical interquartile ranges and thin segments observed minima/maxima. H1/H2 identify document pairs, F/I/B arrivals and A1/A2 instruction cohorts; shading groups instruction rows. No confidence interval or global throughput bound is inferred from the batch-count comparison.",
+    "plot_data": "source_data/v22_figures/modern/fig_confirmation_v17_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig_confirmation_v17_plotrows.json",
+    "plot_data_sha256": "b84559dc4b2dc728ca225018899c3559463061760ef1ded991555ab6cf3cf2f4",
+    "source_sha256": {
+      "source_data/v17_verified/confirmation_all_primary_pairs.csv": "0e67f79390545b18c2b81af7ad994f827d79e33ac69daf8f83bd94fa7d359bcb"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig_confirmation_v17_v22.pdf",
+        "sha256": "862a96915d317e417896c5bd5b79353ba230d13081e311f14d7e5e94692ca8b8"
+      },
+      "svg": {
+        "path": "figs/fig_confirmation_v17_v22.svg",
+        "sha256": "b1dcef868a5e250eef26286f300882f7c1ee45be239ec93fb985c2a4fc04a3d5"
+      },
+      "png": {
+        "path": "figs/fig_confirmation_v17_v22.png",
+        "sha256": "d284bd0eaeacde633bf871e084633321ec349013bed435829323fab03dc1747d"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "862a96915d317e417896c5bd5b79353ba230d13081e311f14d7e5e94692ca8b8",
+      "svg": "b1dcef868a5e250eef26286f300882f7c1ee45be239ec93fb985c2a4fc04a3d5",
+      "png": "d284bd0eaeacde633bf871e084633321ec349013bed435829323fab03dc1747d"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig_width_ready_v19",
+    "new_stem": "fig_width_ready_v19_v22",
+    "rows": 2,
+    "cols": 1,
+    "span": "single",
+    "width_in": 3.16697799916978,
+    "height_in": 4.75,
+    "minimum_font_pt": 8.0,
+    "caption": "Ready demand and funded growth in the two base-quota final-deployment functional audits. The panels contain 697 and 1,346 comparable settled cuts, respectively. Marker coordinates count resident requests needing one new page and actual positive-growth width; the latter equals the ready-restricted fixed-witness bound at every plotted cut. Labels give exact cut counts and marker area is logarithmic in count. The dashed diagonal funds every ready request; the ochre region marks positive ready demand left unfunded, not a confidence region. Instruction cuts include 339 zero-width observations with positive free capacity. Cuts are dependent audit observations, not independent timing repeats or a global admission optimum.",
+    "caption_plain": "Ready demand and funded growth in the two base-quota final-deployment functional audits. The panels contain 697 and 1,346 comparable settled cuts, respectively. Marker coordinates count resident requests needing one new page and actual positive-growth width; the latter equals the ready-restricted fixed-witness bound at every plotted cut. Labels give exact cut counts and marker area is logarithmic in count. The dashed diagonal funds every ready request; the ochre region marks positive ready demand left unfunded, not a confidence region. Instruction cuts include 339 zero-width observations with positive free capacity. Cuts are dependent audit observations, not independent timing repeats or a global admission optimum.",
+    "caption_tex": "Ready demand and funded growth in the two base-quota final-deployment functional audits. The panels contain 697 and 1,346 comparable settled cuts, respectively. Marker coordinates count resident requests needing one new page and actual positive-growth width; the latter equals the ready-restricted fixed-witness bound at every plotted cut. Labels give exact cut counts and marker area is logarithmic in count. The dashed diagonal funds every ready request; the ochre region marks positive ready demand left unfunded, not a confidence region. Instruction cuts include 339 zero-width observations with positive free capacity. Cuts are dependent audit observations, not independent timing repeats or a global admission optimum.",
+    "plot_data": "source_data/v22_figures/modern/fig_width_ready_v19_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig_width_ready_v19_plotrows.json",
+    "plot_data_sha256": "73142fceea9616b92820a05c6c5b7c17a5ff52340e91d1a768cced017cd849d2",
+    "source_sha256": {
+      "source_data/v19_closeout/width/width_all_cuts.csv": "aba798efd2538d287abe15c9b2a9a1d2145bdf87dacdc885ec6d2754ce7aa9f8"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig_width_ready_v19_v22.pdf",
+        "sha256": "f0055e5ae919edd3658724cb1a04f5815f2ceeae3a78de8f600fc50e42fc48bc"
+      },
+      "svg": {
+        "path": "figs/fig_width_ready_v19_v22.svg",
+        "sha256": "6be7de5f356f1714d889578be2df5e8dd06427213bd81ec1843def7f74168e6c"
+      },
+      "png": {
+        "path": "figs/fig_width_ready_v19_v22.png",
+        "sha256": "c900b0e8591860c7907f1f189dec2e462812dad21c747548cb5c730989c1cac3"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "f0055e5ae919edd3658724cb1a04f5815f2ceeae3a78de8f600fc50e42fc48bc",
+      "svg": "6be7de5f356f1714d889578be2df5e8dd06427213bd81ec1843def7f74168e6c",
+      "png": "c900b0e8591860c7907f1f189dec2e462812dad21c747548cb5c730989c1cac3"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  },
+  {
+    "old_stem": "fig_projection_reuse_v19",
+    "new_stem": "fig_projection_reuse_v19_v22",
+    "rows": 2,
+    "cols": 3,
+    "span": "double",
+    "width_in": 6.500000276740003,
+    "height_in": 4.8,
+    "minimum_font_pt": 8.0,
+    "caption": "Bounded projection reuse in two separate 7B timing populations. Rows are development and independently frozen fresh-input confirmation; columns give cohort time and brief completion relative to the same-block Native process, then recorded mean scheduling milliseconds per call. P/I denote prefix/instruction inputs and suffixes the measured quotas. Every cell retains all six matched process observations, with faint segments pairing reuse off/on. Large markers are geometric means, thick segments empirical interquartile ranges and thin segments observed ranges. Green points in the scheduling column are the six Native call-time averages. The scheduling ledger is not an Authority/ACK/kernel causal decomposition; stages are not pooled and no 14B reuse result is implied.",
+    "caption_plain": "Bounded projection reuse in two separate 7B timing populations. Rows are development and independently frozen fresh-input confirmation; columns give cohort time and brief completion relative to the same-block Native process, then recorded mean scheduling milliseconds per call. P/I denote prefix/instruction inputs and suffixes the measured quotas. Every cell retains all six matched process observations, with faint segments pairing reuse off/on. Large markers are geometric means, thick segments empirical interquartile ranges and thin segments observed ranges. Green points in the scheduling column are the six Native call-time averages. The scheduling ledger is not an Authority/ACK/kernel causal decomposition; stages are not pooled and no 14B reuse result is implied.",
+    "caption_tex": "Bounded projection reuse in two separate 7B timing populations. Rows are development and independently frozen fresh-input confirmation; columns give cohort time and brief completion relative to the same-block Native process, then recorded mean scheduling milliseconds per call. P/I denote prefix/instruction inputs and suffixes the measured quotas. Every cell retains all six matched process observations, with faint segments pairing reuse off/on. Large markers are geometric means, thick segments empirical interquartile ranges and thin segments observed ranges. Green points in the scheduling column are the six Native call-time averages. The scheduling ledger is not an Authority/ACK/kernel causal decomposition; stages are not pooled and no 14B reuse result is implied.",
+    "plot_data": "source_data/v22_figures/modern/fig_projection_reuse_v19_plotrows.json",
+    "plot_data_path": "source_data/v22_figures/modern/fig_projection_reuse_v19_plotrows.json",
+    "plot_data_sha256": "4b2a9ee8ff20c6e92e07882951b9fd24e4551af11f59d30ecf7078d69a376765",
+    "source_sha256": {
+      "source_data/v19_projection/development/all_services.csv": "c7412d0080753b5688ed2f7c3070620e696c6b3ad6962be0b2c5db23245acaa1",
+      "source_data/v19_projection/confirmation/all_services.csv": "a3bcc2405a4bc73bcb95f6ba755d5bd16755ecd16d97e67093100a370258d20c"
+    },
+    "outputs": {
+      "pdf": {
+        "path": "figs/fig_projection_reuse_v19_v22.pdf",
+        "sha256": "3f9f774ba1a3ae062ef97fccee7e13abc908a822475652c7e22d90045f13148c"
+      },
+      "svg": {
+        "path": "figs/fig_projection_reuse_v19_v22.svg",
+        "sha256": "4f2bde6682db30e189abd66d6b0e00e7c6026bec3e87cfe8a16f2f115810874d"
+      },
+      "png": {
+        "path": "figs/fig_projection_reuse_v19_v22.png",
+        "sha256": "00ef7208c4e7101f95c198170c7b5bc8092cdd1facfe27f761d94f57c9b391e8"
+      }
+    },
+    "figure_sha256": {
+      "pdf": "3f9f774ba1a3ae062ef97fccee7e13abc908a822475652c7e22d90045f13148c",
+      "svg": "4f2bde6682db30e189abd66d6b0e00e7c6026bec3e87cfe8a16f2f115810874d",
+      "png": "00ef7208c4e7101f95c198170c7b5bc8092cdd1facfe27f761d94f57c9b391e8"
+    },
+    "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+    "fixed_geometry": true,
+    "vector_PDF": true,
+    "live_text_SVG": true,
+    "native_PPT_claim": false
+  }
+]

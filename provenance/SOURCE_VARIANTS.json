@@ -1,0 +1,35 @@
+{
+  "projection_python_files": 84,
+  "original_populations": {
+    "experiments/adaptive_source/package": {
+      "python_files": 84,
+      "changed_vs_projection": [
+        "prc_nc/adapters/vllm_scheduler.py"
+      ],
+      "original_adapter_sha256": "047a47e641654c594908e5dbd82ac7aa28a6365fd9f99e82c4c9506bf4e8d2dd"
+    },
+    "experiments/v18_supplement/ownership/package": {
+      "python_files": 84,
+      "changed_vs_projection": [
+        "prc_nc/adapters/vllm_scheduler.py"
+      ],
+      "original_adapter_sha256": "047a47e641654c594908e5dbd82ac7aa28a6365fd9f99e82c4c9506bf4e8d2dd"
+    },
+    "experiments/v18_supplement/baselines/package": {
+      "python_files": 84,
+      "changed_vs_projection": [
+        "prc_nc/adapters/vllm_scheduler.py"
+      ],
+      "original_adapter_sha256": "047a47e641654c594908e5dbd82ac7aa28a6365fd9f99e82c4c9506bf4e8d2dd"
+    },
+    "experiments/v18_supplement/scale14b/package": {
+      "python_files": 84,
+      "changed_vs_projection": [
+        "prc_nc/adapters/vllm_scheduler.py"
+      ],
+      "original_adapter_sha256": "047a47e641654c594908e5dbd82ac7aa28a6365fd9f99e82c4c9506bf4e8d2dd"
+    }
+  },
+  "projection_adapter_sha256": "8525369c20edc5c6617ff14424c304d77e8d3276707292f40787f394632d1db2",
+  "serving_algorithm_edits_for_public_release": []
+}

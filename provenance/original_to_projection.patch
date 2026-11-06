@@ -1,0 +1,148 @@
+--- original/prc_nc/adapters/vllm_scheduler.py
++++ projection/prc_nc/adapters/vllm_scheduler.py
+@@ -128,6 +128,21 @@
+         self._zero_growth_fast = os.environ.get("PRC_ZERO_GROWTH_FAST", "1") == "1"
+         self._zero_growth_hits = 0
+         self._zero_growth_pass = set()
++        # Separate from the legacy uncharged zero-growth shortcut. This opt-in
++        # only reuses an unchanged immutable projection; every Authority and
++        # allocator transaction below remains mandatory.
++        projection_flag = os.environ.get("PRC_ZERO_PROJECTION_REUSE", "0")
++        if projection_flag not in ("0", "1"):
++            raise RuntimeError("zero projection reuse flag must be0/1")
++        self._zero_projection_reuse = projection_flag == "1"
++        self._zero_projection_checks = self._zero_projection_hits = 0
++        self._zero_projection_audit_checks = 0
++        if self._zero_projection_reuse and (
++                self._mode != "shared_incremental" or not self._ordinary_witness_priority
++                or self._peer_resident_limit != 4 or not self._peer_queue_bypass
++                or not self._peer_capacity_adaptive
++                or (self._drain.scope, self._drain.batching) != ("cohort", "cohort_certified")):
++            raise RuntimeError("zero projection reuse supports only frozen Adaptive INC-Q")
+         # Deny cache (v4): a refused growth/admission can only become admissible
+         # after a release (T6) — other requests' growth only shrinks the feasible
+         # set (T5) and leaves the hard-reserve slack sum(d)-f invariant. So a
+@@ -240,6 +255,7 @@
+             drain_scope=self._drain.scope,
+             drain_batching=self._drain.batching,
+             ordinary_witness_priority=self._ordinary_witness_priority,
++            zero_projection_reuse_enabled=self._zero_projection_reuse,
+             peer_resident_limit=self._peer_resident_limit,
+             peer_queue_bypass=self._peer_queue_bypass,
+             peer_capacity_adaptive=self._peer_capacity_adaptive,
+@@ -538,6 +554,13 @@
+                     pair_checks=getattr(self,'_peer_pair_checks',0),
+                     pair_exemptions=getattr(self,'_peer_pair_exemptions',0),
+                     scope="cumulative including warmup; utility decisions, not certificate feasibility trials"),
++                "zero_projection_reuse_stats": dict(
++                    enabled=getattr(self,"_zero_projection_reuse",False),
++                    checks=getattr(self,"_zero_projection_checks",0),
++                    hits=getattr(self,"_zero_projection_hits",0),
++                    audit_equivalence_checks=getattr(self,"_zero_projection_audit_checks",0),
++                    authority_bypass=False,
++                    scope="cumulative including warmup; resident zero-page projection construction only; full grants/dispatch/observation/ACK retained"),
+                 "ordinary_witness_priority_stats": dict(enabled=getattr(self,"_ordinary_witness_priority",False),
+                     observed_steps=getattr(self,"_ordinary_steps",0), relative_order_changes=getattr(self,"_ordinary_reorders",0),
+                     pending_batches=len(getattr(self,"_ordinary_pending_batches",{})),
+@@ -879,37 +902,75 @@
+                     self._log("deny_cache_hit", request_id=request.request_id, hits=self._deny_cache_hits,
+                               release_epoch=self._release_epoch, controller_ns=time.perf_counter_ns() - start)
+                 return False
+-        s, ids, owners = self._snapshot(request)
+-        i = ids.index(request.request_id)
+-        projected = {g.key: set(g.owners) for g in s.groups}
+-        touched_free = 0
+-        for block in cached:
+-            if block.is_null:
+-                raise RuntimeError("Null cache hit")
+-            if str(block.block_id) not in projected:
+-                projected[str(block.block_id)] = set()
+-                touched_free += 1
+-            projected[str(block.block_id)].add(i)
+         target = request.num_computed_tokens + num_new_computed_tokens + num_new_tokens
+         required = (min(target, self.max_model_len) + bs - 1) // bs
+-        new_count = max(0, required - len(current) - len(cached))
+-        for j in range(new_count):
+-            projected[f"prospective-{j}"] = {i}
+-        new_free = s.free[0] - touched_free - new_count
+-        needs = [list(row) for row in s.need]
+-        needs[i][0] -= len(cached) + new_count
+-        if needs[i][0] < 0:
+-            raise AssertionError("Action exceeds remaining hard bound")
+-        physical_fit = new_free >= 0
++        authority = getattr(self, "_authority", None)
++        reuse_enabled = getattr(self, "_zero_projection_reuse", False)
++        if reuse_enabled:
++            self._zero_projection_checks += 1
++        # No authorization is inferred from z=0. The current state must still
++        # be observed; it is only reused as a projection if the Authority is
++        # settled and the exact resident identities/version remain unchanged.
++        reuse_version = authority.version if authority is not None else None
++        reuse_candidate = (reuse_enabled and current and not cached
++            and num_new_computed_tokens == 0 and required <= len(current)
++            and authority is not None and authority.pending is None
++            and authority.virtual == authority.confirmed
++            and request.request_id in authority.ids
++            and not any(getattr(self, name, {}) for name in
++                ("_pending_commit", "_pending_projection", "_pending_index")))
++        s, ids, owners = self._snapshot() if reuse_candidate else self._snapshot(request)
++        i = ids.index(request.request_id)
++        reuse_projection = (reuse_candidate and authority.version == reuse_version
++            and authority.pending is None and authority.virtual == authority.confirmed
++            and tuple(ids) == authority.ids and s == authority.confirmed)
++        if reuse_projection:
++            # State/Group are deeply immutable. A resident, no-prefix, zero-page
++            # allocation changes neither free/need nor exact physical owners.
++            # Keep the ordinary proposal, grant, dispatch and post-observation
++            # path below; this branch only omits redundant object construction.
++            post = s
++            touched_free = new_count = 0
++            new_free = s.free[0]
++            physical_fit = True
++            self._zero_projection_hits += 1
++        else:
++            projected = {g.key: set(g.owners) for g in s.groups}
++            touched_free = 0
++            for block in cached:
++                if block.is_null:
++                    raise RuntimeError("Null cache hit")
++                if str(block.block_id) not in projected:
++                    projected[str(block.block_id)] = set()
++                    touched_free += 1
++                projected[str(block.block_id)].add(i)
++            new_count = max(0, required - len(current) - len(cached))
++            for j in range(new_count):
++                projected[f"prospective-{j}"] = {i}
++            new_free = s.free[0] - touched_free - new_count
++            needs = [list(row) for row in s.need]
++            needs[i][0] -= len(cached) + new_count
++            if needs[i][0] < 0:
++                raise AssertionError("Action exceeds remaining hard bound")
++            physical_fit = new_free >= 0
++            post = (State((new_free,), tuple(map(tuple, needs)),
++                tuple(Group(key, 0, 1, frozenset(who)) for key, who in projected.items()))
++                if physical_fit else None)
+         certificate = False
+         oracle_checked = False
+-        authority = getattr(self, "_authority", None)
+         if physical_fit:
+-            post = State(
+-                (new_free,),
+-                tuple(map(tuple, needs)),
+-                tuple(Group(key, 0, 1, frozenset(who)) for key, who in projected.items()),
+-            )
++            if reuse_projection and self._audit:
++                # Differentially reconstruct the former projection in audit
++                # mode. This is a proof check, not formal timing evidence.
++                original_post = State((s.free[0],), tuple(tuple(row) for row in s.need),
++                    tuple(Group(g.key, 0, 1, frozenset(g.owners)) for g in s.groups))
++                if original_post != post:
++                    raise AssertionError("zero projection reuse differs from original projection")
++                self._zero_projection_audit_checks += 1
++                self._log("zero_projection_reuse", request_id=request.request_id,
++                    authority_version=reuse_version, resident_ids=list(ids),
++                    free=s.free[0], growth_pages=0, projection_identity_reused=True,
++                    original_projection_equal=True, authorization_bypass=False)
+             if authority is None and (self._mode != "shared_incremental" or self._audit):
+                 certificate_state = post
+                 if self._mode == "exclusive_closure":

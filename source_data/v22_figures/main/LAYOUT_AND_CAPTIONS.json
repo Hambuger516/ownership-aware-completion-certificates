@@ -1,0 +1,310 @@
+{
+  "version": "v22",
+  "single_column_width_inches": 3.16697799916978,
+  "figures": [
+    {
+      "old_stem": "fig_ownership_repeated_v18",
+      "new_stem": "fig_ownership_repeated_v22",
+      "outer_rows": 1,
+      "outer_columns": 2,
+      "rows": 1,
+      "cols": 2,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.3,
+      "minimum_font_pt": 9.0,
+      "preferred_font_pt": 9.0,
+      "caption_plain": "Ownership ablation on nine fixed input/arrival scenarios. Panels show cohort and brief completion ratios Full C1/Full C0; F, I and B denote front, interleaved and back arrivals. Each open point is one matched process block (four per row); diamonds are geometric means and horizontal segments span observed minima to maxima, not confidence intervals. Blue row bands identify interleaving; alternating group shading separates the three input pairs. The dashed line is equality. Both axes are logarithmic; values below one favour Full C1.",
+      "caption_tex": "Ownership ablation on nine fixed input/arrival scenarios. Panels show cohort and brief completion ratios Full C1/Full C0; F, I and B denote front, interleaved and back arrivals. Each open point is one matched process block (four per row); diamonds are geometric means and horizontal segments span observed minima to maxima, not confidence intervals. Blue row bands identify interleaving; alternating group shading separates the three input pairs. The dashed line is equality. Both axes are logarithmic; values below one favour Full C1.",
+      "encoding": "Paired point-and-observed-range forests; group and arrival-category bands",
+      "source_sha256": {
+        "source_data/v18_verified/ownership/all_pairs.csv": "93d066543ff8ce74328e43810356d04d8107f8e95748050915e839cf4a12b3a5",
+        "source_data/v18_verified/ownership/all_services.csv": "26afefbe54d10bd8155f3657ad8383359e3bd10c7e168265df7e24d4383baa29",
+        "source_data/v18_verified/ownership/FINAL_NUMERIC_READOUT.json": "17d654d6cfae96b5747e924d62d415da1e867a2c337a938639720589de690c9e"
+      },
+      "data_paths": [
+        "source_data/v18_verified/ownership/all_pairs.csv",
+        "source_data/v18_verified/ownership/all_services.csv",
+        "source_data/v18_verified/ownership/FINAL_NUMERIC_READOUT.json"
+      ],
+      "plot_data_path": "source_data/v22_figures/main/plotrows.json",
+      "raw_displayed_point_count": 72,
+      "plot_group_count": 18,
+      "output_sha256": {
+        "pdf": "d19055d82080665aa2e77f18af823ef77af3be6f3de58e5ae69919873f6fe413",
+        "svg": "4037b57a42d95047ba8e0235e1a34420504012f66c8b69ca942823dd2579a6dd",
+        "png": "a81aea289f8ae53c07631fde696ba91cbe18dce9faee86f52eec439bf372e4d7"
+      },
+      "figure_sha256": {
+        "pdf": "d19055d82080665aa2e77f18af823ef77af3be6f3de58e5ae69919873f6fe413",
+        "svg": "4037b57a42d95047ba8e0235e1a34420504012f66c8b69ca942823dd2579a6dd",
+        "png": "a81aea289f8ae53c07631fde696ba91cbe18dce9faee86f52eec439bf372e4d7"
+      },
+      "pdf_fonts_embedded": [
+        "/EMBBZB+TimesNewRomanPSMT"
+      ],
+      "pdf_type3_fonts": false,
+      "pdf_image_xobjects": 0,
+      "svg_live_text_count": 21,
+      "fixed_width_no_tight_bbox": true,
+      "all_visible_text_within_canvas": true,
+      "visual_signoff": false
+    },
+    {
+      "old_stem": "fig_fair_baselines_v18",
+      "new_stem": "fig_fair_baselines_v22",
+      "outer_rows": 2,
+      "outer_columns": 2,
+      "rows": 2,
+      "cols": 2,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.85,
+      "minimum_font_pt": 8.0,
+      "preferred_font_pt": 9.0,
+      "caption_plain": "Fair baseline comparison on the 7B model. Rows identify the comparator; each cell is Adaptive/comparator for one quota and fixed input family, with cohort time above and brief completion below. The printed value is the geometric mean of four matched process ratios. Each cell also retains the four open raw points and their observed range using the same equality-centred log2 glyph scale; its dotted mark is one. Values below and above one each occupy half of the shared colour/glyph scale. Colour is centred on equality: blue favours Adaptive and ochre favours the comparator. The outlined instruction 4x-quota cohort cell retains Adaptive/Hard reserve = 1.031. All adverse cells are retained. These are observed ranges, not confidence intervals; two fixed input families are not independent workload samples. Full-precision displayed groups and all original method-pair contrasts accompany the figure.",
+      "caption_tex": "Fair baseline comparison on the 7B model. Rows identify the comparator; each cell is Adaptive/comparator for one quota and fixed input family, with cohort time above and brief completion below. The printed value is the geometric mean of four matched process ratios. Each cell also retains the four open raw points and their observed range using the same equality-centred log2 glyph scale; its dotted mark is one. Values below and above one each occupy half of the shared colour/glyph scale. Colour is centred on equality: blue favours Adaptive and ochre favours the comparator. The outlined instruction 4x-quota cohort cell retains Adaptive/Hard reserve = 1.031. All adverse cells are retained. These are observed ranges, not confidence intervals; two fixed input families are not independent workload samples. Full-precision displayed groups and all original method-pair contrasts accompany the figure.",
+      "encoding": "Annotated geometric-mean vector heatmap plus four-point observed-range glyph per cell",
+      "source_sha256": {
+        "source_data/v18_verified/baselines/all_pairs.csv": "6c3ba01fe3240dd52f91bfd3e075b0903aa26f853561a99f6f3fb369a89f3ee2",
+        "source_data/v18_verified/baselines/all_services.csv": "f75294e4bd324f535c3326053d8099787aac0548c765bda87ddd6ac075219952",
+        "source_data/v18_verified/baselines/FINAL_NUMERIC_READOUT.json": "a4b272afdf590ca988bac870667d5fc9a14997530e555d19428867e9e92781a4",
+        "source_data/v18_verified/baselines/PROTOCOL.json": "d59a8ecf750a1169482bcb47d224af66b21d39e82b298355d4dbabb108a98ec0"
+      },
+      "data_paths": [
+        "source_data/v18_verified/baselines/all_pairs.csv",
+        "source_data/v18_verified/baselines/all_services.csv",
+        "source_data/v18_verified/baselines/FINAL_NUMERIC_READOUT.json",
+        "source_data/v18_verified/baselines/PROTOCOL.json"
+      ],
+      "plot_data_path": "source_data/v22_figures/main/plotrows.json",
+      "raw_displayed_point_count": 144,
+      "plot_group_count": 36,
+      "output_sha256": {
+        "pdf": "a201be27311d6e1157e6162a729e27725dd67a4951e184527c1d4af9de3cd4d7",
+        "svg": "f6683eb9d5dcdf265ff1337293b4424056370706675402566321e0fcaae5e656",
+        "png": "aed2a279ea2a1aaa2bfd41184d8413c35567443e036cc0a3783a7e2032c6f059"
+      },
+      "figure_sha256": {
+        "pdf": "a201be27311d6e1157e6162a729e27725dd67a4951e184527c1d4af9de3cd4d7",
+        "svg": "f6683eb9d5dcdf265ff1337293b4424056370706675402566321e0fcaae5e656",
+        "png": "aed2a279ea2a1aaa2bfd41184d8413c35567443e036cc0a3783a7e2032c6f059"
+      },
+      "pdf_fonts_embedded": [
+        "/GHBUSP+TimesNewRomanPSMT"
+      ],
+      "pdf_type3_fonts": false,
+      "pdf_image_xobjects": 0,
+      "svg_live_text_count": 65,
+      "fixed_width_no_tight_bbox": true,
+      "all_visible_text_within_canvas": true,
+      "visual_signoff": false,
+      "shared_log2_ratio_limits": [
+        -6,
+        2
+      ],
+      "shared_ratio_limits": [
+        0.015625,
+        4
+      ],
+      "normalization": "TwoSlopeNorm(log2(ratio)): equality at midpoint; negative and positive spans occupy half each",
+      "small_font_scope": "8pt numeric matrix cell values only; all other text is 9pt",
+      "all_source_pair_contrasts_recomputed": 144,
+      "native_constant_repeats_not_duplicated": true,
+      "equal_family_baseline_table": [
+        {
+          "quota": 1,
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "cohort_ratio": 0.6735224689729291,
+          "brief_ratio": 0.28887716790743684
+        },
+        {
+          "quota": 1,
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "cohort_ratio": 0.5504413267140029,
+          "brief_ratio": 0.030050034437044924
+        },
+        {
+          "quota": 1,
+          "target": "adaptive",
+          "baseline": "native",
+          "cohort_ratio": 1.8899437272910051,
+          "brief_ratio": 0.45112839765855833
+        },
+        {
+          "quota": 2,
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "cohort_ratio": 0.9600435887679011,
+          "brief_ratio": 0.941833127609854
+        },
+        {
+          "quota": 2,
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "cohort_ratio": 0.5323196770011724,
+          "brief_ratio": 0.09721385759269083
+        },
+        {
+          "quota": 2,
+          "target": "adaptive",
+          "baseline": "native",
+          "cohort_ratio": 1.2639243933846387,
+          "brief_ratio": 1.2052847861645928
+        },
+        {
+          "quota": 4,
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "cohort_ratio": 0.9482659036246501,
+          "brief_ratio": 0.9377162674300065
+        },
+        {
+          "quota": 4,
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "cohort_ratio": 0.8257345660263731,
+          "brief_ratio": 0.27614660948387704
+        },
+        {
+          "quota": 4,
+          "target": "adaptive",
+          "baseline": "native",
+          "cohort_ratio": 1.1904601133748147,
+          "brief_ratio": 1.1976003188391247
+        }
+      ],
+      "transparent_companion_files": {
+        "source_data/v22_figures/main/plotrows/baselines_all_services.csv": "f75294e4bd324f535c3326053d8099787aac0548c765bda87ddd6ac075219952",
+        "source_data/v22_figures/main/plotrows/baselines_all_pairs.csv": "6c3ba01fe3240dd52f91bfd3e075b0903aa26f853561a99f6f3fb369a89f3ee2"
+      }
+    },
+    {
+      "old_stem": "fig_scale14b_v18",
+      "new_stem": "fig_scale14b_v22",
+      "outer_rows": 2,
+      "outer_columns": 2,
+      "rows": 2,
+      "cols": 2,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.85,
+      "minimum_font_pt": 8.0,
+      "preferred_font_pt": 9.0,
+      "caption_plain": "Parameter-frozen 14B transfer. Rows show INC, Fixed INC-Q and Adaptive INC-Q, each normalized to matched Native at the two measured quotas. Panels separate fixed input families and cohort/brief completion. Each printed cell is a geometric mean over four matched process ratios; four open points and an observed-range segment retain the raw ratios on a shared equality-centred log2 glyph scale with one marked inside every cell. Values below and above one each occupy half of the shared colour/glyph scale: blue is below Native and ochre is above it. Ranges are not confidence intervals. Only the measured quota levels are shown, with no interpolation, new tuning or projection-reuse result implied.",
+      "caption_tex": "Parameter-frozen 14B transfer. Rows show INC, Fixed INC-Q and Adaptive INC-Q, each normalized to matched Native at the two measured quotas. Panels separate fixed input families and cohort/brief completion. Each printed cell is a geometric mean over four matched process ratios; four open points and an observed-range segment retain the raw ratios on a shared equality-centred log2 glyph scale with one marked inside every cell. Values below and above one each occupy half of the shared colour/glyph scale: blue is below Native and ochre is above it. Ranges are not confidence intervals. Only the measured quota levels are shown, with no interpolation, new tuning or projection-reuse result implied.",
+      "encoding": "Annotated geometric-mean vector heatmap plus four-point observed-range glyph per cell",
+      "source_sha256": {
+        "source_data/v18_verified/scale14b/all_pairs.csv": "eca3fc5f0bd17c8a9107a960106c47ae9e0cbd3fcc22e048239e9b1904e6a550",
+        "source_data/v18_verified/scale14b/all_services.csv": "4c9f0fa7e5ad93f1a61c7dc88130312cbe58ef299acf319e4e69ea6adf95737c",
+        "source_data/v18_verified/scale14b/FINAL_NUMERIC_READOUT.json": "8377712f41245f53d4a7c2de68fe56aa2e8b6684989e4cfeffb3d0aa1361412b",
+        "source_data/v18_verified/scale14b/PROTOCOL.json": "079b6d7876030d90228fdf738dcb1db262f810495b9323b3b5c1be5be3fcc80c"
+      },
+      "data_paths": [
+        "source_data/v18_verified/scale14b/all_pairs.csv",
+        "source_data/v18_verified/scale14b/all_services.csv",
+        "source_data/v18_verified/scale14b/FINAL_NUMERIC_READOUT.json",
+        "source_data/v18_verified/scale14b/PROTOCOL.json"
+      ],
+      "plot_data_path": "source_data/v22_figures/main/plotrows.json",
+      "raw_displayed_point_count": 96,
+      "plot_group_count": 24,
+      "output_sha256": {
+        "pdf": "9c519cdc0141016dee05a973328120bd59e8ad0259e5037b024154451bec3d9d",
+        "svg": "eb501b36f6000c52b21062eed0682d86f6eb1ae251d0339cf81891a5c615f9b7",
+        "png": "f3d63e03fd8c065d053e0362d792396b15dedecb685825eedf54f3ce6fb4be39"
+      },
+      "figure_sha256": {
+        "pdf": "9c519cdc0141016dee05a973328120bd59e8ad0259e5037b024154451bec3d9d",
+        "svg": "eb501b36f6000c52b21062eed0682d86f6eb1ae251d0339cf81891a5c615f9b7",
+        "png": "f3d63e03fd8c065d053e0362d792396b15dedecb685825eedf54f3ce6fb4be39"
+      },
+      "pdf_fonts_embedded": [
+        "/BNGVMQ+TimesNewRomanPSMT"
+      ],
+      "pdf_type3_fonts": false,
+      "pdf_image_xobjects": 0,
+      "svg_live_text_count": 49,
+      "fixed_width_no_tight_bbox": true,
+      "all_visible_text_within_canvas": true,
+      "visual_signoff": false,
+      "shared_log2_ratio_limits": [
+        -4,
+        2
+      ],
+      "shared_ratio_limits": [
+        0.0625,
+        4
+      ],
+      "normalization": "TwoSlopeNorm(log2(ratio)): equality at midpoint; negative and positive spans occupy half each",
+      "small_font_scope": "8pt numeric matrix cell values only; all other text is 9pt",
+      "all_source_pair_contrasts_recomputed": 96,
+      "native_constant_repeats_not_duplicated": true,
+      "transparent_companion_files": {
+        "source_data/v22_figures/main/plotrows/scale14b_all_services.csv": "4c9f0fa7e5ad93f1a61c7dc88130312cbe58ef299acf319e4e69ea6adf95737c",
+        "source_data/v22_figures/main/plotrows/scale14b_all_pairs.csv": "eca3fc5f0bd17c8a9107a960106c47ae9e0cbd3fcc22e048239e9b1904e6a550"
+      }
+    },
+    {
+      "old_stem": "fig_runtime_ledger_v21",
+      "new_stem": "fig_runtime_ledger_v22",
+      "outer_rows": 2,
+      "outer_columns": 1,
+      "rows": 2,
+      "cols": 1,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.75,
+      "minimum_font_pt": 9.0,
+      "preferred_font_pt": 9.0,
+      "caption_plain": "Fresh-input 4x-quota scheduling ledger, with prefix and instruction inputs shown in stacked panels. Left: mean cohort wall time over six matched balanced process blocks, split into the recorded scheduling interval and the arithmetic remainder; all 36 original total-time endpoints are retained as open points. Right: scheduling milliseconds per invocation for the same runs, with each arm mean printed above its six raw points on a logarithmic axis. Segments span observed ranges, not confidence intervals. Reuse off/on share the same policy. The remainder is not measured GPU time and recorded scheduling is not an irreducible certificate lower bound.",
+      "caption_tex": "Fresh-input 4$\\times$-quota scheduling ledger, with prefix and instruction inputs shown in stacked panels. Left: mean cohort wall time over six matched balanced process blocks, split into the recorded scheduling interval and the arithmetic remainder; all 36 original total-time endpoints are retained as open points. Right: scheduling milliseconds per invocation for the same runs, with each arm mean printed above its six raw points on a logarithmic axis. Segments span observed ranges, not confidence intervals. Reuse off/on share the same policy. The remainder is not measured GPU time and recorded scheduling is not an irreducible certificate lower bound.",
+      "encoding": "Stacked measured wall-time ledger and six-run ms/call observed-point strips; two stacked panels",
+      "source_sha256": {
+        "experiments/v20_review/runtime_statistics/output/runtime_factor4_per_service.csv": "a6d3b0d154b8e8b745d254cde4e94b526036ef7db7f438dc8206b3839f4fa743",
+        "experiments/v20_review/runtime_statistics/output/RUNTIME_ACCOUNTING.json": "66619b97358d087ebe4df0b1658d901b09d86c24d938f1d0a8696349e52c84c6"
+      },
+      "data_paths": [
+        "experiments/v20_review/runtime_statistics/output/runtime_factor4_per_service.csv",
+        "experiments/v20_review/runtime_statistics/output/RUNTIME_ACCOUNTING.json"
+      ],
+      "plot_data_path": "source_data/v22_figures/main/plotrows.json",
+      "raw_displayed_point_count": 72,
+      "plot_group_count": 6,
+      "output_sha256": {
+        "pdf": "11f6f877e91feba83ff856b12fc16545c687f20a23957432a40bbe79c80342ee",
+        "svg": "2ec203767c07656184707cf582764d7eb8bce984eb21c1998c2357a9dd3ad2ce",
+        "png": "68d7fc755f878ae12407bccb532fec3bc2b84f28ea85172303d709e2b42dbb76"
+      },
+      "figure_sha256": {
+        "pdf": "11f6f877e91feba83ff856b12fc16545c687f20a23957432a40bbe79c80342ee",
+        "svg": "2ec203767c07656184707cf582764d7eb8bce984eb21c1998c2357a9dd3ad2ce",
+        "png": "68d7fc755f878ae12407bccb532fec3bc2b84f28ea85172303d709e2b42dbb76"
+      },
+      "pdf_fonts_embedded": [
+        "/BVJCLF+TimesNewRomanPSMT"
+      ],
+      "pdf_type3_fonts": false,
+      "pdf_image_xobjects": 0,
+      "svg_live_text_count": 32,
+      "fixed_width_no_tight_bbox": true,
+      "all_visible_text_within_canvas": true,
+      "visual_signoff": false,
+      "original_total_time_endpoints": 36,
+      "additional_actual_ms_per_call_endpoints": 36,
+      "per_call_mean_labels": [
+        "0.193",
+        "15.419",
+        "5.680",
+        "0.119",
+        "2.910",
+        "1.614"
+      ]
+    }
+  ],
+  "editability": "Scientific source and live-text SVG plus vector PDF; not a native PowerPoint chart.",
+  "source_and_algorithm_changes": false,
+  "new_GPU_runs": false
+}

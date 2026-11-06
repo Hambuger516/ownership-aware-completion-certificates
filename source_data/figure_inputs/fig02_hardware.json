@@ -1,0 +1,43 @@
+{
+  "median_ms": {
+    "7b": {
+      "local_5090": 479.2915764992,
+      "a100_40gb": 535.9781747684,
+      "a800_80gb": 353.0553728342,
+      "rtx6000_pro_96gb": 367.6930414513
+    },
+    "14b": {
+      "local_5090": null,
+      "a100_40gb": 870.6131651998,
+      "a800_80gb": 563.4451508522,
+      "rtx6000_pro_96gb": 622.0513042063
+    },
+    "32b": {
+      "local_5090": null,
+      "a100_40gb": null,
+      "a800_80gb": 1203.6091946065,
+      "rtx6000_pro_96gb": 1274.0278383717
+    }
+  },
+  "request_record_counts": {
+    "7b": {
+      "local_5090": 1728.0,
+      "a100_40gb": 1608.0,
+      "a800_80gb": 1608.0,
+      "rtx6000_pro_96gb": 1608.0
+    },
+    "14b": {
+      "local_5090": null,
+      "a100_40gb": 1608.0,
+      "a800_80gb": 1608.0,
+      "rtx6000_pro_96gb": 1608.0
+    },
+    "32b": {
+      "local_5090": null,
+      "a100_40gb": null,
+      "a800_80gb": 1608.0,
+      "rtx6000_pro_96gb": 1608.0
+    }
+  },
+  "scope": "Archived batch/backend latency proxies. Different runtimes/configurations; not streaming TTFT/TPOT or an end-to-end heterogeneous deployment comparison."
+}

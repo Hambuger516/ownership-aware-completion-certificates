@@ -1,0 +1,13 @@
+Author-owned implementation and original documentation
+======================================================
+Copyright (c) 2026 the paper's authors. All rights reserved.
+
+This source-available research release does not grant a general open-source
+license for author-owned code or documentation. Public availability is not an
+MIT, Apache, BSD or other general license grant. Contact the authors for reuse
+permissions beyond applicable law and the hosting platform's terms.
+
+This notice does not supersede the separately stated licenses of third-party
+material: Dolly-derived data (CC BY-SA 3.0), Alpaca-derived input data
+(CC BY-NC 4.0), and the vendored vLLM reference files (Apache-2.0).
+See THIRD_PARTY_NOTICES.md and third_party_licenses/.

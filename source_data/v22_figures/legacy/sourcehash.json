@@ -1,0 +1,17 @@
+{
+  "raw_sources_sha256": {
+    "source_data/figure_inputs/recomputed_effect_v12_20261028.json": "34c5aac6c42bb92ec8ba308baf0ae7df539c4657686d800cc3f058c93108fbb4",
+    "source_data/figure_inputs/rechecked_holdout_20261028.json": "03a8f377265680e217ad765ad37cfc95846ef89a46d73497b268036095e8846c",
+    "source_data/figure_inputs/comparison.json": "464184b886dfefb5079b721b0a20d2a8af1506cadddeae02f209067f421dc2ef",
+    "data/derived_client_trajectory.json": "4429d60c65ad4636d3e9ac88d97098dff4b225c5e709f16e50879c352685fbfb",
+    "source_data/fig04_ownership.json": "f5d815381045e89689fbb8b1f599eaa622a372c78df99059dd86b8be2ab91b68",
+    "source_data/figure_inputs/fig02_hardware.json": "43de6e66c7eaa3faaad8d4357468f49a1aefe0005b1f9bddbab828326dfbe9f8",
+    "source_data/fig03_theory.json": "db5f02a8c25761ecfbaa02124be64b51847580b295c641caacf68e5f0ca258b3",
+    "experiments/routing/results/controlled_runs.csv": "e71463b618de2bf1f36388723944f0a2d9451740a789f4a8619e377e8f38f444"
+  },
+  "redraw_scripts_sha256": {
+    "figure_source/redesign_legacy_v22.py": "e67ea8d415eeabdd6b6c3e8d8b9048fc1a54b3f393f04cfb5500ef4fa88c6246",
+    "figure_source/redesign_legacy_hardware_theory_v22.py": "18db99ebb24d570acca41df189d6e44ac02b9e8ddbc0a9a45226124f2397e575"
+  },
+  "old_sources_and_data_immutable": true
+}

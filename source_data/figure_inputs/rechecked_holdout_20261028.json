@@ -1,0 +1,102 @@
+{
+  "status": "PASS_RECONSTRUCTED_24_RUNS",
+  "runs": 24,
+  "primary_fields_match_archive": true,
+  "comparison_sha256": "0dd37e990b1035829adf4433fdbf3e6fd0c4d6d2199a6ee0a18c00751722da45",
+  "aggregates": [
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "variant": "hard_reserve",
+      "runs": 3,
+      "seconds": 8.135248715057969,
+      "completed": 48,
+      "slo_completed": 48,
+      "requests_per_second": 5.900249848680621,
+      "output_tokens": 2758,
+      "reexecuted_tokens": 0
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "variant": "native_plain",
+      "runs": 3,
+      "seconds": 6.905419323593378,
+      "completed": 48,
+      "slo_completed": 48,
+      "requests_per_second": 6.951062310727599,
+      "output_tokens": 2763,
+      "reexecuted_tokens": 52
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "variant": "prc_original",
+      "runs": 3,
+      "seconds": 16.44961543660611,
+      "completed": 48,
+      "slo_completed": 41,
+      "requests_per_second": 2.9180013468997776,
+      "output_tokens": 2761,
+      "reexecuted_tokens": 0
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "variant": "prc_tuned",
+      "runs": 3,
+      "seconds": 9.213269339874387,
+      "completed": 48,
+      "slo_completed": 48,
+      "requests_per_second": 5.209876996893963,
+      "output_tokens": 2757,
+      "reexecuted_tokens": 0
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "variant": "hard_reserve",
+      "runs": 3,
+      "seconds": 7.728825701400638,
+      "completed": 48,
+      "slo_completed": 48,
+      "requests_per_second": 6.210516558977558,
+      "output_tokens": 2764,
+      "reexecuted_tokens": 0
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "variant": "native_plain",
+      "runs": 3,
+      "seconds": 6.968170052394271,
+      "completed": 48,
+      "slo_completed": 48,
+      "requests_per_second": 6.888465642928325,
+      "output_tokens": 2737,
+      "reexecuted_tokens": 0
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "variant": "prc_original",
+      "runs": 3,
+      "seconds": 15.167418014258146,
+      "completed": 48,
+      "slo_completed": 48,
+      "requests_per_second": 3.164678388561425,
+      "output_tokens": 2737,
+      "reexecuted_tokens": 0
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "variant": "prc_tuned",
+      "runs": 3,
+      "seconds": 9.155670973472297,
+      "completed": 48,
+      "slo_completed": 48,
+      "requests_per_second": 5.242652356017983,
+      "output_tokens": 2757,
+      "reexecuted_tokens": 0
+    }
+  ],
+  "limitations": [
+    "Three distinct input cohorts, one process measurement per cohort/condition; not five repeat seeds.",
+    "Reuses the existing event replay implementation; not an independently implemented proof checker.",
+    "Single model and accelerator; natural-output sequences and lengths differ.",
+    "No new GPU experiment."
+  ]
+}

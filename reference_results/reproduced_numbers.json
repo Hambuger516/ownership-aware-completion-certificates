@@ -1,0 +1,162 @@
+{
+  "scope": "Arithmetic on public derived tables; not a new physical/raw audit or GPU run",
+  "ownership_fullC1_fullC0_M": 0.9439059546735752,
+  "baseline_equal_family": {
+    "1": {
+      "banker_c0": {
+        "M_ratio": 0.6735224689729292,
+        "brief_ratio": 0.2888771679074369,
+        "paired_processes": 8
+      },
+      "hard_reserve": {
+        "M_ratio": 0.5504413267140029,
+        "brief_ratio": 0.030050034437044924,
+        "paired_processes": 8
+      },
+      "native": {
+        "M_ratio": 1.8899437272910051,
+        "brief_ratio": 0.45112839765855833,
+        "paired_processes": 8
+      }
+    },
+    "2": {
+      "banker_c0": {
+        "M_ratio": 0.960043588767901,
+        "brief_ratio": 0.941833127609854,
+        "paired_processes": 8
+      },
+      "hard_reserve": {
+        "M_ratio": 0.5323196770011724,
+        "brief_ratio": 0.09721385759269083,
+        "paired_processes": 8
+      },
+      "native": {
+        "M_ratio": 1.2639243933846387,
+        "brief_ratio": 1.2052847861645928,
+        "paired_processes": 8
+      }
+    },
+    "4": {
+      "banker_c0": {
+        "M_ratio": 0.9482659036246501,
+        "brief_ratio": 0.9377162674300065,
+        "paired_processes": 8
+      },
+      "hard_reserve": {
+        "M_ratio": 0.8257345660263731,
+        "brief_ratio": 0.276146609483877,
+        "paired_processes": 8
+      },
+      "native": {
+        "M_ratio": 1.1904601133748147,
+        "brief_ratio": 1.1976003188391247,
+        "paired_processes": 8
+      }
+    }
+  },
+  "projection": {
+    "development": {
+      "2": {
+        "cells": {
+          "alpaca_new00_interleave": {
+            "on_off_M": 0.969164535605987,
+            "on_Native_M": 1.0614112251716907,
+            "off_Native_M": 1.0951816602616653,
+            "paired_processes": 6
+          },
+          "fresh00_interleave": {
+            "on_off_M": 0.87382151824476,
+            "on_Native_M": 1.26513134753863,
+            "off_Native_M": 1.4478143661189435,
+            "paired_processes": 6
+          }
+        },
+        "equal_family": {
+          "on_off_M": 0.9202591080408828,
+          "on_Native_M": 1.1588030952642858,
+          "off_Native_M": 1.2592139378345664
+        }
+      },
+      "4": {
+        "cells": {
+          "alpaca_new00_interleave": {
+            "on_off_M": 0.9687437766967333,
+            "on_Native_M": 1.0438600096314177,
+            "off_Native_M": 1.0775398353430659,
+            "paired_processes": 6
+          },
+          "fresh00_interleave": {
+            "on_off_M": 0.8550020171088304,
+            "on_Native_M": 1.132024099300633,
+            "off_Native_M": 1.3240016709300249,
+            "paired_processes": 6
+          }
+        },
+        "equal_family": {
+          "on_off_M": 0.9100977327393653,
+          "on_Native_M": 1.08704861307991,
+          "off_Native_M": 1.1944306352768599
+        }
+      }
+    },
+    "confirmation": {
+      "1": {
+        "cells": {
+          "confirm_instruction65_interleave": {
+            "on_off_M": 0.9944930147734092,
+            "on_Native_M": 1.9241964199450718,
+            "off_Native_M": 1.934851619227805,
+            "paired_processes": 6
+          },
+          "confirm_prefix65_interleave": {
+            "on_off_M": 0.9846295392956832,
+            "on_Native_M": 2.0909603799099323,
+            "off_Native_M": 2.1236011072810395,
+            "paired_processes": 6
+          }
+        },
+        "equal_family": {
+          "on_off_M": 0.9895489876550413,
+          "on_Native_M": 2.0058460751687,
+          "off_Native_M": 2.0270305969611506
+        }
+      },
+      "4": {
+        "cells": {
+          "confirm_instruction65_interleave": {
+            "on_off_M": 0.9714079813520082,
+            "on_Native_M": 1.0469394793269262,
+            "off_Native_M": 1.0777546606831385,
+            "paired_processes": 6
+          },
+          "confirm_prefix65_interleave": {
+            "on_off_M": 0.8254661539051,
+            "on_Native_M": 1.1593090844006573,
+            "off_Native_M": 1.4044295806874931,
+            "paired_processes": 6
+          }
+        },
+        "equal_family": {
+          "on_off_M": 0.8954688214780899,
+          "on_Native_M": 1.1016925384159593,
+          "off_Native_M": 1.2302969260252632
+        }
+      }
+    }
+  },
+  "eight_scenario_base_Adaptive_INC_brief": {
+    "families": {
+      "prefix": 0.3422874268795656,
+      "instruction": 0.9546115756047636
+    },
+    "equal_family_ratio": 0.5716218504249138
+  },
+  "scheduler_replacement_accounting_scenario": {
+    "families": {
+      "confirm_instruction65_interleave": 1.009412455961487,
+      "confirm_prefix65_interleave": 1.0204343053712703
+    },
+    "equal_family_ratio": 1.014908418692134,
+    "interpretation": "Arithmetic substitution, not causal intervention, achievable optimization prediction, engineering floor or GPU timer"
+  }
+}

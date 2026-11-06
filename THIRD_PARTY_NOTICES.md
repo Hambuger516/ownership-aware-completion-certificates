@@ -1,0 +1,9 @@
+# Third-party notices
+
+* **Databricks Dolly 15k**, Databricks, Inc.: https://huggingface.co/datasets/databricks/databricks-dolly-15k . The bundled 512-record normalized sample and Dolly-derived tokenized inputs retain **CC BY-SA 3.0**. Normalization/selection changes are described in DATA_PROVENANCE.md. The license text is in `third_party_licenses/Dolly-CC-BY-SA-3.0.txt`.
+* **Stanford Alpaca data**, Stanford/Tatsu Lab: https://github.com/tatsu-lab/stanford_alpaca . Its data is **CC BY-NC 4.0**, separately from the project's Apache-2.0 code license. This repository includes selected tokenized input-only evaluation traces, not Alpaca model weights or its reference-output corpus. The data license is in `third_party_licenses/Alpaca-DATA-LICENSE.txt`.
+* **vLLM contributors**: `native_runtime_reference/request_queue.py` and `scheduler.py` are unmodified archived reference source files, retaining their SPDX copyright/license headers, under **Apache-2.0**. They support CPU AST compatibility tests and do not vendor the whole engine. License: `third_party_licenses/Apache-2.0.txt`; project: https://github.com/vllm-project/vllm .
+* **Qwen/Qwen2.5-7B-Instruct** and **Qwen/Qwen2.5-14B-Instruct** are external public models. Download them through their official model pages and comply with the model terms. No weights or tokenizer assets are redistributed in this repository.
+* Python, PyTorch, vLLM, Transformers, NumPy, Matplotlib, pypdf and other installed dependencies retain their own licenses. They are dependencies, not author-owned redistributions. Times New Roman is not bundled.
+
+The author-code notice in LICENSE does not restrict rights already granted under these third-party licenses. No third-party material is relabeled as MIT.

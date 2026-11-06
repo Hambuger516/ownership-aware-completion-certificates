@@ -1,0 +1,120 @@
+{
+  "cases": [
+    {
+      "case": "confirm_prefix65_interleave",
+      "family": "main",
+      "trace": "inputs/confirm_prefix65_interleave.json",
+      "trace_sha256": "41b561719b0bba80933a83192c18ca85d57ce5aa38b5eac3c681d3bd0e81ce45",
+      "capacity": {
+        "physical_full_prefill_trie_pages": 95,
+        "reference_free_pages": 4,
+        "max_single_hard_envelope_pages": 62,
+        "context_floor_pages": 64,
+        "usable_pages": 99,
+        "blocks": 100
+      },
+      "source_indices": [
+        14382,
+        2660
+      ]
+    },
+    {
+      "case": "confirm_instruction65_interleave",
+      "family": "alpaca",
+      "trace": "inputs/confirm_instruction65_interleave.json",
+      "trace_sha256": "06334705605b54b509b762c53bcccd2b9c0d71d276d95bee447aff47db619eef",
+      "capacity": {
+        "physical_full_prefill_trie_pages": 38,
+        "reference_free_pages": 4,
+        "max_single_hard_envelope_pages": 37,
+        "context_floor_pages": 64,
+        "usable_pages": 64,
+        "blocks": 65
+      },
+      "source_indices": [
+        45511,
+        42496,
+        30924,
+        36812,
+        10105,
+        27432,
+        32288,
+        58,
+        18650,
+        34441,
+        26905,
+        1802,
+        3682,
+        17054,
+        48071,
+        42236
+      ]
+    }
+  ],
+  "unique_prompt_fingerprints": [
+    "15b1ce4eb4c0dcafca94330a5c2ad78aabaa3b315c678ffebe1d3a73c8bb1e39",
+    "21d74b9c4a5f185f4e743d8fcbdac7e9e33e553aa7bbf768d88d83877f74dcd3",
+    "2475d257f2cd6f1ece1194ffe0f8348904606f581dc101b217b6cd8ee86a391f",
+    "292c33149d0c627a4ceb7bc655b1261b83e4ce9176d9ed048d6adb2fa1ae348e",
+    "31394b4e979331c587eceecf386336615e9a5f67510c65ebd33fd413ff914448",
+    "45de028c7072b71a85992f6e9c072f0dd73ee3f1e223e98fc13f6a5de5a6cca2",
+    "4e007a845c75de24bfa5a7684b7b3b3f8a4f5391e3115b11ae71b2d0da3afb41",
+    "4e8ed427df96eddf19e014488a82e9c19f3e2c493622744991b2f3c319518181",
+    "5312978be3b7d67aa6fdd9c95a553c0394b034b639253ed10ae0d6bb3a304024",
+    "57fee1c742ce6da5735a670d6997652053cf6d0edc1d63a84d02ed4885643a08",
+    "5c0eedf6f7094e2fdecff9d127425bce2cde5f465444f4fa16e59458e3326e48",
+    "605c9e78e4915c64bfc36b415730ad05ae3dc0fbbd7de4181267dabd80d88980",
+    "61976e8eed95bccd0eb79bbd41bef7d58ef6b8f0d2362640fbaa01e923cde3be",
+    "64c925796395ea6f8a462e08f4e299cc14cb534587a65f6edd00b9f86cdb44a0",
+    "6cc3d9692b6ad3b44e9f85570e54cd5149a63f870ad7895c2d8966818295df22",
+    "6f0153051d08222972fc925e82590f160131e59f6c829473149bd360afc2661c",
+    "73308c5f629132a8a8bff9c114636006ba4bf41f7ac80bae37168887d7e28d97",
+    "84fd4697c98371263547a81fcbe841aea648ada7d866241d5471cc6d2fc1a424",
+    "852277d385c77abb8b8d5c8d85194cd1bcd744d91e78a9804a9558202b15401a",
+    "9b528cea36151ebec296e394b82ca4cb21b01c86600f6d486e3e33f7d05fa517",
+    "a55d5c30672de9d64e48d3c14adba0f4d19cd0438b66a239eae1bde176f0fce0",
+    "a6c0dd748f7eaa12d6b0fe2b3203ff023349354b8d5354ca8c03da5bca34d6a7",
+    "aac9bcc64a493333d6ecfa0db8b4b7e1e9849a63d4fb7eafb2d071a784182fa2",
+    "bfd7a03a500e88949e6beca7a1421b9a57bba1600739c1d2d69f007ff5bc752d",
+    "c9a0e3c39e92e1b64fcc4a87c8ab50432d5be1c465318bcb41374a4bb8ab0a43",
+    "d6eee98327290bdc40cf5ae9537d41964a348fa0ad787e959c570aacef97d162",
+    "dba59b74ce92d9455f06efce8c7848eb2c8c73333ddc5eadec772749fc201948",
+    "dd7ebdfefb157669f97b3a1f3a798a5408839e21eabae3ad93ff46e01e90b20b",
+    "de1a209c5eb54d95b23a0605444787a82d7127fb3a443e5b7f8eca26274998c2",
+    "e6c855c03e46270f3aea2666bee03b08558ea94eaaeef672739c3e1090c2b7c0",
+    "eeda319dda37fd8e6ea6e44622fc75cc6e7ad37ebada6a1040d6410cb3642a6f",
+    "f456c5b35c76c6ad628601285fc98c232b71ea0221c336c32305b305f9f29c29"
+  ],
+  "all_new_to_discoverable_registered_lineage": true,
+  "tokenizer_metadata_sha256": {
+    "config.json": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+    "configuration.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "generation_config.json": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model.safetensors.index.json": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "tokenizer_versions": {
+    "transformers": "4.57.1",
+    "tokenizers": "0.22.2",
+    "jinja2": "3.1.6"
+  },
+  "source_documents": [
+    {
+      "source_index": 14382,
+      "full_input_tokens": 421,
+      "prefix_tokens": 384,
+      "input_sha256": "51736540b6ddd0c532002c04e559112cadc840abb5d19fa7baed654f42235af2",
+      "prefix_token_sha256": "aec0db63fa0626d468d6d8a79ff741872fc0c678a8dc10f5bf89e45e1bc8458e"
+    },
+    {
+      "source_index": 2660,
+      "full_input_tokens": 349,
+      "prefix_tokens": 349,
+      "input_sha256": "5a423dd647d1e5251fbd5483f37d4ad0fb5670531fc33a20d38e67d7a4d2716b",
+      "prefix_token_sha256": "85afd9f85b4c4a9fa1f7bb852e497c2c10f1a0b8ee61df89e16adda55f07bdeb"
+    }
+  ]
+}

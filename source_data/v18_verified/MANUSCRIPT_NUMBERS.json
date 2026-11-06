@@ -1,0 +1,1570 @@
+{
+  "status": "ALL290_FROZEN_SOURCE_OUTPUT_RESOURCE_RAW_REPLAY_AND_LEDGER_PASS",
+  "qualified": 290,
+  "formal": 232,
+  "audit": 58,
+  "studies": {
+    "ownership": {
+      "qualified": 90,
+      "formal": 72,
+      "audits": 18,
+      "primary_GPU": 5,
+      "GPU_indices_observed": [
+        5,
+        6,
+        7
+      ],
+      "archive_sha256": "683491549ddec6ea2c9d65508b02cb10ae6e7b0ef8b465ea3d2788aebc142c65",
+      "all_outputs_exact": true,
+      "controller_reexecution_zero": true,
+      "source_files": 106,
+      "summary_file_sha256": "da7855b61bd1a823471c3d9d62048d6d1c95b8c98b856ec84b2bcc14a1244e70",
+      "M_GM": 0.9439059546735752,
+      "B_GM": 0.5532623950255188,
+      "M_ratio_range": [
+        0.7298150181843943,
+        1.0203967020914206
+      ],
+      "B_ratio_range": [
+        0.05646589282967274,
+        1.0302447992671426
+      ],
+      "case_results": [
+        {
+          "case": "confirm00_front",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "0.7316404885340922",
+          "M_min": "0.7298150181843943",
+          "M_max": "0.7338305012114523",
+          "brief_GM": "1.0249124553796056",
+          "brief_min": "1.0176785956869798",
+          "brief_max": "1.0302447992671426",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "confirm00_interleave",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "1.0145045841124425",
+          "M_min": "1.008748432968043",
+          "M_max": "1.0203967020914206",
+          "brief_GM": "0.08722669379015335",
+          "brief_min": "0.08612938657564476",
+          "brief_max": "0.08820754490466232",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "confirm00_back",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "0.9987576892023224",
+          "M_min": "0.9966344603303341",
+          "M_max": "1.0001581000181565",
+          "brief_GM": "0.9987983249732364",
+          "brief_min": "0.9968239201961985",
+          "brief_max": "1.0004857110427041",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "confirm01_front",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "1.0015943373707341",
+          "M_min": "0.9932063687396621",
+          "M_max": "1.0062591677659956",
+          "brief_GM": "1.0071371084307212",
+          "brief_min": "0.9967733957418103",
+          "brief_max": "1.0138511873902192",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "confirm01_interleave",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "0.9672987370890973",
+          "M_min": "0.965565713795745",
+          "M_max": "0.9686202224194858",
+          "brief_GM": "0.05681731773541549",
+          "brief_min": "0.05646589282967274",
+          "brief_max": "0.05727034503301695",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "confirm01_back",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "1.001123848255494",
+          "M_min": "0.9969210680680852",
+          "M_max": "1.0067336331096448",
+          "brief_GM": "1.001110856229484",
+          "brief_min": "0.9966398515573642",
+          "brief_max": "1.0066979331398356",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "confirm02_front",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "0.828822710848444",
+          "M_min": "0.8262872116595823",
+          "M_max": "0.8325766719247404",
+          "brief_GM": "1.0006338781777635",
+          "brief_min": "0.9909711102562521",
+          "brief_max": "1.0114447998496905",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "confirm02_interleave",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "0.9969618476169334",
+          "M_min": "0.9939206334332089",
+          "M_max": "0.9990765797079988",
+          "brief_GM": "0.9476200787459474",
+          "brief_min": "0.9420087123346326",
+          "brief_max": "0.9512173259142703",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "confirm02_back",
+          "quota_factor": "1",
+          "target": "full_c1",
+          "baseline": "full_c0",
+          "M_GM": "1.0010740004691736",
+          "M_min": "0.9976313662662225",
+          "M_max": "1.0066973561623964",
+          "brief_GM": "1.0013950281877537",
+          "brief_min": "0.9978405082900985",
+          "brief_max": "1.007319757237274",
+          "all_outputs_exact": "True"
+        }
+      ],
+      "paired_requests": 576,
+      "interleaving": [
+        {
+          "case": "confirm00_interleave",
+          "speedup": 11.464380415538411,
+          "per_pair_speedup_min": 11.336898686850809,
+          "per_pair_speedup_max": 11.610439128365684
+        },
+        {
+          "case": "confirm01_interleave",
+          "speedup": 17.60026766234827,
+          "per_pair_speedup_min": 17.461043746523433,
+          "per_pair_speedup_max": 17.709805864868954
+        },
+        {
+          "case": "confirm02_interleave",
+          "speedup": 1.0552752336393827,
+          "per_pair_speedup_min": 1.051284467551978,
+          "per_pair_speedup_max": 1.061561307136581
+        }
+      ],
+      "all9_case_directions": [
+        {
+          "case": "confirm00_front",
+          "cohort_faster_pairs": 4,
+          "brief_faster_pairs": 0
+        },
+        {
+          "case": "confirm00_interleave",
+          "cohort_faster_pairs": 0,
+          "brief_faster_pairs": 4
+        },
+        {
+          "case": "confirm00_back",
+          "cohort_faster_pairs": 3,
+          "brief_faster_pairs": 3
+        },
+        {
+          "case": "confirm01_front",
+          "cohort_faster_pairs": 1,
+          "brief_faster_pairs": 1
+        },
+        {
+          "case": "confirm01_interleave",
+          "cohort_faster_pairs": 4,
+          "brief_faster_pairs": 4
+        },
+        {
+          "case": "confirm01_back",
+          "cohort_faster_pairs": 1,
+          "brief_faster_pairs": 1
+        },
+        {
+          "case": "confirm02_front",
+          "cohort_faster_pairs": 4,
+          "brief_faster_pairs": 2
+        },
+        {
+          "case": "confirm02_interleave",
+          "cohort_faster_pairs": 4,
+          "brief_faster_pairs": 4
+        },
+        {
+          "case": "confirm02_back",
+          "cohort_faster_pairs": 2,
+          "brief_faster_pairs": 2
+        }
+      ]
+    },
+    "baselines": {
+      "qualified": 120,
+      "formal": 96,
+      "audits": 24,
+      "primary_GPU": 6,
+      "GPU_indices_observed": [
+        6
+      ],
+      "archive_sha256": "1a5abd0c2ff1205105db924e921b7b0add4b01d7b2a5d4c4319b8a5677a02f9d",
+      "all_outputs_exact": true,
+      "controller_reexecution_zero": true,
+      "source_files": 106,
+      "summary_file_sha256": "8dd95fcde61598f875684f1c926fb3f2f94618b29b8bb41f43870638398eba5e",
+      "equal_family_comparisons": [
+        {
+          "quota": 1,
+          "baseline": "banker_c0",
+          "M_ratio": 0.6735224689729292,
+          "B_ratio": 0.2888771679074369,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "banker_c0",
+              "M_GM": "0.5879273024976436",
+              "M_min": "0.5854987572712557",
+              "M_max": "0.5922948252058262",
+              "brief_GM": "0.08852999121237368",
+              "brief_min": "0.08826119092149813",
+              "brief_max": "0.08879549845252671",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "banker_c0",
+              "M_GM": "0.7715792654708504",
+              "M_min": "0.7708156573984662",
+              "M_max": "0.7734595022137223",
+              "brief_GM": "0.9426186199209495",
+              "brief_min": "0.9323919516031541",
+              "brief_max": "0.9536585367327176",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 1,
+          "baseline": "hard_reserve",
+          "M_ratio": 0.5504413267140029,
+          "B_ratio": 0.030050034437044924,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "hard_reserve",
+              "M_GM": "0.5931766912086882",
+              "M_min": "0.5892127029246039",
+              "M_max": "0.5989642357552212",
+              "brief_GM": "0.04971035268620245",
+              "brief_min": "0.04950435005478408",
+              "brief_max": "0.049984677522916014",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "hard_reserve",
+              "M_GM": "0.5107848279359934",
+              "M_min": "0.5091655910686735",
+              "M_max": "0.5129575779288622",
+              "brief_GM": "0.018165322128527624",
+              "brief_min": "0.01804769737369526",
+              "brief_max": "0.018298603698043647",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 1,
+          "baseline": "native",
+          "M_ratio": 1.8899437272910051,
+          "B_ratio": 0.45112839765855833,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.7002942283899471",
+              "M_min": "1.6919809146830025",
+              "M_max": "1.711789101301854",
+              "brief_GM": "0.19197898047184594",
+              "brief_min": "0.19164627512579355",
+              "brief_max": "0.19232377611749302",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "2.100746584142046",
+              "M_min": "2.093195634647632",
+              "M_max": "2.108466720622024",
+              "brief_GM": "1.0600995519081031",
+              "brief_min": "1.0531692890304682",
+              "brief_max": "1.0709921929017696",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 2,
+          "baseline": "banker_c0",
+          "M_ratio": 0.960043588767901,
+          "B_ratio": 0.941833127609854,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "2",
+              "target": "adaptive",
+              "baseline": "banker_c0",
+              "M_GM": "0.938576696307118",
+              "M_min": "0.9342416145367658",
+              "M_max": "0.9439726239286279",
+              "brief_GM": "0.9262301715312335",
+              "brief_min": "0.9142912974402597",
+              "brief_max": "0.9339189448924312",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "2",
+              "target": "adaptive",
+              "baseline": "banker_c0",
+              "M_GM": "0.9820014666470691",
+              "M_min": "0.9765339859267622",
+              "M_max": "0.9873118020325728",
+              "brief_GM": "0.957698925739915",
+              "brief_min": "0.9478407400285378",
+              "brief_max": "0.9614719058751224",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 2,
+          "baseline": "hard_reserve",
+          "M_ratio": 0.5323196770011724,
+          "B_ratio": 0.09721385759269083,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "2",
+              "target": "adaptive",
+              "baseline": "hard_reserve",
+              "M_GM": "0.4978849147762711",
+              "M_min": "0.49274584772391505",
+              "M_max": "0.5030281855179659",
+              "brief_GM": "0.15286644465160137",
+              "brief_min": "0.15036695759387259",
+              "brief_max": "0.15428443134956923",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "2",
+              "target": "adaptive",
+              "baseline": "hard_reserve",
+              "M_GM": "0.5691360194151788",
+              "M_min": "0.5610360097420054",
+              "M_max": "0.5758067978785024",
+              "brief_GM": "0.06182216201593964",
+              "brief_min": "0.06098995301540309",
+              "brief_max": "0.06254012668999852",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 2,
+          "baseline": "native",
+          "M_ratio": 1.2639243933846387,
+          "B_ratio": 1.2052847861645928,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "2",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.460011219609886",
+              "M_min": "1.4427583504926582",
+              "M_max": "1.4661340052962086",
+              "brief_GM": "1.302089214088582",
+              "brief_min": "1.2774195683177954",
+              "brief_max": "1.3180373523287028",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "2",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.0941730109578056",
+              "M_min": "1.082063655119648",
+              "M_max": "1.1058377459881792",
+              "brief_GM": "1.1156773284361137",
+              "brief_min": "1.1070726259227588",
+              "brief_max": "1.126603938806134",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 4,
+          "baseline": "banker_c0",
+          "M_ratio": 0.9482659036246501,
+          "B_ratio": 0.9377162674300065,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "banker_c0",
+              "M_GM": "0.9165379371479356",
+              "M_min": "0.9089346609124512",
+              "M_max": "0.9200784219794507",
+              "brief_GM": "0.9119657743302999",
+              "brief_min": "0.9038566350603033",
+              "brief_max": "0.9222476979317099",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "banker_c0",
+              "M_GM": "0.9810922030955013",
+              "M_min": "0.9747249108200045",
+              "M_max": "0.9922455986632426",
+              "brief_GM": "0.9641938578765022",
+              "brief_min": "0.9513662000172606",
+              "brief_max": "0.9770753629138239",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 4,
+          "baseline": "hard_reserve",
+          "M_ratio": 0.8257345660263731,
+          "B_ratio": 0.276146609483877,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "hard_reserve",
+              "M_GM": "0.661209254570617",
+              "M_min": "0.6553967590583981",
+              "M_max": "0.6672313962747973",
+              "brief_GM": "0.25991340759454057",
+              "brief_min": "0.25725621584834396",
+              "brief_max": "0.2633422914979014",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "hard_reserve",
+              "M_GM": "1.0311978678724658",
+              "M_min": "1.026211882317966",
+              "M_max": "1.036451975979679",
+              "brief_GM": "0.29339367535975713",
+              "brief_min": "0.29163059098600286",
+              "brief_max": "0.2951541060821396",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 4,
+          "baseline": "native",
+          "M_ratio": 1.1904601133748147,
+          "B_ratio": 1.1976003188391247,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.3176704411445974",
+              "M_min": "1.307673744644084",
+              "M_max": "1.3260900602918735",
+              "brief_GM": "1.2885637585206178",
+              "brief_min": "1.2736697922550313",
+              "brief_max": "1.306248886060996",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.0755309046056516",
+              "M_min": "1.0676112179266262",
+              "M_max": "1.090420595678064",
+              "brief_GM": "1.113058251250378",
+              "brief_min": "1.1044795486332473",
+              "brief_max": "1.1338333899299058",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        }
+      ],
+      "case_results": [
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "M_GM": "0.5879273024976436",
+          "M_min": "0.5854987572712557",
+          "M_max": "0.5922948252058262",
+          "brief_GM": "0.08852999121237368",
+          "brief_min": "0.08826119092149813",
+          "brief_max": "0.08879549845252671",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "M_GM": "0.5931766912086882",
+          "M_min": "0.5892127029246039",
+          "M_max": "0.5989642357552212",
+          "brief_GM": "0.04971035268620245",
+          "brief_min": "0.04950435005478408",
+          "brief_max": "0.049984677522916014",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.7002942283899471",
+          "M_min": "1.6919809146830025",
+          "M_max": "1.711789101301854",
+          "brief_GM": "0.19197898047184594",
+          "brief_min": "0.19164627512579355",
+          "brief_max": "0.19232377611749302",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "banker_c0",
+          "baseline": "hard_reserve",
+          "M_GM": "1.0089286357152392",
+          "M_min": "1.004089588050003",
+          "M_max": "1.0116523760312885",
+          "brief_GM": "0.5615086142610451",
+          "brief_min": "0.5582679867265717",
+          "brief_max": "0.563315793165672",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "banker_c0",
+          "baseline": "native",
+          "M_GM": "2.89201440580617",
+          "M_min": "2.883339770476598",
+          "M_max": "2.898341817005047",
+          "brief_GM": "2.1685191407204543",
+          "brief_min": "2.1626051196669143",
+          "brief_max": "2.1742184923887824",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "hard_reserve",
+          "baseline": "native",
+          "M_GM": "2.8664211753252435",
+          "M_min": "2.8579153797780528",
+          "M_max": "2.8715961252782254",
+          "brief_GM": "3.8619516880863216",
+          "brief_min": "3.8476546343490985",
+          "brief_max": "3.873775984088649",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "2",
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "M_GM": "0.938576696307118",
+          "M_min": "0.9342416145367658",
+          "M_max": "0.9439726239286279",
+          "brief_GM": "0.9262301715312335",
+          "brief_min": "0.9142912974402597",
+          "brief_max": "0.9339189448924312",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "2",
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "M_GM": "0.4978849147762711",
+          "M_min": "0.49274584772391505",
+          "M_max": "0.5030281855179659",
+          "brief_GM": "0.15286644465160137",
+          "brief_min": "0.15036695759387259",
+          "brief_max": "0.15428443134956923",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "2",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.460011219609886",
+          "M_min": "1.4427583504926582",
+          "M_max": "1.4661340052962086",
+          "brief_GM": "1.302089214088582",
+          "brief_min": "1.2774195683177954",
+          "brief_max": "1.3180373523287028",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "2",
+          "target": "banker_c0",
+          "baseline": "hard_reserve",
+          "M_GM": "0.5304680126144479",
+          "M_min": "0.5244736124450236",
+          "M_max": "0.5349683513024335",
+          "brief_GM": "0.16504153001071456",
+          "brief_min": "0.16446285556348922",
+          "brief_max": "0.16569990679659208",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "2",
+          "target": "banker_c0",
+          "baseline": "native",
+          "M_GM": "1.5555587788982839",
+          "M_min": "1.5356571495495983",
+          "M_max": "1.5693306554570217",
+          "brief_GM": "1.4057944278968826",
+          "brief_min": "1.3971691209291672",
+          "brief_max": "1.414943185489693",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "2",
+          "target": "hard_reserve",
+          "baseline": "native",
+          "M_GM": "2.9324271057016342",
+          "M_min": "2.913750032021947",
+          "M_max": "2.9546062882021307",
+          "brief_GM": "8.517822319058835",
+          "brief_min": "8.476466248666798",
+          "brief_max": "8.58556829316807",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "M_GM": "0.9165379371479356",
+          "M_min": "0.9089346609124512",
+          "M_max": "0.9200784219794507",
+          "brief_GM": "0.9119657743302999",
+          "brief_min": "0.9038566350603033",
+          "brief_max": "0.9222476979317099",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "M_GM": "0.661209254570617",
+          "M_min": "0.6553967590583981",
+          "M_max": "0.6672313962747973",
+          "brief_GM": "0.25991340759454057",
+          "brief_min": "0.25725621584834396",
+          "brief_max": "0.2633422914979014",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.3176704411445974",
+          "M_min": "1.307673744644084",
+          "M_max": "1.3260900602918735",
+          "brief_GM": "1.2885637585206178",
+          "brief_min": "1.2736697922550313",
+          "brief_max": "1.306248886060996",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "banker_c0",
+          "baseline": "hard_reserve",
+          "M_GM": "0.7214204974735194",
+          "M_min": "0.7171499158797814",
+          "M_max": "0.7274761595371747",
+          "brief_GM": "0.2850034671371384",
+          "brief_min": "0.2835528023785364",
+          "brief_max": "0.28630390562667063",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "banker_c0",
+          "baseline": "native",
+          "M_GM": "1.437660556904931",
+          "M_min": "1.430300203064583",
+          "M_max": "1.4458236072935693",
+          "brief_GM": "1.412951883492417",
+          "brief_min": "1.4033684960151387",
+          "brief_max": "1.416375328439931",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "hard_reserve",
+          "baseline": "native",
+          "M_GM": "1.9928191144273688",
+          "M_min": "1.987451531351092",
+          "M_max": "1.995239870460766",
+          "brief_GM": "4.95766559503829",
+          "brief_min": "4.944917590665259",
+          "brief_max": "4.976302325793691",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "M_GM": "0.7715792654708504",
+          "M_min": "0.7708156573984662",
+          "M_max": "0.7734595022137223",
+          "brief_GM": "0.9426186199209495",
+          "brief_min": "0.9323919516031541",
+          "brief_max": "0.9536585367327176",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "M_GM": "0.5107848279359934",
+          "M_min": "0.5091655910686735",
+          "M_max": "0.5129575779288622",
+          "brief_GM": "0.018165322128527624",
+          "brief_min": "0.01804769737369526",
+          "brief_max": "0.018298603698043647",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "2.100746584142046",
+          "M_min": "2.093195634647632",
+          "M_max": "2.108466720622024",
+          "brief_GM": "1.0600995519081031",
+          "brief_min": "1.0531692890304682",
+          "brief_max": "1.0709921929017696",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "banker_c0",
+          "baseline": "hard_reserve",
+          "M_GM": "0.6619991630079521",
+          "M_min": "0.660554292302686",
+          "M_max": "0.6631990123086262",
+          "brief_GM": "0.019271125930072346",
+          "brief_min": "0.019187794156109158",
+          "brief_max": "0.019382455266946683",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "banker_c0",
+          "baseline": "native",
+          "M_GM": "2.7226581611936926",
+          "M_min": "2.7155593098773463",
+          "M_max": "2.7345064637826533",
+          "brief_GM": "1.1246325178649725",
+          "brief_min": "1.1197025799322127",
+          "brief_max": "1.1297056968540042",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "hard_reserve",
+          "baseline": "native",
+          "M_GM": "4.1127818784885495",
+          "M_min": "4.104098113735847",
+          "M_max": "4.129132703076587",
+          "brief_GM": "58.358422955972586",
+          "brief_min": "58.26569360567763",
+          "brief_max": "58.52862931920168",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "2",
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "M_GM": "0.9820014666470691",
+          "M_min": "0.9765339859267622",
+          "M_max": "0.9873118020325728",
+          "brief_GM": "0.957698925739915",
+          "brief_min": "0.9478407400285378",
+          "brief_max": "0.9614719058751224",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "2",
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "M_GM": "0.5691360194151788",
+          "M_min": "0.5610360097420054",
+          "M_max": "0.5758067978785024",
+          "brief_GM": "0.06182216201593964",
+          "brief_min": "0.06098995301540309",
+          "brief_max": "0.06254012668999852",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "2",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.0941730109578056",
+          "M_min": "1.082063655119648",
+          "M_max": "1.1058377459881792",
+          "brief_GM": "1.1156773284361137",
+          "brief_min": "1.1070726259227588",
+          "brief_max": "1.126603938806134",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "2",
+          "target": "banker_c0",
+          "baseline": "hard_reserve",
+          "M_GM": "0.5795673822753322",
+          "M_min": "0.5745176489782525",
+          "M_max": "0.5832066391722377",
+          "brief_GM": "0.0645528154562521",
+          "brief_min": "0.06426711176403024",
+          "brief_max": "0.06511240279926746",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "2",
+          "target": "banker_c0",
+          "baseline": "native",
+          "M_GM": "1.1142274712620677",
+          "M_min": "1.1036022226874591",
+          "M_max": "1.1241513815763635",
+          "brief_GM": "1.1649562283617945",
+          "brief_min": "1.1514352308766755",
+          "brief_max": "1.1722554730269958",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "2",
+          "target": "hard_reserve",
+          "baseline": "native",
+          "M_GM": "1.9225158373953095",
+          "M_min": "1.901747773625931",
+          "M_max": "1.942301730325277",
+          "brief_GM": "18.046559551709922",
+          "brief_min": "17.88602427382758",
+          "brief_max": "18.208584370383527",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "M_GM": "0.9810922030955013",
+          "M_min": "0.9747249108200045",
+          "M_max": "0.9922455986632426",
+          "brief_GM": "0.9641938578765022",
+          "brief_min": "0.9513662000172606",
+          "brief_max": "0.9770753629138239",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "M_GM": "1.0311978678724658",
+          "M_min": "1.026211882317966",
+          "M_max": "1.036451975979679",
+          "brief_GM": "0.29339367535975713",
+          "brief_min": "0.29163059098600286",
+          "brief_max": "0.2951541060821396",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.0755309046056516",
+          "M_min": "1.0676112179266262",
+          "M_max": "1.090420595678064",
+          "brief_GM": "1.113058251250378",
+          "brief_min": "1.1044795486332473",
+          "brief_max": "1.1338333899299058",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "banker_c0",
+          "baseline": "hard_reserve",
+          "M_GM": "1.0510713107482388",
+          "M_min": "1.0354749515818609",
+          "M_max": "1.0620083921569008",
+          "brief_GM": "0.30428909390266634",
+          "brief_min": "0.29975535389978347",
+          "brief_max": "0.308942996041902",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "banker_c0",
+          "baseline": "native",
+          "M_GM": "1.0962587422590673",
+          "M_min": "1.092639861196526",
+          "M_max": "1.098942234812715",
+          "brief_GM": "1.1543925966316857",
+          "brief_min": "1.1420790268242724",
+          "brief_max": "1.1609404965335206",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "hard_reserve",
+          "baseline": "native",
+          "M_GM": "1.0429917847140746",
+          "M_min": "1.0340495795042326",
+          "M_max": "1.0612929198662866",
+          "brief_GM": "3.7937363506065847",
+          "brief_min": "3.757782216807602",
+          "brief_max": "3.8712768534473128",
+          "all_outputs_exact": "True"
+        }
+      ],
+      "Native_reexecuted_positions": 10944,
+      "model": "[private-path-removed]"
+    },
+    "scale14b": {
+      "qualified": 80,
+      "formal": 64,
+      "audits": 16,
+      "primary_GPU": 7,
+      "GPU_indices_observed": [
+        7
+      ],
+      "archive_sha256": "27685c213c3ecd76aaeb2904a6473f7466208b4f082cabe85dd774958d430ad1",
+      "all_outputs_exact": true,
+      "controller_reexecution_zero": true,
+      "source_files": 106,
+      "summary_file_sha256": "51d74e6c8df49bd65d61b2e3a6b8c12dde61106c2461655233c0d17b7e820948",
+      "equal_family_comparisons": [
+        {
+          "quota": 1,
+          "baseline": "inc",
+          "M_ratio": 0.7686833155262051,
+          "B_ratio": 0.8235426668077769,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "inc",
+              "M_GM": "0.7026438837275369",
+              "M_min": "0.7006204144670448",
+              "M_max": "0.7048802581123081",
+              "brief_GM": "0.6959932123728577",
+              "brief_min": "0.6940855757778233",
+              "brief_max": "0.6984644453675146",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "inc",
+              "M_GM": "0.840929599264087",
+              "M_min": "0.8387638855730817",
+              "M_max": "0.8440241046432477",
+              "brief_GM": "0.9744671528341392",
+              "brief_min": "0.9655748096096571",
+              "brief_max": "0.9792170956132878",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 1,
+          "baseline": "fixed",
+          "M_ratio": 1.0010516242762026,
+          "B_ratio": 1.0018235159637643,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "fixed",
+              "M_GM": "1.0008903492754795",
+              "M_min": "0.9996630840000005",
+              "M_max": "1.0036063714757524",
+              "brief_GM": "0.9984975380696253",
+              "brief_min": "0.9919663749604343",
+              "brief_max": "1.003125023598647",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "fixed",
+              "M_GM": "1.0012129252634145",
+              "M_min": "0.997247837555383",
+              "M_max": "1.0074289041510938",
+              "brief_GM": "1.0051605726322923",
+              "brief_min": "1.0016308457077754",
+              "brief_max": "1.0097222024740422",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 1,
+          "baseline": "native",
+          "M_ratio": 1.8914031670224625,
+          "B_ratio": 0.3454050427767811,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.9169472471385638",
+              "M_min": "1.9118758580598287",
+              "M_max": "1.9213480531292169",
+              "brief_GM": "0.11513612734016487",
+              "brief_min": "0.11457862444814262",
+              "brief_max": "0.11553967653331051",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "1",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.8661994718751973",
+              "M_min": "1.8614798302609181",
+              "M_max": "1.8696235900565414",
+              "brief_GM": "1.0362051106960495",
+              "brief_min": "1.0327014680995008",
+              "brief_max": "1.0423585331059415",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 4,
+          "baseline": "inc",
+          "M_ratio": 0.9978957657486299,
+          "B_ratio": 0.9989320574237085,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "inc",
+              "M_GM": "0.9953840916027142",
+              "M_min": "0.983832944251074",
+              "M_max": "1.0014683574861496",
+              "brief_GM": "0.9978126773181437",
+              "brief_min": "0.9844847645869137",
+              "brief_max": "1.0046832767288127",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "inc",
+              "M_GM": "1.0004137776560875",
+              "M_min": "0.9967576691000533",
+              "M_max": "1.0036482465751684",
+              "brief_GM": "1.000052693287843",
+              "brief_min": "0.9931412416734254",
+              "brief_max": "1.0064171701993434",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 4,
+          "baseline": "fixed",
+          "M_ratio": 0.4044834094318707,
+          "B_ratio": 1.0941374834680118,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "fixed",
+              "M_GM": "0.3330553696211083",
+              "M_min": "0.33086534146235447",
+              "M_max": "0.3358568007102058",
+              "brief_GM": "1.1430645811012508",
+              "brief_min": "1.1253637318093062",
+              "brief_max": "1.1502541279984695",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "fixed",
+              "M_GM": "0.4912301179583244",
+              "M_min": "0.49052559207550134",
+              "M_max": "0.4919259124831543",
+              "brief_GM": "1.0473046339834697",
+              "brief_min": "1.0426646233190147",
+              "brief_max": "1.0569948218198222",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        },
+        {
+          "quota": 4,
+          "baseline": "native",
+          "M_ratio": 1.1275787044101178,
+          "B_ratio": 1.1275884084794119,
+          "each_case": [
+            {
+              "case": "fresh00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.2248963224507818",
+              "M_min": "1.2148636877348158",
+              "M_max": "1.2340546959034147",
+              "brief_GM": "1.1798776425849822",
+              "brief_min": "1.1676490383774805",
+              "brief_max": "1.1899748416730835",
+              "all_outputs_exact": "True"
+            },
+            {
+              "case": "alpaca_new00_interleave",
+              "quota_factor": "4",
+              "target": "adaptive",
+              "baseline": "native",
+              "M_GM": "1.0379929397577954",
+              "M_min": "1.0336679042782493",
+              "M_max": "1.0412393451082245",
+              "brief_GM": "1.0776165028023699",
+              "brief_min": "1.0717783589674454",
+              "brief_max": "1.0872084673130233",
+              "all_outputs_exact": "True"
+            }
+          ],
+          "paired_outputs": 128
+        }
+      ],
+      "case_results": [
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "fixed",
+          "M_GM": "1.0008903492754795",
+          "M_min": "0.9996630840000005",
+          "M_max": "1.0036063714757524",
+          "brief_GM": "0.9984975380696253",
+          "brief_min": "0.9919663749604343",
+          "brief_max": "1.003125023598647",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "inc",
+          "M_GM": "0.7026438837275369",
+          "M_min": "0.7006204144670448",
+          "M_max": "0.7048802581123081",
+          "brief_GM": "0.6959932123728577",
+          "brief_min": "0.6940855757778233",
+          "brief_max": "0.6984644453675146",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.9169472471385638",
+          "M_min": "1.9118758580598287",
+          "M_max": "1.9213480531292169",
+          "brief_GM": "0.11513612734016487",
+          "brief_min": "0.11457862444814262",
+          "brief_max": "0.11553967653331051",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "fixed",
+          "baseline": "native",
+          "M_GM": "1.915242012800099",
+          "M_min": "1.9123768865965407",
+          "M_max": "1.9202744576685513",
+          "brief_GM": "0.1153093752867485",
+          "brief_min": "0.11488352812541161",
+          "brief_max": "0.1162847153517536",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "inc",
+          "baseline": "fixed",
+          "M_GM": "1.4244631917462092",
+          "M_min": "1.4183089906739714",
+          "M_max": "1.4281094341708915",
+          "brief_GM": "1.4346368905889701",
+          "brief_min": "1.4272983449104875",
+          "brief_max": "1.445246895491958",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "1",
+          "target": "inc",
+          "baseline": "native",
+          "M_GM": "2.7281917505196636",
+          "M_min": "2.7123413318169716",
+          "M_max": "2.735678266263434",
+          "brief_GM": "0.16542708361713754",
+          "brief_min": "0.16404360337605187",
+          "brief_max": "0.16646315752035562",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "fixed",
+          "M_GM": "0.3330553696211083",
+          "M_min": "0.33086534146235447",
+          "M_max": "0.3358568007102058",
+          "brief_GM": "1.1430645811012508",
+          "brief_min": "1.1253637318093062",
+          "brief_max": "1.1502541279984695",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "inc",
+          "M_GM": "0.9953840916027142",
+          "M_min": "0.983832944251074",
+          "M_max": "1.0014683574861496",
+          "brief_GM": "0.9978126773181437",
+          "brief_min": "0.9844847645869137",
+          "brief_max": "1.0046832767288127",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.2248963224507818",
+          "M_min": "1.2148636877348158",
+          "M_max": "1.2340546959034147",
+          "brief_GM": "1.1798776425849822",
+          "brief_min": "1.1676490383774805",
+          "brief_max": "1.1899748416730835",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "fixed",
+          "baseline": "native",
+          "M_GM": "3.6777558153296033",
+          "M_min": "3.6705772422091925",
+          "M_max": "3.6943722978510576",
+          "brief_GM": "1.0322055832123371",
+          "brief_min": "1.0258888691699803",
+          "brief_max": "1.0375747905969832",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "inc",
+          "baseline": "fixed",
+          "M_GM": "0.33459985188716485",
+          "M_min": "0.3329526037206174",
+          "M_max": "0.3363023604726106",
+          "brief_GM": "1.1455703130306036",
+          "brief_min": "1.143099184761386",
+          "brief_max": "1.1509938257005545",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "fresh00_interleave",
+          "quota_factor": "4",
+          "target": "inc",
+          "baseline": "native",
+          "M_GM": "1.2305765510864446",
+          "M_min": "1.2252031345861776",
+          "M_max": "1.2348272080476121",
+          "brief_GM": "1.1824640730724938",
+          "brief_min": "1.1741733576532496",
+          "brief_max": "1.1860508972603774",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "fixed",
+          "M_GM": "1.0012129252634145",
+          "M_min": "0.997247837555383",
+          "M_max": "1.0074289041510938",
+          "brief_GM": "1.0051605726322923",
+          "brief_min": "1.0016308457077754",
+          "brief_max": "1.0097222024740422",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "inc",
+          "M_GM": "0.840929599264087",
+          "M_min": "0.8387638855730817",
+          "M_max": "0.8440241046432477",
+          "brief_GM": "0.9744671528341392",
+          "brief_min": "0.9655748096096571",
+          "brief_max": "0.9792170956132878",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.8661994718751973",
+          "M_min": "1.8614798302609181",
+          "M_max": "1.8696235900565414",
+          "brief_GM": "1.0362051106960495",
+          "brief_min": "1.0327014680995008",
+          "brief_max": "1.0423585331059415",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "fixed",
+          "baseline": "native",
+          "M_GM": "1.8639386535928",
+          "M_min": "1.8558367566711547",
+          "M_max": "1.8709648146088218",
+          "brief_GM": "1.0308851529885004",
+          "brief_min": "1.0284812454889969",
+          "brief_max": "1.0323220887407776",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "inc",
+          "baseline": "fixed",
+          "M_GM": "1.1906025500108384",
+          "M_min": "1.1889494227258222",
+          "M_max": "1.1936020530798868",
+          "brief_GM": "1.031497644337097",
+          "brief_min": "1.0281604648765184",
+          "brief_max": "1.0375211444011874",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "1",
+          "target": "inc",
+          "baseline": "native",
+          "M_GM": "2.2192101140313567",
+          "M_min": "2.213004495535169",
+          "M_max": "2.2244825362694836",
+          "brief_GM": "1.0633556068897259",
+          "brief_min": "1.058197400332072",
+          "brief_max": "1.069519894079445",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "fixed",
+          "M_GM": "0.4912301179583244",
+          "M_min": "0.49052559207550134",
+          "M_max": "0.4919259124831543",
+          "brief_GM": "1.0473046339834697",
+          "brief_min": "1.0426646233190147",
+          "brief_max": "1.0569948218198222",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "inc",
+          "M_GM": "1.0004137776560875",
+          "M_min": "0.9967576691000533",
+          "M_max": "1.0036482465751684",
+          "brief_GM": "1.000052693287843",
+          "brief_min": "0.9931412416734254",
+          "brief_max": "1.0064171701993434",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "adaptive",
+          "baseline": "native",
+          "M_GM": "1.0379929397577954",
+          "M_min": "1.0336679042782493",
+          "M_max": "1.0412393451082245",
+          "brief_GM": "1.0776165028023699",
+          "brief_min": "1.0717783589674454",
+          "brief_max": "1.0872084673130233",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "fixed",
+          "baseline": "native",
+          "M_GM": "2.1130482472694356",
+          "M_min": "2.107266004011362",
+          "M_max": "2.116933216839884",
+          "brief_GM": "1.0289427429568487",
+          "brief_min": "1.0239017721029675",
+          "brief_max": "1.0317823913956323",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "inc",
+          "baseline": "fixed",
+          "M_GM": "0.4910269419811955",
+          "M_min": "0.4901377690458721",
+          "M_max": "0.49227232619938854",
+          "brief_GM": "1.0472494509667065",
+          "brief_min": "1.0441409678336009",
+          "brief_max": "1.050255155732747",
+          "all_outputs_exact": "True"
+        },
+        {
+          "case": "alpaca_new00_interleave",
+          "quota_factor": "4",
+          "target": "inc",
+          "baseline": "native",
+          "M_GM": "1.037563619115436",
+          "M_min": "1.0346078401506664",
+          "M_max": "1.0421076390625241",
+          "brief_GM": "1.077559722637737",
+          "brief_min": "1.0697228685326534",
+          "brief_max": "1.083232629287462",
+          "all_outputs_exact": "True"
+        }
+      ],
+      "Native_reexecuted_positions": 9836,
+      "model": "[private-path-removed]"
+    }
+  },
+  "retuned": false,
+  "Native_superiority_assumed": false,
+  "scope": "Repeated ownership stability; complete-deployment fairness; same-family model-scale transfer. No new-input or independent-architecture confirmation claim for these exposed prompts.",
+  "finished_utc": "2026-11-05T14:39:57.016193+00:00"
+}

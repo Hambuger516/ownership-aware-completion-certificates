@@ -1,0 +1,40 @@
+[
+  {
+    "old_stem": "fig02_hardware",
+    "new_stem": "fig02_hardware_v22",
+    "panel_columns": 1,
+    "panel_rows": 1,
+    "width_inches": 3.16697799916978,
+    "height_inches": 2.68,
+    "span": "single",
+    "minimum_font_pt": 8.0,
+    "caption": "Archived backend-latency proxies on separate hosts and configurations. Rows identify GPUs and columns model sizes; vector cells show completed-request medians in milliseconds and record counts n. A single global color scale is used. Hatched cells mean not recorded, not zero or failure. These are neither streaming TTFT/TPOT measurements nor a matched heterogeneous-serving comparison. The repeated scaling view is omitted without removing any measured cell.",
+    "assets": [
+      "figs/fig02_hardware_v22.pdf",
+      "figs/fig02_hardware_v22.svg",
+      "figs/fig02_hardware_v22.png"
+    ],
+    "fonts": "Times New Roman; math Computer Modern",
+    "intervals": "Observed sample SD or archived setting min/max, as specifically labelled; no CI.",
+    "data_scope": "Archived batch/backend latency proxies. Different runtimes/configurations; not streaming TTFT/TPOT or an end-to-end heterogeneous deployment comparison."
+  },
+  {
+    "old_stem": "fig03_theory_executed",
+    "new_stem": "fig03_theory_executed_v22",
+    "panel_columns": 3,
+    "panel_rows": 1,
+    "width_inches": 6.500000276740003,
+    "height_inches": 3.0,
+    "span": "double",
+    "minimum_font_pt": 8.0,
+    "caption": "Supporting CPU calculations and controlled policy execution, not GPU-serving benchmarks. (a) Median reserve-reduction arithmetic across archived settings; shaded bands show setting minima and maxima, not confidence intervals. (b) Actually executed routing at alpha=0.025 and zero label noise, with the expectation alpha*T/2 as a dotted reference. (c) Label-noise control at T=10,000. Panels (b,c) retain all 20 seed observations as open points and display means with sample SD. Queue, Locality, Flat collapsed and Typed no residual coincide exactly; TypedRoute and Flat sufficient coincide exactly. Coincident methods are grouped only after checking every corresponding archived record. No curve is a live heterogeneous-GPU result.",
+    "assets": [
+      "figs/fig03_theory_executed_v22.pdf",
+      "figs/fig03_theory_executed_v22.svg",
+      "figs/fig03_theory_executed_v22.png"
+    ],
+    "fonts": "Times New Roman; math Computer Modern",
+    "intervals": "Observed sample SD or archived setting min/max, as specifically labelled; no CI.",
+    "data_scope": "Controlled CPU arithmetic and executed routing; no GPU measurement. Identical method groups verified recordwise."
+  }
+]

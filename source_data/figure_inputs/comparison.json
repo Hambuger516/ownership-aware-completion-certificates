@@ -1,0 +1,4715 @@
+{
+  "status": "REPLAYED_TUNING_RUNS",
+  "runs": [
+    {
+      "run_id": "holdout_roomy_prc_original_c0",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 517,
+        "executed_tokens": 2182,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-a1269ab5": {
+            "executed_tokens": 210,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-82fb7e73": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-84d5556a": {
+            "executed_tokens": 215,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-9dc117d1": {
+            "executed_tokens": 277,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-bb3ceb72": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-8b0529d3": {
+            "executed_tokens": 155,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-8b2874f5": {
+            "executed_tokens": 149,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-b8edf9a2": {
+            "executed_tokens": 124,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-a2910a71": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-870fa3eb": {
+            "executed_tokens": 80,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-aa09ddb0": {
+            "executed_tokens": 98,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-99b37931": {
+            "executed_tokens": 174,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-9d1852af": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-8f9d62bc": {
+            "executed_tokens": 92,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-abf94acd": {
+            "executed_tokens": 217,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-86268895": {
+            "executed_tokens": 193,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.754080111,
+        "update_seconds": 0.101112817,
+        "scheduler_lifecycle_seconds": 0.855192928,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 30,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 30,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_prc_original_c0",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "30f4dcc9116f257fa477e361f51e38d689f662bc7a9121894c37cb5a8ea38b19",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 991,
+      "measured_seconds": 5.845906492322683,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.07504247222095728,
+      "mean_tpot_p95_s": 0.033970475337174656,
+      "submission_lag_p95_s": 0.012193244695663435,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal_binding": 992,
+        "causal_authorize": 992,
+        "incremental_proposal": 992,
+        "proposal": 992,
+        "causal_execute": 992,
+        "causal_acknowledge": 992,
+        "allocation": 992,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_defer": 727,
+        "drain_service": 445,
+        "drain_dispatch": 445
+      },
+      "proposal_bindings": 992,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 992,
+      "causal_executes": 992,
+      "causal_acks": 992,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 992,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 976,
+      "incremental_page_growth_fast_accepts": 60,
+      "incremental_zero_growth_fast_accepts": 916,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 16,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.470721243,
+      "instrumented_schedule_s": 0.754003057,
+      "output_tokens_sha256": "6b8baba82fdf84b9248d66c671ca5ab2a959334dcb722a3636e47f84d11144a8",
+      "error": null,
+      "time_relative_to_native": 2.288349981691233
+    },
+    {
+      "run_id": "holdout_roomy_native_c0",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "native_plain",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 273,
+        "executed_tokens": 2182,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-88f6a465": {
+            "executed_tokens": 210,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-9c12a2c9": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-b81a6449": {
+            "executed_tokens": 215,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-b01cca5f": {
+            "executed_tokens": 277,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-ab7eae97": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-b21c1cc2": {
+            "executed_tokens": 155,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-80dfe9ac": {
+            "executed_tokens": 149,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-849532ae": {
+            "executed_tokens": 124,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-a2188e7e": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-98a679bf": {
+            "executed_tokens": 80,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-8b0d07fe": {
+            "executed_tokens": 98,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-a91d8d2c": {
+            "executed_tokens": 174,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-8c101356": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-9c7988ea": {
+            "executed_tokens": 92,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-89b317cc": {
+            "executed_tokens": 217,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-8f17bdf0": {
+            "executed_tokens": 193,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.023311221,
+        "update_seconds": 0.020051383,
+        "scheduler_lifecycle_seconds": 0.043362604,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 30,
+      "config": {
+        "method": "native_plain",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 30,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_native_c0",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "30f4dcc9116f257fa477e361f51e38d689f662bc7a9121894c37cb5a8ea38b19",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 991,
+      "measured_seconds": 2.55463829357177,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.0421817364171147,
+      "mean_tpot_p95_s": 0.01055949668009435,
+      "submission_lag_p95_s": 0.009897634945809836,
+      "cap_terminated": 8,
+      "event_counts": {},
+      "proposal_bindings": null,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": null,
+      "causal_executes": null,
+      "causal_acks": null,
+      "causal_refunds": null,
+      "causal_finishes": null,
+      "snapshots_replayed": null,
+      "shared_snapshots": null,
+      "proper_subset_shared_snapshots": null,
+      "ownership_useful_snapshots": null,
+      "ownership_closure_gain_snapshots": null,
+      "bridge_condition_snapshots": null,
+      "phase_observed_snapshots": null,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": null,
+      "release_checks": null,
+      "preemptions": null,
+      "discarded_computed_tokens": null,
+      "native_failed_allocation_rollbacks": null,
+      "waiting_cancellations_verified": null,
+      "resident_cancellations_verified": null,
+      "prefix_reuse_proposals": null,
+      "zero_owner_cache_touch_proposals": null,
+      "successful_prefix_reuse_allocations": null,
+      "successful_zero_owner_cache_reuse_allocations": null,
+      "incremental_oracle_comparisons": null,
+      "drain_episodes": null,
+      "incremental_fast_accepts": null,
+      "incremental_page_growth_fast_accepts": null,
+      "incremental_zero_growth_fast_accepts": null,
+      "incremental_complete_fallbacks": null,
+      "incremental_fallback_rescues": null,
+      "incremental_structural_rebuild_proposals": null,
+      "incremental_commit_checks": null,
+      "proposal_controller_s": null,
+      "instrumented_schedule_s": null,
+      "output_tokens_sha256": "07f599d7382af467b6c9edc3564fb321203670638a181d85d7133322cab58ec2",
+      "error": null,
+      "time_relative_to_native": 1.0
+    },
+    {
+      "run_id": "holdout_roomy_prc_tuned_c0",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 272,
+        "executed_tokens": 2182,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-b9e5953b": {
+            "executed_tokens": 210,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-b2cdea67": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-a9105f16": {
+            "executed_tokens": 215,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-a3589d5f": {
+            "executed_tokens": 277,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-a773a7f9": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-aaf463ca": {
+            "executed_tokens": 155,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-9175f2e6": {
+            "executed_tokens": 149,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-86cd2afe": {
+            "executed_tokens": 124,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-9e31f41a": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a6814fa9": {
+            "executed_tokens": 80,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-b3cb7af0": {
+            "executed_tokens": 98,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-81fe6d62": {
+            "executed_tokens": 174,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-84c0a51e": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-883d0e84": {
+            "executed_tokens": 92,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-ad2f82dd": {
+            "executed_tokens": 217,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-9800fa11": {
+            "executed_tokens": 193,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.726920215,
+        "update_seconds": 0.076071497,
+        "scheduler_lifecycle_seconds": 0.802991712,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 30,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 30,
+        "audit": false,
+        "drain_after_steps": 256,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_prc_tuned_c0",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "30f4dcc9116f257fa477e361f51e38d689f662bc7a9121894c37cb5a8ea38b19",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 991,
+      "measured_seconds": 3.4646565364673734,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.06471688970923423,
+      "mean_tpot_p95_s": 0.023081932682543993,
+      "submission_lag_p95_s": 0.015330088324844837,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal_binding": 991,
+        "causal_authorize": 991,
+        "incremental_proposal": 991,
+        "proposal": 991,
+        "causal_execute": 991,
+        "causal_acknowledge": 991,
+        "allocation": 991,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_service": 8,
+        "drain_dispatch": 8
+      },
+      "proposal_bindings": 991,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 991,
+      "causal_executes": 991,
+      "causal_acks": 991,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 991,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 975,
+      "incremental_page_growth_fast_accepts": 59,
+      "incremental_zero_growth_fast_accepts": 916,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 16,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.464054468,
+      "instrumented_schedule_s": 0.726850833,
+      "output_tokens_sha256": "90c438e445807ef7122d3141e83bd3c065b84f2ae32b754ef593211e613cd278",
+      "error": null,
+      "time_relative_to_native": 1.3562219532939281
+    },
+    {
+      "run_id": "holdout_roomy_hard_c0",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "hard_reserve",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 273,
+        "executed_tokens": 2182,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-9a84a79d": {
+            "executed_tokens": 210,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-816ae418": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-bdd3e438": {
+            "executed_tokens": 215,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-929385e6": {
+            "executed_tokens": 277,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-97ba5898": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-9d713d64": {
+            "executed_tokens": 155,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-adb741d9": {
+            "executed_tokens": 149,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-a3810f5a": {
+            "executed_tokens": 124,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-a8e75bb3": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-957a5b5e": {
+            "executed_tokens": 80,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-8f69424d": {
+            "executed_tokens": 98,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-8a4da1c1": {
+            "executed_tokens": 174,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-bcc39103": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-8522244e": {
+            "executed_tokens": 92,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-9c8b7362": {
+            "executed_tokens": 217,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-88578b46": {
+            "executed_tokens": 193,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.275355054,
+        "update_seconds": 0.031592549,
+        "scheduler_lifecycle_seconds": 0.306947603,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 30,
+      "config": {
+        "method": "hard_reserve",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 30,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_hard_c0",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "30f4dcc9116f257fa477e361f51e38d689f662bc7a9121894c37cb5a8ea38b19",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 991,
+      "measured_seconds": 2.8945914432406425,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.054682988859713066,
+      "mean_tpot_p95_s": 0.014080270286649465,
+      "submission_lag_p95_s": 0.010798849165439606,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal": 992,
+        "allocation": 992,
+        "release": 16
+      },
+      "proposal_bindings": 0,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": 0,
+      "causal_executes": 0,
+      "causal_acks": 0,
+      "causal_refunds": 0,
+      "causal_finishes": 0,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 992,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 0,
+      "drain_episodes": 0,
+      "incremental_fast_accepts": 0,
+      "incremental_page_growth_fast_accepts": 0,
+      "incremental_zero_growth_fast_accepts": 0,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 0,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.112921472,
+      "instrumented_schedule_s": 0.275309388,
+      "output_tokens_sha256": "efa0a457b32849890912706ce5c9e01c616ec6529c7a2db0be40689883c1f0bf",
+      "error": null,
+      "time_relative_to_native": 1.1330729091959106
+    },
+    {
+      "run_id": "holdout_roomy_prc_original_c2",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 333,
+        "executed_tokens": 1330,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-894015ab": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-831684c4": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-8ec6b9fc": {
+            "executed_tokens": 146,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-9df6d192": {
+            "executed_tokens": 43,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-8f3b750f": {
+            "executed_tokens": 52,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-b8e01b39": {
+            "executed_tokens": 138,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-8d33ef52": {
+            "executed_tokens": 147,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-9dd27346": {
+            "executed_tokens": 93,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-8f14303d": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-b775831a": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-95c3bc54": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-aa787c06": {
+            "executed_tokens": 30,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-966ff0c0": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-b3c6d581": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-9d9cc747": {
+            "executed_tokens": 131,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-b8915691": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.611681118,
+        "update_seconds": 0.071933526,
+        "scheduler_lifecycle_seconds": 0.683614644,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 32,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 32,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_prc_original_c2",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "ba1cd5f23041ff86241d2108125e46a1e0e617e9df156f472da36baccb3ad4ce",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 869,
+      "measured_seconds": 3.8162125423550606,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.14174001608043907,
+      "mean_tpot_p95_s": 0.0474735636294621,
+      "submission_lag_p95_s": 0.07190748006105419,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal_binding": 869,
+        "causal_authorize": 869,
+        "incremental_proposal": 869,
+        "proposal": 869,
+        "causal_execute": 869,
+        "causal_acknowledge": 869,
+        "allocation": 869,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_defer": 815,
+        "drain_service": 261,
+        "drain_dispatch": 261
+      },
+      "proposal_bindings": 869,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 869,
+      "causal_executes": 869,
+      "causal_acks": 869,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 869,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 853,
+      "incremental_page_growth_fast_accepts": 52,
+      "incremental_zero_growth_fast_accepts": 801,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 16,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.389546683,
+      "instrumented_schedule_s": 0.611619181,
+      "output_tokens_sha256": "efe761ff8ce26fd6995e7f51a814fc2494806d6dd8dcfcc48ae30bb9e46f02bc",
+      "error": null,
+      "time_relative_to_native": 2.5194264033606424
+    },
+    {
+      "run_id": "holdout_roomy_prc_tuned_c2",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 151,
+        "executed_tokens": 1350,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-aa5a0807": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-a4e36a64": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-888f8163": {
+            "executed_tokens": 146,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-90400eb5": {
+            "executed_tokens": 43,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-931b2369": {
+            "executed_tokens": 52,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-ae24c01c": {
+            "executed_tokens": 138,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-9021e259": {
+            "executed_tokens": 147,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-93b37553": {
+            "executed_tokens": 113,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-9d9c3bf0": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a05a10b3": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-98374124": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-9fba7637": {
+            "executed_tokens": 30,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-be12caee": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-b30fc239": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-9c9614ac": {
+            "executed_tokens": 131,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-ab9c4e6f": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.612419027,
+        "update_seconds": 0.066477821,
+        "scheduler_lifecycle_seconds": 0.678896848,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 32,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 32,
+        "audit": false,
+        "drain_after_steps": 256,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_prc_tuned_c2",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "ba1cd5f23041ff86241d2108125e46a1e0e617e9df156f472da36baccb3ad4ce",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 889,
+      "measured_seconds": 2.223722090013325,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.1465000536292791,
+      "mean_tpot_p95_s": 0.023065632293847473,
+      "submission_lag_p95_s": 0.07447077818214892,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal_binding": 889,
+        "causal_authorize": 889,
+        "incremental_proposal": 889,
+        "proposal": 889,
+        "causal_execute": 889,
+        "causal_acknowledge": 889,
+        "allocation": 889,
+        "causal_finish": 16,
+        "release": 16
+      },
+      "proposal_bindings": 889,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 889,
+      "causal_executes": 889,
+      "causal_acks": 889,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 889,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 0,
+      "incremental_fast_accepts": 873,
+      "incremental_page_growth_fast_accepts": 54,
+      "incremental_zero_growth_fast_accepts": 819,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 16,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.400833197,
+      "instrumented_schedule_s": 0.612343907,
+      "output_tokens_sha256": "f5fdf707bb6bc18db44eab6d14945c82316718dfa3bc394fa38ab1ec5247347f",
+      "error": null,
+      "time_relative_to_native": 1.4680796955450668
+    },
+    {
+      "run_id": "holdout_roomy_native_c2",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "native_plain",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 153,
+        "executed_tokens": 1330,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-b805407b": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-b2f0a5c2": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-a5456247": {
+            "executed_tokens": 146,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-ad116486": {
+            "executed_tokens": 43,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-ab41f154": {
+            "executed_tokens": 52,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-9876708d": {
+            "executed_tokens": 138,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-9f979f38": {
+            "executed_tokens": 147,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-b97d28bd": {
+            "executed_tokens": 93,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-9a10606c": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a6170293": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-9f6d403c": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-b284e6ca": {
+            "executed_tokens": 30,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-b38e545f": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-afc32f13": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-bd785f34": {
+            "executed_tokens": 131,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-b67be519": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.016100595,
+        "update_seconds": 0.013683378,
+        "scheduler_lifecycle_seconds": 0.029783973,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 32,
+      "config": {
+        "method": "native_plain",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 32,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_native_c2",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "ba1cd5f23041ff86241d2108125e46a1e0e617e9df156f472da36baccb3ad4ce",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 869,
+      "measured_seconds": 1.514714832417667,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.0996207594871521,
+      "mean_tpot_p95_s": 0.013082170438381934,
+      "submission_lag_p95_s": 0.07795001845806837,
+      "cap_terminated": 8,
+      "event_counts": {},
+      "proposal_bindings": null,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": null,
+      "causal_executes": null,
+      "causal_acks": null,
+      "causal_refunds": null,
+      "causal_finishes": null,
+      "snapshots_replayed": null,
+      "shared_snapshots": null,
+      "proper_subset_shared_snapshots": null,
+      "ownership_useful_snapshots": null,
+      "ownership_closure_gain_snapshots": null,
+      "bridge_condition_snapshots": null,
+      "phase_observed_snapshots": null,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": null,
+      "release_checks": null,
+      "preemptions": null,
+      "discarded_computed_tokens": null,
+      "native_failed_allocation_rollbacks": null,
+      "waiting_cancellations_verified": null,
+      "resident_cancellations_verified": null,
+      "prefix_reuse_proposals": null,
+      "zero_owner_cache_touch_proposals": null,
+      "successful_prefix_reuse_allocations": null,
+      "successful_zero_owner_cache_reuse_allocations": null,
+      "incremental_oracle_comparisons": null,
+      "drain_episodes": null,
+      "incremental_fast_accepts": null,
+      "incremental_page_growth_fast_accepts": null,
+      "incremental_zero_growth_fast_accepts": null,
+      "incremental_complete_fallbacks": null,
+      "incremental_fallback_rescues": null,
+      "incremental_structural_rebuild_proposals": null,
+      "incremental_commit_checks": null,
+      "proposal_controller_s": null,
+      "instrumented_schedule_s": null,
+      "output_tokens_sha256": "5d9e0e4c414b89f7b9cf71cad2a7c57e3024791de0ae0a4f8f31f37be9653bcc",
+      "error": null,
+      "time_relative_to_native": 1.0
+    },
+    {
+      "run_id": "holdout_roomy_hard_c2",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "hard_reserve",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 152,
+        "executed_tokens": 1357,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-8e83f15b": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-a76753c6": {
+            "executed_tokens": 71,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-8990f733": {
+            "executed_tokens": 146,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-a7779049": {
+            "executed_tokens": 43,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-ab258e60": {
+            "executed_tokens": 52,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-a482ce8c": {
+            "executed_tokens": 138,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-836fb28b": {
+            "executed_tokens": 147,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-9b66af5e": {
+            "executed_tokens": 119,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-8d8a11da": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-ae39844c": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-ae3bf42b": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-9fe51d35": {
+            "executed_tokens": 30,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-99689a65": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-9abd01e6": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-9dd0c5dd": {
+            "executed_tokens": 131,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-98f6cecf": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.218932834,
+        "update_seconds": 0.022355106,
+        "scheduler_lifecycle_seconds": 0.24128794,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 32,
+      "config": {
+        "method": "hard_reserve",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 32,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_hard_c2",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "ba1cd5f23041ff86241d2108125e46a1e0e617e9df156f472da36baccb3ad4ce",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 896,
+      "measured_seconds": 1.7184271989390254,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.11413432005792856,
+      "mean_tpot_p95_s": 0.016324990008386872,
+      "submission_lag_p95_s": 0.062489387951791264,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal": 896,
+        "allocation": 896,
+        "release": 16
+      },
+      "proposal_bindings": 0,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": 0,
+      "causal_executes": 0,
+      "causal_acks": 0,
+      "causal_refunds": 0,
+      "causal_finishes": 0,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 896,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 0,
+      "drain_episodes": 0,
+      "incremental_fast_accepts": 0,
+      "incremental_page_growth_fast_accepts": 0,
+      "incremental_zero_growth_fast_accepts": 0,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 0,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.092349244,
+      "instrumented_schedule_s": 0.218885851,
+      "output_tokens_sha256": "d58cd2cf58ca876a730b4d5250645abaa9f280e289ff419e2632e942651ab49d",
+      "error": null,
+      "time_relative_to_native": 1.1344889230378823
+    },
+    {
+      "run_id": "holdout_pressure_hard_c2",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "hard_reserve",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 158,
+        "executed_tokens": 1351,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-a798103b": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-9da6c10c": {
+            "executed_tokens": 71,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-adeba33e": {
+            "executed_tokens": 146,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-85c2f03f": {
+            "executed_tokens": 43,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-a4c33865": {
+            "executed_tokens": 52,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-a55148c5": {
+            "executed_tokens": 138,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-8dc23395": {
+            "executed_tokens": 147,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-a459b758": {
+            "executed_tokens": 113,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-a8658b7d": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-89ef1de1": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-ac4b6378": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-9e57d23f": {
+            "executed_tokens": 30,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-92845105": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-a76a248a": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-8250a9c5": {
+            "executed_tokens": 131,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-a4fb7ada": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.208240583,
+        "update_seconds": 0.022307869,
+        "scheduler_lifecycle_seconds": 0.230548452,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 32,
+      "config": {
+        "method": "hard_reserve",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 32,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_hard_c2",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "ba1cd5f23041ff86241d2108125e46a1e0e617e9df156f472da36baccb3ad4ce",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 890,
+      "measured_seconds": 1.8111797217279673,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.6218933828175068,
+      "mean_tpot_p95_s": 0.01502209126708969,
+      "submission_lag_p95_s": 0.06971185225993393,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal": 964,
+        "allocation": 890,
+        "release": 16
+      },
+      "proposal_bindings": 0,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": 0,
+      "causal_executes": 0,
+      "causal_acks": 0,
+      "causal_refunds": 0,
+      "causal_finishes": 0,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 890,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 89,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 0,
+      "drain_episodes": 0,
+      "incremental_fast_accepts": 0,
+      "incremental_page_growth_fast_accepts": 0,
+      "incremental_zero_growth_fast_accepts": 0,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 0,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.088940536,
+      "instrumented_schedule_s": 0.208196005,
+      "output_tokens_sha256": "194eeca2f6bf9ec5739d6bd11362bcfa3e4be6a860630b4333e21211ebc837d7",
+      "error": null,
+      "time_relative_to_native": 1.1994449078766654
+    },
+    {
+      "run_id": "holdout_pressure_prc_original_c2",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 424,
+        "executed_tokens": 1354,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-9ab27bad": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-abc412cc": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-950b7ffa": {
+            "executed_tokens": 146,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-9d8fa08a": {
+            "executed_tokens": 43,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-9a1cacbf": {
+            "executed_tokens": 52,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-8fd8c163": {
+            "executed_tokens": 138,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-ab1da0b1": {
+            "executed_tokens": 147,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-908d1267": {
+            "executed_tokens": 93,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-8b2e9f1b": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a5755fc7": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-a891db87": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-8686e4db": {
+            "executed_tokens": 30,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-a213887d": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-92e4a9b9": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-80022256": {
+            "executed_tokens": 131,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-9d145d2e": {
+            "executed_tokens": 102,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.593237805,
+        "update_seconds": 0.08336321,
+        "scheduler_lifecycle_seconds": 0.676601015,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 32,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 32,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_prc_original_c2",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "ba1cd5f23041ff86241d2108125e46a1e0e617e9df156f472da36baccb3ad4ce",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 893,
+      "measured_seconds": 4.621807030402124,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.4518956644460559,
+      "mean_tpot_p95_s": 0.04685018026488431,
+      "submission_lag_p95_s": 0.0711354890838265,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal_binding": 917,
+        "causal_authorize": 893,
+        "incremental_proposal": 917,
+        "proposal": 917,
+        "causal_execute": 893,
+        "causal_acknowledge": 893,
+        "allocation": 893,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_defer": 972,
+        "drain_service": 352,
+        "drain_dispatch": 352
+      },
+      "proposal_bindings": 917,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 893,
+      "causal_executes": 893,
+      "causal_acks": 893,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 893,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 39,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 877,
+      "incremental_page_growth_fast_accepts": 54,
+      "incremental_zero_growth_fast_accepts": 823,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 40,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.378841757,
+      "instrumented_schedule_s": 0.593174322,
+      "output_tokens_sha256": "f8e43e6ab317a47fc20813700e7742fa813d4569c0545f7e1274275cdb299d72",
+      "error": null,
+      "time_relative_to_native": 3.060769089505646
+    },
+    {
+      "run_id": "holdout_pressure_prc_tuned_c2",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 151,
+        "executed_tokens": 1350,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-9eb9c9fc": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-9138dbac": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-a9797319": {
+            "executed_tokens": 146,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-9961fe5f": {
+            "executed_tokens": 43,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-b90f44e7": {
+            "executed_tokens": 52,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-8ad489b1": {
+            "executed_tokens": 138,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-89dc60ec": {
+            "executed_tokens": 147,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-adba4f2d": {
+            "executed_tokens": 113,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-98653deb": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-8fadff64": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-aea2900f": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-99dca4ad": {
+            "executed_tokens": 30,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-8cf161f8": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-bb0898af": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-9b4bcc48": {
+            "executed_tokens": 131,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-8de55985": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.581679328,
+        "update_seconds": 0.06588743,
+        "scheduler_lifecycle_seconds": 0.647566758,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 32,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 32,
+        "audit": false,
+        "drain_after_steps": 256,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_prc_tuned_c2",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "ba1cd5f23041ff86241d2108125e46a1e0e617e9df156f472da36baccb3ad4ce",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 889,
+      "measured_seconds": 2.1849779821932316,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.467890240252018,
+      "mean_tpot_p95_s": 0.02073456213111058,
+      "submission_lag_p95_s": 0.07502491846680637,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal_binding": 913,
+        "causal_authorize": 889,
+        "incremental_proposal": 913,
+        "proposal": 913,
+        "causal_execute": 889,
+        "causal_acknowledge": 889,
+        "allocation": 889,
+        "causal_finish": 16,
+        "release": 16
+      },
+      "proposal_bindings": 913,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 889,
+      "causal_executes": 889,
+      "causal_acks": 889,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 889,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 39,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 0,
+      "incremental_fast_accepts": 873,
+      "incremental_page_growth_fast_accepts": 54,
+      "incremental_zero_growth_fast_accepts": 819,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 40,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.381184818,
+      "instrumented_schedule_s": 0.581607076,
+      "output_tokens_sha256": "fd8fdf33e29f4c14c48276a57a58af5afc934d77c5583563e8cbabfe4c260855",
+      "error": null,
+      "time_relative_to_native": 1.4469909767231435
+    },
+    {
+      "run_id": "holdout_pressure_native_c2",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "native_plain",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 153,
+        "executed_tokens": 1356,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-85df5048": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-9f39d8b8": {
+            "executed_tokens": 70,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-8aeaad99": {
+            "executed_tokens": 146,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-91570db7": {
+            "executed_tokens": 43,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-9b079f93": {
+            "executed_tokens": 52,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-9655deb5": {
+            "executed_tokens": 138,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-bd9d66d2": {
+            "executed_tokens": 147,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-a723e1b7": {
+            "executed_tokens": 119,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-a5bb520a": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a7101f89": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-a6378194": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-a3de83b9": {
+            "executed_tokens": 30,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-831a49b4": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-8299b4ac": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-a08b8c5d": {
+            "executed_tokens": 131,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-9e0eebfd": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.016799994,
+        "update_seconds": 0.013864273,
+        "scheduler_lifecycle_seconds": 0.030664267,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 32,
+      "config": {
+        "method": "native_plain",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 32,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_native_c2",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "ba1cd5f23041ff86241d2108125e46a1e0e617e9df156f472da36baccb3ad4ce",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 895,
+      "measured_seconds": 1.510014932602644,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.10153725929558277,
+      "mean_tpot_p95_s": 0.013074109390858681,
+      "submission_lag_p95_s": 0.0803819065913558,
+      "cap_terminated": 8,
+      "event_counts": {},
+      "proposal_bindings": null,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": null,
+      "causal_executes": null,
+      "causal_acks": null,
+      "causal_refunds": null,
+      "causal_finishes": null,
+      "snapshots_replayed": null,
+      "shared_snapshots": null,
+      "proper_subset_shared_snapshots": null,
+      "ownership_useful_snapshots": null,
+      "ownership_closure_gain_snapshots": null,
+      "bridge_condition_snapshots": null,
+      "phase_observed_snapshots": null,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": null,
+      "release_checks": null,
+      "preemptions": null,
+      "discarded_computed_tokens": null,
+      "native_failed_allocation_rollbacks": null,
+      "waiting_cancellations_verified": null,
+      "resident_cancellations_verified": null,
+      "prefix_reuse_proposals": null,
+      "zero_owner_cache_touch_proposals": null,
+      "successful_prefix_reuse_allocations": null,
+      "successful_zero_owner_cache_reuse_allocations": null,
+      "incremental_oracle_comparisons": null,
+      "drain_episodes": null,
+      "incremental_fast_accepts": null,
+      "incremental_page_growth_fast_accepts": null,
+      "incremental_zero_growth_fast_accepts": null,
+      "incremental_complete_fallbacks": null,
+      "incremental_fallback_rescues": null,
+      "incremental_structural_rebuild_proposals": null,
+      "incremental_commit_checks": null,
+      "proposal_controller_s": null,
+      "instrumented_schedule_s": null,
+      "output_tokens_sha256": "e2a2df011ee745dc05458dd6cac1201e01f491c088b61aa9fde52ceb12fed8aa",
+      "error": null,
+      "time_relative_to_native": 1.0
+    },
+    {
+      "run_id": "holdout_pressure_native_c1",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "native_plain",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 287,
+        "executed_tokens": 2565,
+        "reexecuted_tokens": 52,
+        "requests": {
+          "w0-r0-b0d14a92": {
+            "executed_tokens": 75,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-a866ff19": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-917669a8": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-91fd0c07": {
+            "executed_tokens": 225,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-92ece1ef": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-831e9eef": {
+            "executed_tokens": 50,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-ab8eeb28": {
+            "executed_tokens": 365,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-a9e6e5be": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-b042b5c8": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-951d7e53": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-81c43fe2": {
+            "executed_tokens": 72,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-a3e72453": {
+            "executed_tokens": 275,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-9eff2b72": {
+            "executed_tokens": 339,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-a9c3034f": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-8de8dba0": {
+            "executed_tokens": 389,
+            "reexecuted_tokens": 52
+          },
+          "w0-r15-8be89099": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.025792955,
+        "update_seconds": 0.020891972,
+        "scheduler_lifecycle_seconds": 0.046684927,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 31,
+      "config": {
+        "method": "native_plain",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 31,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_native_c1",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "a7f5a260a7345c1f3fdd085559903529e35ed861ca90fdf8eb5a55f60ee7393a",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 877,
+      "measured_seconds": 2.733666275627911,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.26249270886182785,
+      "mean_tpot_p95_s": 0.015384787857970771,
+      "submission_lag_p95_s": 0.07230951972305774,
+      "cap_terminated": 5,
+      "event_counts": {},
+      "proposal_bindings": null,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": null,
+      "causal_executes": null,
+      "causal_acks": null,
+      "causal_refunds": null,
+      "causal_finishes": null,
+      "snapshots_replayed": null,
+      "shared_snapshots": null,
+      "proper_subset_shared_snapshots": null,
+      "ownership_useful_snapshots": null,
+      "ownership_closure_gain_snapshots": null,
+      "bridge_condition_snapshots": null,
+      "phase_observed_snapshots": null,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": null,
+      "release_checks": null,
+      "preemptions": null,
+      "discarded_computed_tokens": null,
+      "native_failed_allocation_rollbacks": null,
+      "waiting_cancellations_verified": null,
+      "resident_cancellations_verified": null,
+      "prefix_reuse_proposals": null,
+      "zero_owner_cache_touch_proposals": null,
+      "successful_prefix_reuse_allocations": null,
+      "successful_zero_owner_cache_reuse_allocations": null,
+      "incremental_oracle_comparisons": null,
+      "drain_episodes": null,
+      "incremental_fast_accepts": null,
+      "incremental_page_growth_fast_accepts": null,
+      "incremental_zero_growth_fast_accepts": null,
+      "incremental_complete_fallbacks": null,
+      "incremental_fallback_rescues": null,
+      "incremental_structural_rebuild_proposals": null,
+      "incremental_commit_checks": null,
+      "proposal_controller_s": null,
+      "instrumented_schedule_s": null,
+      "output_tokens_sha256": "9a6038c6e084861da3d84d54ef12a62f2025c2e42fa48f4d899cfbd5c2c59bc9",
+      "error": null,
+      "time_relative_to_native": 1.0
+    },
+    {
+      "run_id": "holdout_pressure_hard_c1",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "hard_reserve",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 336,
+        "executed_tokens": 2513,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-bdbdc830": {
+            "executed_tokens": 75,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-ae6dba4f": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-8d33476a": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-88afb40a": {
+            "executed_tokens": 225,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-94b0f0c4": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-af3eeae0": {
+            "executed_tokens": 50,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-a9ecbbf4": {
+            "executed_tokens": 365,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-9d634f78": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-940e1966": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-86b8f360": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-aaa3a1a9": {
+            "executed_tokens": 72,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-b2a4ac78": {
+            "executed_tokens": 275,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-99418a31": {
+            "executed_tokens": 339,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-aa3ee289": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-b00a7a0e": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-9ce26dec": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.231198929,
+        "update_seconds": 0.033165431,
+        "scheduler_lifecycle_seconds": 0.26436436,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 31,
+      "config": {
+        "method": "hard_reserve",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 31,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_hard_c1",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "a7f5a260a7345c1f3fdd085559903529e35ed861ca90fdf8eb5a55f60ee7393a",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 877,
+      "measured_seconds": 3.4783651223406196,
+      "slo_completed": 16,
+      "ttft_p95_s": 1.1611602135002612,
+      "mean_tpot_p95_s": 0.017158871023532224,
+      "submission_lag_p95_s": 0.06628534924238916,
+      "cap_terminated": 5,
+      "event_counts": {
+        "proposal": 1009,
+        "allocation": 881,
+        "release": 16
+      },
+      "proposal_bindings": 0,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": 0,
+      "causal_executes": 0,
+      "causal_acks": 0,
+      "causal_refunds": 0,
+      "causal_finishes": 0,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 881,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 143,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 0,
+      "drain_episodes": 0,
+      "incremental_fast_accepts": 0,
+      "incremental_page_growth_fast_accepts": 0,
+      "incremental_zero_growth_fast_accepts": 0,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 0,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.094557994,
+      "instrumented_schedule_s": 0.231154672,
+      "output_tokens_sha256": "9a6038c6e084861da3d84d54ef12a62f2025c2e42fa48f4d899cfbd5c2c59bc9",
+      "error": null,
+      "time_relative_to_native": 1.272417614890338
+    },
+    {
+      "run_id": "holdout_pressure_prc_tuned_c1",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 295,
+        "executed_tokens": 2513,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-bc2924b1": {
+            "executed_tokens": 75,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-9c5ac18d": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-863235eb": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-ae310071": {
+            "executed_tokens": 225,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-a4a88d05": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-9904214e": {
+            "executed_tokens": 50,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-97ad891f": {
+            "executed_tokens": 365,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-8894da81": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-9a0f6ecb": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-8fc2af9a": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-8fedb6a2": {
+            "executed_tokens": 72,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-ac425f91": {
+            "executed_tokens": 275,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-bb3c7ead": {
+            "executed_tokens": 339,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-bcfb4693": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-90e266db": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-850f9f1e": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.604260571,
+        "update_seconds": 0.080134566,
+        "scheduler_lifecycle_seconds": 0.684395137,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 31,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 31,
+        "audit": false,
+        "drain_after_steps": 256,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_prc_tuned_c1",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "a7f5a260a7345c1f3fdd085559903529e35ed861ca90fdf8eb5a55f60ee7393a",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 877,
+      "measured_seconds": 3.740782924927771,
+      "slo_completed": 16,
+      "ttft_p95_s": 1.0416365737095474,
+      "mean_tpot_p95_s": 0.02150167491944397,
+      "submission_lag_p95_s": 0.08086991310119629,
+      "cap_terminated": 5,
+      "event_counts": {
+        "proposal_binding": 956,
+        "causal_authorize": 881,
+        "incremental_proposal": 956,
+        "proposal": 956,
+        "causal_execute": 881,
+        "causal_acknowledge": 881,
+        "allocation": 881,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_service": 31,
+        "drain_dispatch": 31
+      },
+      "proposal_bindings": 956,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 881,
+      "causal_executes": 881,
+      "causal_acks": 881,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 881,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 90,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 865,
+      "incremental_page_growth_fast_accepts": 59,
+      "incremental_zero_growth_fast_accepts": 806,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 91,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.376983802,
+      "instrumented_schedule_s": 0.604186632,
+      "output_tokens_sha256": "9a6038c6e084861da3d84d54ef12a62f2025c2e42fa48f4d899cfbd5c2c59bc9",
+      "error": null,
+      "time_relative_to_native": 1.3684124350798927
+    },
+    {
+      "run_id": "holdout_pressure_prc_original_c1",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 525,
+        "executed_tokens": 2513,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-bec7c7c6": {
+            "executed_tokens": 75,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-b1d93942": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-b09a62f6": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-a0fd8ae0": {
+            "executed_tokens": 225,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-a33d5a34": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-a6026e25": {
+            "executed_tokens": 50,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-84de014b": {
+            "executed_tokens": 365,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-bfaab543": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-8adc5dc3": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a02c25da": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-8dbcafdc": {
+            "executed_tokens": 72,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-84a80468": {
+            "executed_tokens": 275,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-bcd17ecb": {
+            "executed_tokens": 339,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-8d0807e6": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-86593a9d": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-ab496601": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.564727602,
+        "update_seconds": 0.084644285,
+        "scheduler_lifecycle_seconds": 0.649371887,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 31,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 31,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_prc_original_c1",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "a7f5a260a7345c1f3fdd085559903529e35ed861ca90fdf8eb5a55f60ee7393a",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 877,
+      "measured_seconds": 5.625486551783979,
+      "slo_completed": 12,
+      "ttft_p95_s": 4.853993531502783,
+      "mean_tpot_p95_s": 0.021573944886525472,
+      "submission_lag_p95_s": 0.07910246029496193,
+      "cap_terminated": 5,
+      "event_counts": {
+        "proposal_binding": 926,
+        "causal_authorize": 881,
+        "incremental_proposal": 926,
+        "proposal": 926,
+        "causal_execute": 881,
+        "causal_acknowledge": 881,
+        "allocation": 881,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_defer": 810,
+        "drain_service": 414,
+        "drain_dispatch": 414
+      },
+      "proposal_bindings": 926,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 881,
+      "causal_executes": 881,
+      "causal_acks": 881,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 881,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 60,
+      "zero_owner_cache_touch_proposals": 1,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 1,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 865,
+      "incremental_page_growth_fast_accepts": 59,
+      "incremental_zero_growth_fast_accepts": 806,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 61,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.344951024,
+      "instrumented_schedule_s": 0.564681878,
+      "output_tokens_sha256": "9a6038c6e084861da3d84d54ef12a62f2025c2e42fa48f4d899cfbd5c2c59bc9",
+      "error": null,
+      "time_relative_to_native": 2.0578541725953103
+    },
+    {
+      "run_id": "holdout_roomy_prc_tuned_c1",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 284,
+        "executed_tokens": 2513,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-9626a575": {
+            "executed_tokens": 75,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-9fa92851": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-b8a090d8": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-bfd22582": {
+            "executed_tokens": 225,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-a2575ee5": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-ab654869": {
+            "executed_tokens": 50,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-acf6068b": {
+            "executed_tokens": 365,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-a5ed1474": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-ac8f4415": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-93bd3acf": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-be5de07c": {
+            "executed_tokens": 72,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-bf5559b4": {
+            "executed_tokens": 275,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-8d2d78e8": {
+            "executed_tokens": 339,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-ad713d71": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-98bc94cd": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-a6bf4466": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.650475812,
+        "update_seconds": 0.072218572,
+        "scheduler_lifecycle_seconds": 0.722694384,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 31,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 31,
+        "audit": false,
+        "drain_after_steps": 256,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_prc_tuned_c1",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "a7f5a260a7345c1f3fdd085559903529e35ed861ca90fdf8eb5a55f60ee7393a",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 877,
+      "measured_seconds": 3.4672923469915986,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.14220177624374628,
+      "mean_tpot_p95_s": 0.02873459507656448,
+      "submission_lag_p95_s": 0.07086943462491035,
+      "cap_terminated": 5,
+      "event_counts": {
+        "proposal_binding": 881,
+        "causal_authorize": 881,
+        "incremental_proposal": 881,
+        "proposal": 881,
+        "causal_execute": 881,
+        "causal_acknowledge": 881,
+        "allocation": 881,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_service": 20,
+        "drain_dispatch": 20
+      },
+      "proposal_bindings": 881,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 881,
+      "causal_executes": 881,
+      "causal_acks": 881,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 881,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 865,
+      "incremental_page_growth_fast_accepts": 59,
+      "incremental_zero_growth_fast_accepts": 806,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 16,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.409258661,
+      "instrumented_schedule_s": 0.65041273,
+      "output_tokens_sha256": "9a6038c6e084861da3d84d54ef12a62f2025c2e42fa48f4d899cfbd5c2c59bc9",
+      "error": null,
+      "time_relative_to_native": 1.19610600980304
+    },
+    {
+      "run_id": "holdout_roomy_hard_c1",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "hard_reserve",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 285,
+        "executed_tokens": 2513,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-8ee95107": {
+            "executed_tokens": 75,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-833aed6a": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-bf719cdb": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-afe41827": {
+            "executed_tokens": 225,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-a55d7fca": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-a9a65cb2": {
+            "executed_tokens": 50,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-a7a87a87": {
+            "executed_tokens": 365,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-b98f94b7": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-b748e605": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a7c6b981": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-b156037d": {
+            "executed_tokens": 72,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-a1368f8b": {
+            "executed_tokens": 275,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-9fb90f33": {
+            "executed_tokens": 339,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-987a1e39": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-93b24ef9": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-810e6d79": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.262371025,
+        "update_seconds": 0.030713318,
+        "scheduler_lifecycle_seconds": 0.293084343,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 31,
+      "config": {
+        "method": "hard_reserve",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 31,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_hard_c1",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "a7f5a260a7345c1f3fdd085559903529e35ed861ca90fdf8eb5a55f60ee7393a",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 877,
+      "measured_seconds": 3.1158070592209697,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.11538538392633199,
+      "mean_tpot_p95_s": 0.020814600564977703,
+      "submission_lag_p95_s": 0.0601348290219903,
+      "cap_terminated": 5,
+      "event_counts": {
+        "proposal": 881,
+        "allocation": 881,
+        "release": 16
+      },
+      "proposal_bindings": 0,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": 0,
+      "causal_executes": 0,
+      "causal_acks": 0,
+      "causal_refunds": 0,
+      "causal_finishes": 0,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 881,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 0,
+      "drain_episodes": 0,
+      "incremental_fast_accepts": 0,
+      "incremental_page_growth_fast_accepts": 0,
+      "incremental_zero_growth_fast_accepts": 0,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 0,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.108440342,
+      "instrumented_schedule_s": 0.262322765,
+      "output_tokens_sha256": "9a6038c6e084861da3d84d54ef12a62f2025c2e42fa48f4d899cfbd5c2c59bc9",
+      "error": null,
+      "time_relative_to_native": 1.0748547211931907
+    },
+    {
+      "run_id": "holdout_roomy_prc_original_c1",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 460,
+        "executed_tokens": 2513,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-a6743458": {
+            "executed_tokens": 75,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-ab721588": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-8bdf8785": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-bbfcd04b": {
+            "executed_tokens": 225,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-91622064": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-94ef80dd": {
+            "executed_tokens": 50,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-9fa3f79a": {
+            "executed_tokens": 365,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-8462a000": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-a16f61fb": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-89a7f500": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-bf7c1492": {
+            "executed_tokens": 72,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-b374735c": {
+            "executed_tokens": 275,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-9aac556e": {
+            "executed_tokens": 339,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-ac51c176": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-8879d807": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-bced1042": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.705396183,
+        "update_seconds": 0.094838648,
+        "scheduler_lifecycle_seconds": 0.800234831,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 31,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 31,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_prc_original_c1",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "a7f5a260a7345c1f3fdd085559903529e35ed861ca90fdf8eb5a55f60ee7393a",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 877,
+      "measured_seconds": 5.505298979580402,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.0790453933179378,
+      "mean_tpot_p95_s": 0.0318023182451725,
+      "submission_lag_p95_s": 0.014259846694767458,
+      "cap_terminated": 5,
+      "event_counts": {
+        "proposal_binding": 881,
+        "causal_authorize": 881,
+        "incremental_proposal": 881,
+        "proposal": 881,
+        "causal_execute": 881,
+        "causal_acknowledge": 881,
+        "allocation": 881,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_defer": 354,
+        "drain_service": 388,
+        "drain_dispatch": 388
+      },
+      "proposal_bindings": 881,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 881,
+      "causal_executes": 881,
+      "causal_acks": 881,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 881,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 15,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 865,
+      "incremental_page_growth_fast_accepts": 59,
+      "incremental_zero_growth_fast_accepts": 806,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 16,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.437181269,
+      "instrumented_schedule_s": 0.705328001,
+      "output_tokens_sha256": "9a6038c6e084861da3d84d54ef12a62f2025c2e42fa48f4d899cfbd5c2c59bc9",
+      "error": null,
+      "time_relative_to_native": 1.8991537304179384
+    },
+    {
+      "run_id": "holdout_roomy_native_c1",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_roomy",
+      "method": "native_plain",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 285,
+        "executed_tokens": 2513,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-8f78896b": {
+            "executed_tokens": 75,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-bd27c834": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-b2e138ef": {
+            "executed_tokens": 41,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-948e58f9": {
+            "executed_tokens": 225,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-896ec2af": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-a90fdf84": {
+            "executed_tokens": 50,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-8cf71aee": {
+            "executed_tokens": 365,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-9e69fb3b": {
+            "executed_tokens": 88,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-9e00f2a7": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-b7421725": {
+            "executed_tokens": 84,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-8d95be98": {
+            "executed_tokens": 72,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-ab8d13d0": {
+            "executed_tokens": 275,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-8b700f6d": {
+            "executed_tokens": 339,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-ac932c51": {
+            "executed_tokens": 58,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-b4dc4e66": {
+            "executed_tokens": 337,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-8c9361f8": {
+            "executed_tokens": 78,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.027746305,
+        "update_seconds": 0.024657101,
+        "scheduler_lifecycle_seconds": 0.052403406,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 31,
+      "config": {
+        "method": "native_plain",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 512,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 31,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_roomy_native_c1",
+        "case": "HOLDOUT_dolly_roomy",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "a7f5a260a7345c1f3fdd085559903529e35ed861ca90fdf8eb5a55f60ee7393a",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 877,
+      "measured_seconds": 2.898816926404834,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.12386126741766929,
+      "mean_tpot_p95_s": 0.01604895753895535,
+      "submission_lag_p95_s": 0.06700088325887918,
+      "cap_terminated": 5,
+      "event_counts": {},
+      "proposal_bindings": null,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": null,
+      "causal_executes": null,
+      "causal_acks": null,
+      "causal_refunds": null,
+      "causal_finishes": null,
+      "snapshots_replayed": null,
+      "shared_snapshots": null,
+      "proper_subset_shared_snapshots": null,
+      "ownership_useful_snapshots": null,
+      "ownership_closure_gain_snapshots": null,
+      "bridge_condition_snapshots": null,
+      "phase_observed_snapshots": null,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": null,
+      "release_checks": null,
+      "preemptions": null,
+      "discarded_computed_tokens": null,
+      "native_failed_allocation_rollbacks": null,
+      "waiting_cancellations_verified": null,
+      "resident_cancellations_verified": null,
+      "prefix_reuse_proposals": null,
+      "zero_owner_cache_touch_proposals": null,
+      "successful_prefix_reuse_allocations": null,
+      "successful_zero_owner_cache_reuse_allocations": null,
+      "incremental_oracle_comparisons": null,
+      "drain_episodes": null,
+      "incremental_fast_accepts": null,
+      "incremental_page_growth_fast_accepts": null,
+      "incremental_zero_growth_fast_accepts": null,
+      "incremental_complete_fallbacks": null,
+      "incremental_fallback_rescues": null,
+      "incremental_structural_rebuild_proposals": null,
+      "incremental_commit_checks": null,
+      "proposal_controller_s": null,
+      "instrumented_schedule_s": null,
+      "output_tokens_sha256": "9a6038c6e084861da3d84d54ef12a62f2025c2e42fa48f4d899cfbd5c2c59bc9",
+      "error": null,
+      "time_relative_to_native": 1.0
+    },
+    {
+      "run_id": "holdout_pressure_prc_original_c0",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 578,
+        "executed_tokens": 2182,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-832233f2": {
+            "executed_tokens": 210,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-a1b0e616": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-9030194a": {
+            "executed_tokens": 215,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-932747f8": {
+            "executed_tokens": 277,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-8aa75848": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-b2d9942a": {
+            "executed_tokens": 155,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-8286d9e2": {
+            "executed_tokens": 149,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-b4735e2c": {
+            "executed_tokens": 124,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-9c3dc433": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-98338534": {
+            "executed_tokens": 80,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-90197480": {
+            "executed_tokens": 98,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-a0baeb59": {
+            "executed_tokens": 174,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-a799e872": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-bac2b0dc": {
+            "executed_tokens": 92,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-a4aacd52": {
+            "executed_tokens": 217,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-9a10f516": {
+            "executed_tokens": 193,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.699665999,
+        "update_seconds": 0.098481438,
+        "scheduler_lifecycle_seconds": 0.798147437,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 30,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 30,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_prc_original_c0",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "30f4dcc9116f257fa477e361f51e38d689f662bc7a9121894c37cb5a8ea38b19",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 991,
+      "measured_seconds": 6.202321854420006,
+      "slo_completed": 13,
+      "ttft_p95_s": 5.095451326109469,
+      "mean_tpot_p95_s": 0.04158730258427139,
+      "submission_lag_p95_s": 0.013346509635448423,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal_binding": 1034,
+        "causal_authorize": 992,
+        "incremental_proposal": 1034,
+        "proposal": 1034,
+        "causal_execute": 992,
+        "causal_acknowledge": 992,
+        "allocation": 992,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_defer": 1455,
+        "drain_service": 442,
+        "drain_dispatch": 442
+      },
+      "proposal_bindings": 1034,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 992,
+      "causal_executes": 992,
+      "causal_acks": 992,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 992,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 57,
+      "zero_owner_cache_touch_proposals": 1,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 1,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 2,
+      "incremental_fast_accepts": 976,
+      "incremental_page_growth_fast_accepts": 60,
+      "incremental_zero_growth_fast_accepts": 916,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 58,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.427140783,
+      "instrumented_schedule_s": 0.699621743,
+      "output_tokens_sha256": "07f599d7382af467b6c9edc3564fb321203670638a181d85d7133322cab58ec2",
+      "error": null,
+      "time_relative_to_native": 2.3301773448792367
+    },
+    {
+      "run_id": "holdout_pressure_hard_c0",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "hard_reserve",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 273,
+        "executed_tokens": 2182,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-8e41aca0": {
+            "executed_tokens": 210,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-b7b1e98e": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-b4447cc9": {
+            "executed_tokens": 215,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-982a9de1": {
+            "executed_tokens": 277,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-8cd8a4bc": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-9a691057": {
+            "executed_tokens": 155,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-bfa8782c": {
+            "executed_tokens": 149,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-8b1a3bd4": {
+            "executed_tokens": 124,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-b2ec4df9": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a5449bd9": {
+            "executed_tokens": 80,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-a2572a79": {
+            "executed_tokens": 98,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-beb5cf63": {
+            "executed_tokens": 174,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-b09e443e": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-91bd3341": {
+            "executed_tokens": 92,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-88911ab7": {
+            "executed_tokens": 217,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-b3235905": {
+            "executed_tokens": 193,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.265508084,
+        "update_seconds": 0.02918357,
+        "scheduler_lifecycle_seconds": 0.294691654,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 30,
+      "config": {
+        "method": "hard_reserve",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 30,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_hard_c0",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "30f4dcc9116f257fa477e361f51e38d689f662bc7a9121894c37cb5a8ea38b19",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 991,
+      "measured_seconds": 2.8457038709893823,
+      "slo_completed": 16,
+      "ttft_p95_s": 1.1740838760510086,
+      "mean_tpot_p95_s": 0.011653915862552822,
+      "submission_lag_p95_s": 0.010831677913665738,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal": 1117,
+        "allocation": 991,
+        "release": 16
+      },
+      "proposal_bindings": 0,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": 0,
+      "causal_executes": 0,
+      "causal_acks": 0,
+      "causal_refunds": 0,
+      "causal_finishes": 0,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 991,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 141,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 0,
+      "drain_episodes": 0,
+      "incremental_fast_accepts": 0,
+      "incremental_page_growth_fast_accepts": 0,
+      "incremental_zero_growth_fast_accepts": 0,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 0,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.113274427,
+      "instrumented_schedule_s": 0.265458527,
+      "output_tokens_sha256": "07f599d7382af467b6c9edc3564fb321203670638a181d85d7133322cab58ec2",
+      "error": null,
+      "time_relative_to_native": 1.0691148969783162
+    },
+    {
+      "run_id": "holdout_pressure_prc_tuned_c0",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "prc",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 272,
+        "executed_tokens": 2182,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-bdb47154": {
+            "executed_tokens": 210,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-8df91e8e": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-bfba7589": {
+            "executed_tokens": 215,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-850249cc": {
+            "executed_tokens": 277,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-9b6d1abf": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-8fdfea28": {
+            "executed_tokens": 155,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-98180d3a": {
+            "executed_tokens": 149,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-9c12c6cc": {
+            "executed_tokens": 124,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-99925819": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-ba689168": {
+            "executed_tokens": 80,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-b6205eb1": {
+            "executed_tokens": 98,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-8cf50db0": {
+            "executed_tokens": 174,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-b68ed3ca": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-8804dbeb": {
+            "executed_tokens": 92,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-bd3ccaa3": {
+            "executed_tokens": 217,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-bebc51b2": {
+            "executed_tokens": 193,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.674737662,
+        "update_seconds": 0.076471193,
+        "scheduler_lifecycle_seconds": 0.751208855,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 30,
+      "config": {
+        "method": "prc",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 30,
+        "audit": false,
+        "drain_after_steps": 256,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_prc_tuned_c0",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "30f4dcc9116f257fa477e361f51e38d689f662bc7a9121894c37cb5a8ea38b19",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 991,
+      "measured_seconds": 3.287508432753384,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.8139181692153215,
+      "mean_tpot_p95_s": 0.017195737379933556,
+      "submission_lag_p95_s": 0.012613959237933126,
+      "cap_terminated": 8,
+      "event_counts": {
+        "proposal_binding": 1052,
+        "causal_authorize": 991,
+        "incremental_proposal": 1052,
+        "proposal": 1052,
+        "causal_execute": 991,
+        "causal_acknowledge": 991,
+        "allocation": 991,
+        "causal_finish": 16,
+        "release": 16,
+        "drain_service": 8,
+        "drain_dispatch": 8
+      },
+      "proposal_bindings": 1052,
+      "proposal_manifest_count": 16,
+      "proposal_learned_exact_fallbacks": 0,
+      "causal_authorizations": 991,
+      "causal_executes": 991,
+      "causal_acks": 991,
+      "causal_refunds": 0,
+      "causal_finishes": 16,
+      "snapshots_replayed": 0,
+      "shared_snapshots": 0,
+      "proper_subset_shared_snapshots": 0,
+      "ownership_useful_snapshots": 0,
+      "ownership_closure_gain_snapshots": 0,
+      "bridge_condition_snapshots": 0,
+      "phase_observed_snapshots": 0,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": 991,
+      "release_checks": 16,
+      "preemptions": 0,
+      "discarded_computed_tokens": 0,
+      "native_failed_allocation_rollbacks": 0,
+      "waiting_cancellations_verified": 0,
+      "resident_cancellations_verified": 0,
+      "prefix_reuse_proposals": 76,
+      "zero_owner_cache_touch_proposals": 0,
+      "successful_prefix_reuse_allocations": 15,
+      "successful_zero_owner_cache_reuse_allocations": 0,
+      "incremental_oracle_comparisons": 16,
+      "drain_episodes": 1,
+      "incremental_fast_accepts": 975,
+      "incremental_page_growth_fast_accepts": 59,
+      "incremental_zero_growth_fast_accepts": 916,
+      "incremental_complete_fallbacks": 0,
+      "incremental_fallback_rescues": 0,
+      "incremental_structural_rebuild_proposals": 77,
+      "incremental_commit_checks": 0,
+      "proposal_controller_s": 0.430811277,
+      "instrumented_schedule_s": 0.674669186,
+      "output_tokens_sha256": "bf1de6604b969f76bfadd5a99f1f2cdaf9a864161daa2d7439a4704e44540c73",
+      "error": null,
+      "time_relative_to_native": 1.2350983794306383
+    },
+    {
+      "run_id": "holdout_pressure_native_c0",
+      "status": "PASS",
+      "case": "HOLDOUT_dolly_pressure",
+      "method": "native_plain",
+      "execution_measurement": {
+        "schema_version": 1,
+        "pending_batches": 0,
+        "confirmed_batches": 273,
+        "executed_tokens": 2182,
+        "reexecuted_tokens": 0,
+        "requests": {
+          "w0-r0-a14aba45": {
+            "executed_tokens": 210,
+            "reexecuted_tokens": 0
+          },
+          "w0-r1-8a2d9a50": {
+            "executed_tokens": 53,
+            "reexecuted_tokens": 0
+          },
+          "w0-r2-b65912ff": {
+            "executed_tokens": 215,
+            "reexecuted_tokens": 0
+          },
+          "w0-r3-82d791a6": {
+            "executed_tokens": 277,
+            "reexecuted_tokens": 0
+          },
+          "w0-r4-bcd04f6f": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r5-9303ea03": {
+            "executed_tokens": 155,
+            "reexecuted_tokens": 0
+          },
+          "w0-r6-bfe61fbd": {
+            "executed_tokens": 149,
+            "reexecuted_tokens": 0
+          },
+          "w0-r7-94dec2dd": {
+            "executed_tokens": 124,
+            "reexecuted_tokens": 0
+          },
+          "w0-r8-a4afca87": {
+            "executed_tokens": 48,
+            "reexecuted_tokens": 0
+          },
+          "w0-r9-a7a20d8a": {
+            "executed_tokens": 80,
+            "reexecuted_tokens": 0
+          },
+          "w0-r10-85f9bb44": {
+            "executed_tokens": 98,
+            "reexecuted_tokens": 0
+          },
+          "w0-r11-b45cdc89": {
+            "executed_tokens": 174,
+            "reexecuted_tokens": 0
+          },
+          "w0-r12-86626d9c": {
+            "executed_tokens": 49,
+            "reexecuted_tokens": 0
+          },
+          "w0-r13-9373d848": {
+            "executed_tokens": 92,
+            "reexecuted_tokens": 0
+          },
+          "w0-r14-aacecb68": {
+            "executed_tokens": 217,
+            "reexecuted_tokens": 0
+          },
+          "w0-r15-aae5b868": {
+            "executed_tokens": 193,
+            "reexecuted_tokens": 0
+          }
+        },
+        "scope": "positions executed again for the same internal request after an earlier confirmed execution; excludes padding, cached-prefix reads and warmup",
+        "schedule_seconds": 0.024131545,
+        "update_seconds": 0.019998141,
+        "scheduler_lifecycle_seconds": 0.044129686,
+        "timing_scope": "schedule plus nonempty execution-result processing; after first successful cache reset; excludes warmup, initialization, client submission, cache reset and log-file writes"
+      },
+      "replicate": 30,
+      "config": {
+        "method": "native_plain",
+        "workload": "dolly",
+        "count": 16,
+        "cap": 128,
+        "cap_profile": "mixed",
+        "blocks": 80,
+        "block_size": 16,
+        "batch_tokens": 256,
+        "max_seqs": 16,
+        "arrival_interval": 0.025,
+        "ignore_eos": false,
+        "prefix": true,
+        "waves": 1,
+        "reset_between": false,
+        "cancellation": false,
+        "busy_reset": false,
+        "dtype": "float16",
+        "seed": 20260917,
+        "min_prompt": 32,
+        "max_prompt": 384,
+        "observation_limit": 120,
+        "replicate": 30,
+        "audit": false,
+        "drain_after_steps": 64,
+        "model_path": "[private-path-removed]",
+        "data_path": "[private-path-removed]",
+        "trace_path": "",
+        "output_root": "[private-path-removed]",
+        "run_id": "holdout_pressure_native_c0",
+        "case": "HOLDOUT_dolly_pressure",
+        "fault": null,
+        "expected_error": null,
+        "timeout_seconds": 300,
+        "proposal_mode": "exact",
+        "predictor_z": 2.0,
+        "predictor_checkpoint": "",
+        "patch_checkpoint": "",
+        "enable_prc_pipeline": true,
+        "learned_checkpoint": ""
+      },
+      "prompt_token_sha256": "30f4dcc9116f257fa477e361f51e38d689f662bc7a9121894c37cb5a8ea38b19",
+      "caps_sha256": "267bfa7be0f17946f13b0a625b3921e3a826ce73a4eff5c2c39b2facb6c85488",
+      "completed": 16,
+      "cancelled": 0,
+      "output_tokens": 991,
+      "measured_seconds": 2.661738115362823,
+      "slo_completed": 16,
+      "ttft_p95_s": 0.03721903134137389,
+      "mean_tpot_p95_s": 0.010919564433636205,
+      "submission_lag_p95_s": 0.010403279773890967,
+      "cap_terminated": 8,
+      "event_counts": {},
+      "proposal_bindings": null,
+      "proposal_manifest_count": null,
+      "proposal_learned_exact_fallbacks": null,
+      "causal_authorizations": null,
+      "causal_executes": null,
+      "causal_acks": null,
+      "causal_refunds": null,
+      "causal_finishes": null,
+      "snapshots_replayed": null,
+      "shared_snapshots": null,
+      "proper_subset_shared_snapshots": null,
+      "ownership_useful_snapshots": null,
+      "ownership_closure_gain_snapshots": null,
+      "bridge_condition_snapshots": null,
+      "phase_observed_snapshots": null,
+      "all_prefill_complete_snapshots": null,
+      "allocation_checks": null,
+      "release_checks": null,
+      "preemptions": null,
+      "discarded_computed_tokens": null,
+      "native_failed_allocation_rollbacks": null,
+      "waiting_cancellations_verified": null,
+      "resident_cancellations_verified": null,
+      "prefix_reuse_proposals": null,
+      "zero_owner_cache_touch_proposals": null,
+      "successful_prefix_reuse_allocations": null,
+      "successful_zero_owner_cache_reuse_allocations": null,
+      "incremental_oracle_comparisons": null,
+      "drain_episodes": null,
+      "incremental_fast_accepts": null,
+      "incremental_page_growth_fast_accepts": null,
+      "incremental_zero_growth_fast_accepts": null,
+      "incremental_complete_fallbacks": null,
+      "incremental_fallback_rescues": null,
+      "incremental_structural_rebuild_proposals": null,
+      "incremental_commit_checks": null,
+      "proposal_controller_s": null,
+      "instrumented_schedule_s": null,
+      "output_tokens_sha256": "bf1de6604b969f76bfadd5a99f1f2cdaf9a864161daa2d7439a4704e44540c73",
+      "error": null,
+      "time_relative_to_native": 1.0
+    }
+  ],
+  "paired_outputs": [
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 30,
+      "run_id": "holdout_roomy_prc_original_c0",
+      "reference": "holdout_roomy_native_c0",
+      "exact_output_matches": 14,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 30,
+      "run_id": "holdout_roomy_native_c0",
+      "reference": "holdout_roomy_native_c0",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 30,
+      "run_id": "holdout_roomy_prc_tuned_c0",
+      "reference": "holdout_roomy_native_c0",
+      "exact_output_matches": 14,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 30,
+      "run_id": "holdout_roomy_hard_c0",
+      "reference": "holdout_roomy_native_c0",
+      "exact_output_matches": 15,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 32,
+      "run_id": "holdout_roomy_prc_original_c2",
+      "reference": "holdout_roomy_native_c2",
+      "exact_output_matches": 15,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 32,
+      "run_id": "holdout_roomy_prc_tuned_c2",
+      "reference": "holdout_roomy_native_c2",
+      "exact_output_matches": 13,
+      "output_length_matches": 15,
+      "output_length_delta_tokens": 20,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 32,
+      "run_id": "holdout_roomy_native_c2",
+      "reference": "holdout_roomy_native_c2",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 32,
+      "run_id": "holdout_roomy_hard_c2",
+      "reference": "holdout_roomy_native_c2",
+      "exact_output_matches": 14,
+      "output_length_matches": 14,
+      "output_length_delta_tokens": 27,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 32,
+      "run_id": "holdout_pressure_hard_c2",
+      "reference": "holdout_pressure_native_c2",
+      "exact_output_matches": 14,
+      "output_length_matches": 14,
+      "output_length_delta_tokens": -5,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 32,
+      "run_id": "holdout_pressure_prc_original_c2",
+      "reference": "holdout_pressure_native_c2",
+      "exact_output_matches": 12,
+      "output_length_matches": 14,
+      "output_length_delta_tokens": -2,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 32,
+      "run_id": "holdout_pressure_prc_tuned_c2",
+      "reference": "holdout_pressure_native_c2",
+      "exact_output_matches": 13,
+      "output_length_matches": 15,
+      "output_length_delta_tokens": -6,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 32,
+      "run_id": "holdout_pressure_native_c2",
+      "reference": "holdout_pressure_native_c2",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 31,
+      "run_id": "holdout_pressure_native_c1",
+      "reference": "holdout_pressure_native_c1",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 31,
+      "run_id": "holdout_pressure_hard_c1",
+      "reference": "holdout_pressure_native_c1",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 31,
+      "run_id": "holdout_pressure_prc_tuned_c1",
+      "reference": "holdout_pressure_native_c1",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 31,
+      "run_id": "holdout_pressure_prc_original_c1",
+      "reference": "holdout_pressure_native_c1",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 31,
+      "run_id": "holdout_roomy_prc_tuned_c1",
+      "reference": "holdout_roomy_native_c1",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 31,
+      "run_id": "holdout_roomy_hard_c1",
+      "reference": "holdout_roomy_native_c1",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 31,
+      "run_id": "holdout_roomy_prc_original_c1",
+      "reference": "holdout_roomy_native_c1",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_roomy",
+      "replicate": 31,
+      "run_id": "holdout_roomy_native_c1",
+      "reference": "holdout_roomy_native_c1",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 30,
+      "run_id": "holdout_pressure_prc_original_c0",
+      "reference": "holdout_pressure_native_c0",
+      "exact_output_matches": 14,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 30,
+      "run_id": "holdout_pressure_hard_c0",
+      "reference": "holdout_pressure_native_c0",
+      "exact_output_matches": 14,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 30,
+      "run_id": "holdout_pressure_prc_tuned_c0",
+      "reference": "holdout_pressure_native_c0",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    },
+    {
+      "case": "HOLDOUT_dolly_pressure",
+      "replicate": 30,
+      "run_id": "holdout_pressure_native_c0",
+      "reference": "holdout_pressure_native_c0",
+      "exact_output_matches": 16,
+      "output_length_matches": 16,
+      "output_length_delta_tokens": 0,
+      "requests": 16
+    }
+  ],
+  "runtime_source_manifest_sha256": "c1669e665264f8c874252447b693ff7fbed7aba6ce31b98a4cfcf1baca432d05",
+  "scope": "Tuning observations; no automatic selection or held-out generalization claim"
+}

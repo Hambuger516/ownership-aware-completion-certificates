@@ -1,0 +1,12 @@
+{
+  "run_id": "smoke_v1",
+  "case": "E1_smoke",
+  "method": "prc",
+  "count": 4,
+  "cap": 33,
+  "ignore_eos": true,
+  "audit": true,
+  "drain_after_steps": 64,
+  "model_path": "",
+  "output_root": "runs"
+}

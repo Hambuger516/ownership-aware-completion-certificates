@@ -1,0 +1,11 @@
+{
+  "url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/main/databricks-dolly-15k.jsonl",
+  "source_sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+  "source_rows": 15011,
+  "sample_rows": 512,
+  "seed": 20260917,
+  "selection": "uniform sample without replacement before tokenization or outcomes",
+  "data_nature": "Public human-authored instruction/context dataset; not production arrivals",
+  "license": "CC-BY-SA-3.0",
+  "reference": "https://huggingface.co/datasets/databricks/databricks-dolly-15k"
+}

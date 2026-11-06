@@ -1,0 +1,1223 @@
+{
+  "version": "v23",
+  "status": "ALL21_CURRENT_EXPERIMENTAL_FIGURES_CAPTIONS_GEOMETRY_AND_SOURCE_BOUND",
+  "parent": "v22",
+  "data_changed": false,
+  "algorithm_changed": false,
+  "new_GPU_services": 0,
+  "experimental_figures": 21,
+  "single_column": 12,
+  "true_three_column_double": 9,
+  "figures": [
+    {
+      "old_stem": "fig_ownership_repeated_v18",
+      "new_stem": "fig_ownership_repeated_v22",
+      "outer_rows": 1,
+      "outer_columns": 2,
+      "rows": 1,
+      "cols": 2,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.3,
+      "minimum_font_pt": 9.0,
+      "preferred_font_pt": 9.0,
+      "caption_plain": "Ownership contrast: Full C1/Full C0 cohort and brief ratios on logarithmic axes. F/I/B denote front/interleaved/back arrivals. Bands group input pairs and highlight interleaving; dashed lines mark equality. Values below one favour Full C1.",
+      "caption_tex": "Ownership contrast: Full C1/Full C0 cohort and brief ratios on logarithmic axes. F/I/B denote front/interleaved/back arrivals. Bands group input pairs and highlight interleaving; dashed lines mark equality. Values below one favour Full C1.",
+      "encoding": "Paired point-and-observed-range forests; group and arrival-category bands",
+      "source_sha256": {
+        "source_data/v18_verified/ownership/all_pairs.csv": "93d066543ff8ce74328e43810356d04d8107f8e95748050915e839cf4a12b3a5",
+        "source_data/v18_verified/ownership/all_services.csv": "4c165d7f0a12978f28f245158499cd81120bba04b7ae0bdeb6260baec66a6c5a",
+        "source_data/v18_verified/ownership/FINAL_NUMERIC_READOUT.json": "17d654d6cfae96b5747e924d62d415da1e867a2c337a938639720589de690c9e"
+      },
+      "data_paths": [
+        "source_data/v18_verified/ownership/all_pairs.csv",
+        "source_data/v18_verified/ownership/all_services.csv",
+        "source_data/v18_verified/ownership/FINAL_NUMERIC_READOUT.json"
+      ],
+      "plot_data_path": "source_data/v22_figures/main/plotrows.json",
+      "raw_displayed_point_count": 72,
+      "plot_group_count": 18,
+      "output_sha256": {
+        "pdf": "063204ef7c16dc533e05c01f194653250740ab5912424a8967e3e33ec02094a9",
+        "svg": "17c87e830a2bd4f7427d5368f9049e0c33c68b5e11ce7b5732a976354ae6bef3",
+        "png": "a81aea289f8ae53c07631fde696ba91cbe18dce9faee86f52eec439bf372e4d7"
+      },
+      "figure_sha256": {
+        "pdf": "063204ef7c16dc533e05c01f194653250740ab5912424a8967e3e33ec02094a9",
+        "svg": "17c87e830a2bd4f7427d5368f9049e0c33c68b5e11ce7b5732a976354ae6bef3",
+        "png": "a81aea289f8ae53c07631fde696ba91cbe18dce9faee86f52eec439bf372e4d7"
+      },
+      "pdf_fonts_embedded": [
+        "/EMBBZB+TimesNewRomanPSMT"
+      ],
+      "pdf_type3_fonts": false,
+      "pdf_image_xobjects": 0,
+      "svg_live_text_count": 21,
+      "fixed_width_no_tight_bbox": true,
+      "all_visible_text_within_canvas": true,
+      "visual_signoff": false,
+      "agent_registry": "source_data/v22_figures/main/LAYOUT_AND_CAPTIONS.json",
+      "tex": "sections/05_evaluation.tex",
+      "label": "fig:mechanism-main",
+      "document": "main.tex",
+      "parent_v22_stem": "fig_ownership_repeated_v22",
+      "caption_words": 38
+    },
+    {
+      "old_stem": "fig_fair_baselines_v22",
+      "new_stem": "fig_fair_baselines_v23",
+      "outer_rows": 2,
+      "outer_columns": 2,
+      "rows": 2,
+      "cols": 2,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.85,
+      "minimum_font_pt": 8.0,
+      "preferred_font_pt": 9.0,
+      "caption_plain": "7B Adaptive/comparator ratios by input family, quota and endpoint. Cells retain the mean, four process points and range. Colour and glyphs use a piecewise log2 scale centred at one; below/above-one domains each occupy half the scale. Blue favours Adaptive, ochre the comparator. The outlined instruction 4$\\times$ cohort cell is 1.031.",
+      "caption_tex": "7B Adaptive/comparator ratios by input family, quota and endpoint. Cells retain the mean, four process points and range. Colour and glyphs use a piecewise log2 scale centred at one; below/above-one domains each occupy half the scale. Blue favours Adaptive, ochre the comparator. The outlined instruction 4$\\times$ cohort cell is 1.031.",
+      "encoding": "Annotated geometric-mean vector heatmap with four non-touching filled process points and observed range",
+      "source_sha256": {
+        "source_data/v18_verified/baselines/all_pairs.csv": "6c3ba01fe3240dd52f91bfd3e075b0903aa26f853561a99f6f3fb369a89f3ee2",
+        "source_data/v18_verified/baselines/all_services.csv": "cf498b57a26a918b7af4e998c2561f36ca5a9304d1493bdd20630f2ec6762196",
+        "source_data/v18_verified/baselines/FINAL_NUMERIC_READOUT.json": "a4b272afdf590ca988bac870667d5fc9a14997530e555d19428867e9e92781a4",
+        "source_data/v18_verified/baselines/PROTOCOL.json": "2f6d76c82967dd877e785cb00a746c68cd1a8f340ae830b2fb46a82b4c6d0e7f"
+      },
+      "data_paths": [
+        "source_data/v18_verified/baselines/all_pairs.csv",
+        "source_data/v18_verified/baselines/all_services.csv",
+        "source_data/v18_verified/baselines/FINAL_NUMERIC_READOUT.json",
+        "source_data/v18_verified/baselines/PROTOCOL.json"
+      ],
+      "plot_data_path": "source_data/v23_concision/matrix_redraw/plotrows.json",
+      "raw_displayed_point_count": 144,
+      "plot_group_count": 36,
+      "output_sha256": {
+        "pdf": "04a91e96d978375c115a4c2c0f76e8b611f9e181193425e91d78ab91bdb6ed19",
+        "svg": "cd5081ceb226f41a025b132e3b604a62867d0fa6cf84963a916f889d718d5813",
+        "png": "ef68eb26c957fd9151d3dbb675e29e9bbc64430969406b1df9c11f98bdfd8661"
+      },
+      "figure_sha256": {
+        "pdf": "04a91e96d978375c115a4c2c0f76e8b611f9e181193425e91d78ab91bdb6ed19",
+        "svg": "cd5081ceb226f41a025b132e3b604a62867d0fa6cf84963a916f889d718d5813",
+        "png": "ef68eb26c957fd9151d3dbb675e29e9bbc64430969406b1df9c11f98bdfd8661"
+      },
+      "pdf_fonts_embedded": [
+        "/GHBUSP+TimesNewRomanPSMT"
+      ],
+      "pdf_type3_fonts": false,
+      "pdf_image_xobjects": 0,
+      "svg_live_text_count": 65,
+      "fixed_width_no_tight_bbox": true,
+      "all_visible_text_within_canvas": true,
+      "visual_signoff": false,
+      "shared_log2_ratio_limits": [
+        -6,
+        2
+      ],
+      "shared_ratio_limits": [
+        0.015625,
+        4
+      ],
+      "normalization": "TwoSlopeNorm(log2(ratio)): equality at midpoint; negative and positive spans occupy half each",
+      "small_font_scope": "8pt numeric matrix cell values only; all other text is 9pt",
+      "all_source_pair_contrasts_recomputed": 144,
+      "native_constant_repeats_not_duplicated": true,
+      "equal_family_baseline_table": [
+        {
+          "quota": 1,
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "cohort_ratio": 0.6735224689729291,
+          "brief_ratio": 0.28887716790743684
+        },
+        {
+          "quota": 1,
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "cohort_ratio": 0.5504413267140029,
+          "brief_ratio": 0.030050034437044924
+        },
+        {
+          "quota": 1,
+          "target": "adaptive",
+          "baseline": "native",
+          "cohort_ratio": 1.8899437272910051,
+          "brief_ratio": 0.45112839765855833
+        },
+        {
+          "quota": 2,
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "cohort_ratio": 0.9600435887679011,
+          "brief_ratio": 0.941833127609854
+        },
+        {
+          "quota": 2,
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "cohort_ratio": 0.5323196770011724,
+          "brief_ratio": 0.09721385759269083
+        },
+        {
+          "quota": 2,
+          "target": "adaptive",
+          "baseline": "native",
+          "cohort_ratio": 1.2639243933846387,
+          "brief_ratio": 1.2052847861645928
+        },
+        {
+          "quota": 4,
+          "target": "adaptive",
+          "baseline": "banker_c0",
+          "cohort_ratio": 0.9482659036246501,
+          "brief_ratio": 0.9377162674300065
+        },
+        {
+          "quota": 4,
+          "target": "adaptive",
+          "baseline": "hard_reserve",
+          "cohort_ratio": 0.8257345660263731,
+          "brief_ratio": 0.27614660948387704
+        },
+        {
+          "quota": 4,
+          "target": "adaptive",
+          "baseline": "native",
+          "cohort_ratio": 1.1904601133748147,
+          "brief_ratio": 1.1976003188391247
+        }
+      ],
+      "transparent_companion_files": {
+        "source_data/v22_figures/main/plotrows/baselines_all_services.csv": "cf498b57a26a918b7af4e998c2561f36ca5a9304d1493bdd20630f2ec6762196",
+        "source_data/v22_figures/main/plotrows/baselines_all_pairs.csv": "6c3ba01fe3240dd52f91bfd3e075b0903aa26f853561a99f6f3fb369a89f3ee2"
+      },
+      "agent_registry": "source_data/v22_figures/main/LAYOUT_AND_CAPTIONS.json",
+      "tex": "sections/05_evaluation.tex",
+      "label": "fig:quota-main",
+      "document": "main.tex",
+      "parent_v22_stem": "fig_fair_baselines_v22",
+      "repeat_marker_diameter_pt": 1.25,
+      "repeat_marker_vertical_spacing_cell": 0.11,
+      "no_observations_or_statistics_changed": true,
+      "parent_v22_plot_values_identical": true,
+      "caption_words": 54
+    },
+    {
+      "old_stem": "fig_scale14b_v22",
+      "new_stem": "fig_scale14b_v23",
+      "outer_rows": 2,
+      "outer_columns": 2,
+      "rows": 2,
+      "cols": 2,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.85,
+      "minimum_font_pt": 8.0,
+      "preferred_font_pt": 9.0,
+      "caption_plain": "14B transfer at the two measured quotas. Rows identify methods normalized to matched Native; panels separate input families and endpoints. Cells retain all four process ratios, using the piecewise log2 encoding of Fig.~\\ref{fig:quota-main}.",
+      "caption_tex": "14B transfer at the two measured quotas. Rows identify methods normalized to matched Native; panels separate input families and endpoints. Cells retain all four process ratios, using the piecewise log2 encoding of Fig.~\\ref{fig:quota-main}.",
+      "encoding": "Annotated geometric-mean vector heatmap with four non-touching filled process points and observed range",
+      "source_sha256": {
+        "source_data/v18_verified/scale14b/all_pairs.csv": "eca3fc5f0bd17c8a9107a960106c47ae9e0cbd3fcc22e048239e9b1904e6a550",
+        "source_data/v18_verified/scale14b/all_services.csv": "9f75a4f0ff7d2ef9e0cb5dca9fa30fa715dadf833766b2f036954b6649332845",
+        "source_data/v18_verified/scale14b/FINAL_NUMERIC_READOUT.json": "8377712f41245f53d4a7c2de68fe56aa2e8b6684989e4cfeffb3d0aa1361412b",
+        "source_data/v18_verified/scale14b/PROTOCOL.json": "40e5c2f3c71fb033a6566147e943e77755e1bd13ec359d11e0cc8e373cd90fe7"
+      },
+      "data_paths": [
+        "source_data/v18_verified/scale14b/all_pairs.csv",
+        "source_data/v18_verified/scale14b/all_services.csv",
+        "source_data/v18_verified/scale14b/FINAL_NUMERIC_READOUT.json",
+        "source_data/v18_verified/scale14b/PROTOCOL.json"
+      ],
+      "plot_data_path": "source_data/v23_concision/matrix_redraw/plotrows.json",
+      "raw_displayed_point_count": 96,
+      "plot_group_count": 24,
+      "output_sha256": {
+        "pdf": "0418cc27acbb29a9d72fb3b5e6d582e35c5ef09ec4612cd44e51e035ca342304",
+        "svg": "0ee70eaeb6ca6d9133f6d7f0ac53ae496462757ff47170f855302aab055980aa",
+        "png": "7a709bafcc9ea7c186e73b109af693fa48646006f503561df67fc888ad419ed9"
+      },
+      "figure_sha256": {
+        "pdf": "0418cc27acbb29a9d72fb3b5e6d582e35c5ef09ec4612cd44e51e035ca342304",
+        "svg": "0ee70eaeb6ca6d9133f6d7f0ac53ae496462757ff47170f855302aab055980aa",
+        "png": "7a709bafcc9ea7c186e73b109af693fa48646006f503561df67fc888ad419ed9"
+      },
+      "pdf_fonts_embedded": [
+        "/BNGVMQ+TimesNewRomanPSMT"
+      ],
+      "pdf_type3_fonts": false,
+      "pdf_image_xobjects": 0,
+      "svg_live_text_count": 49,
+      "fixed_width_no_tight_bbox": true,
+      "all_visible_text_within_canvas": true,
+      "visual_signoff": false,
+      "shared_log2_ratio_limits": [
+        -4,
+        2
+      ],
+      "shared_ratio_limits": [
+        0.0625,
+        4
+      ],
+      "normalization": "TwoSlopeNorm(log2(ratio)): equality at midpoint; negative and positive spans occupy half each",
+      "small_font_scope": "8pt numeric matrix cell values only; all other text is 9pt",
+      "all_source_pair_contrasts_recomputed": 96,
+      "native_constant_repeats_not_duplicated": true,
+      "transparent_companion_files": {
+        "source_data/v22_figures/main/plotrows/scale14b_all_services.csv": "9f75a4f0ff7d2ef9e0cb5dca9fa30fa715dadf833766b2f036954b6649332845",
+        "source_data/v22_figures/main/plotrows/scale14b_all_pairs.csv": "eca3fc5f0bd17c8a9107a960106c47ae9e0cbd3fcc22e048239e9b1904e6a550"
+      },
+      "agent_registry": "source_data/v22_figures/main/LAYOUT_AND_CAPTIONS.json",
+      "tex": "sections/05_evaluation.tex",
+      "label": "fig:scale-transfer",
+      "document": "main.tex",
+      "parent_v22_stem": "fig_scale14b_v22",
+      "repeat_marker_diameter_pt": 1.25,
+      "repeat_marker_vertical_spacing_cell": 0.11,
+      "no_observations_or_statistics_changed": true,
+      "parent_v22_plot_values_identical": true,
+      "caption_words": 36
+    },
+    {
+      "old_stem": "fig_runtime_ledger_v21",
+      "new_stem": "fig_runtime_ledger_v22",
+      "outer_rows": 2,
+      "outer_columns": 1,
+      "rows": 2,
+      "cols": 1,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 3.75,
+      "minimum_font_pt": 9.0,
+      "preferred_font_pt": 9.0,
+      "caption_plain": "Fresh-input 4$\\times$ ledger, with input families stacked. Left: arithmetic mean cohort time partitioned into recorded scheduling and remaining service, with all 36 endpoints. Right: scheduling milliseconds per call, means and six process observations on a logarithmic axis. Off/on share the same policy.",
+      "caption_tex": "Fresh-input 4$\\times$ ledger, with input families stacked. Left: arithmetic mean cohort time partitioned into recorded scheduling and remaining service, with all 36 endpoints. Right: scheduling milliseconds per call, means and six process observations on a logarithmic axis. Off/on share the same policy.",
+      "encoding": "Stacked measured wall-time ledger and six-run ms/call observed-point strips; two stacked panels",
+      "source_sha256": {
+        "experiments/v20_review/runtime_statistics/output/runtime_factor4_per_service.csv": "0b519d27d7dd183a45661299fceb3a32fe26a4d76974a4b0ff6a1ed471e975ff",
+        "experiments/v20_review/runtime_statistics/output/RUNTIME_ACCOUNTING.json": "66619b97358d087ebe4df0b1658d901b09d86c24d938f1d0a8696349e52c84c6"
+      },
+      "data_paths": [
+        "experiments/v20_review/runtime_statistics/output/runtime_factor4_per_service.csv",
+        "experiments/v20_review/runtime_statistics/output/RUNTIME_ACCOUNTING.json"
+      ],
+      "plot_data_path": "source_data/v22_figures/main/plotrows.json",
+      "raw_displayed_point_count": 72,
+      "plot_group_count": 6,
+      "output_sha256": {
+        "pdf": "1837788c942175cdb7a34a4c6335cc587d2eca5ff80e065418d1f0384b5f7fa1",
+        "svg": "04d7f23f689f13c7bdce0f48c20e5c64d8eae904db7b449b100bd92c2278408c",
+        "png": "68d7fc755f878ae12407bccb532fec3bc2b84f28ea85172303d709e2b42dbb76"
+      },
+      "figure_sha256": {
+        "pdf": "1837788c942175cdb7a34a4c6335cc587d2eca5ff80e065418d1f0384b5f7fa1",
+        "svg": "04d7f23f689f13c7bdce0f48c20e5c64d8eae904db7b449b100bd92c2278408c",
+        "png": "68d7fc755f878ae12407bccb532fec3bc2b84f28ea85172303d709e2b42dbb76"
+      },
+      "pdf_fonts_embedded": [
+        "/BVJCLF+TimesNewRomanPSMT"
+      ],
+      "pdf_type3_fonts": false,
+      "pdf_image_xobjects": 0,
+      "svg_live_text_count": 32,
+      "fixed_width_no_tight_bbox": true,
+      "all_visible_text_within_canvas": true,
+      "visual_signoff": false,
+      "original_total_time_endpoints": 36,
+      "additional_actual_ms_per_call_endpoints": 36,
+      "per_call_mean_labels": [
+        "0.193",
+        "15.419",
+        "5.680",
+        "0.119",
+        "2.910",
+        "1.614"
+      ],
+      "agent_registry": "source_data/v22_figures/main/LAYOUT_AND_CAPTIONS.json",
+      "tex": "sections/05_evaluation.tex",
+      "label": "fig:runtime-diagnosis",
+      "document": "main.tex",
+      "parent_v22_stem": "fig_runtime_ledger_v22",
+      "caption_words": 44
+    },
+    {
+      "old_stem": "fig05_measured_matrix",
+      "new_stem": "fig05_measured_matrix_v22",
+      "panel_columns": 3,
+      "panel_rows": 1,
+      "span": "double",
+      "width_inches": 6.500000276740003,
+      "height_inches": 2.9,
+      "caption_en": "Archived 45-process comparison: five fresh processes per method/scenario. (a) Every cohort time, arithmetic mean and sample SD on a logarithmic axis; shading identifies scenarios. (b) SLO-qualified/completed request counts use TTFT \u22642 s and mean TPOT \u22640.1 s. (c) Shared-case repeated executed positions summed over five processes. Zero repeats do not imply lower cohort time; methods are complete configurations, not an isolated ownership-cost intervention.",
+      "interval_definition": "As explicitly identified in caption; no invented CI",
+      "exports": [
+        "figs/fig05_measured_matrix_v22.pdf",
+        "figs/fig05_measured_matrix_v22.svg",
+        "figs/fig05_measured_matrix_v22.png"
+      ],
+      "rows": 1,
+      "cols": 3,
+      "width_in": 6.500000276740003,
+      "height_in": 2.9,
+      "caption_plain": "Archived comparison of 45 processes, five per method/scenario. (a) Individual cohort times, arithmetic means and sample SD on a log axis; shading groups scenarios. (b) SLO-qualified/completed counts, using TTFT $\\le$2 s and mean TPOT $\\le$0.1 s. (c) Shared-case repeated executed positions summed over five processes.",
+      "caption_tex": "Archived comparison of 45 processes, five per method/scenario. (a) Individual cohort times, arithmetic means and sample SD on a log axis; shading groups scenarios. (b) SLO-qualified/completed counts, using TTFT $\\le$2 s and mean TPOT $\\le$0.1 s. (c) Shared-case repeated executed positions summed over five processes.",
+      "plot_data_path": "source_data/v22_figures/legacy/plotrows.json",
+      "source_sha256": {
+        "source_data/figure_inputs/recomputed_effect_v12_20261028.json": "ea7e0dc47cd902c5151a3b9fb693dfffa487c6a01e11d12173ad0aca290b31b5",
+        "source_data/figure_inputs/rechecked_holdout_20261028.json": "1558fb81509ca73a74f77528404ad618094bdc8e27739d833f6ebc7a5e7910f4",
+        "source_data/figure_inputs/comparison.json": "0dd37e990b1035829adf4433fdbf3e6fd0c4d6d2199a6ee0a18c00751722da45",
+        "source_data/figure_inputs/dual_engine_probe.json": "c2b080173ee7df73d8602ce56e7f80d7e73e1d7c0af28f52e217e147efb212f3",
+        "source_data/figure_inputs/arrival_trace.json": "b7be9d41d4c0102be75f95450574a787d6466f6726812322df4a5084910b655b",
+        "source_data/figure_inputs/output_receipts.jsonl": "0ebef387370e1be102e344cb73fb0fed1d7944088a5500734bea66bfab28d8ae",
+        "source_data/fig04_ownership.json": "5b7ce8062a1e64e46fd0c800adeb20ffa51468f2636b1d7c6bdb72d428bee50c",
+        "source_data/figure_inputs/fig02_hardware.json": "830d1efcff85b69c7beb92790a94988796603b6aac3f3df201b9690b895dad07",
+        "source_data/fig03_theory.json": "c97f4f7ab50b76e55dae9c99aad1c4e70345ba1fb86cf96eb97caf44760213d5",
+        "experiments/routing/results/controlled_runs.csv": "e71463b618de2bf1f36388723944f0a2d9451740a789f4a8619e377e8f38f444"
+      },
+      "figure_sha256": {
+        "pdf": "3c7c26c939783978e68ffc94d543c271e837253c79f0c11eeb35c5b199f38d34",
+        "svg": "3bd9ab7b6f49d5d52d5d03721d8489ee504a7f833e5071866f1284990b00b8c3",
+        "png": "8e7349d0cb4c341953b78dea526db2c65f134fc2925f0feffc0ad9997e9967cf"
+      },
+      "minimum_font_pt": 8.0,
+      "asset_sha256": {
+        "pdf": "3c7c26c939783978e68ffc94d543c271e837253c79f0c11eeb35c5b199f38d34",
+        "svg": "3bd9ab7b6f49d5d52d5d03721d8489ee504a7f833e5071866f1284990b00b8c3",
+        "png": "8e7349d0cb4c341953b78dea526db2c65f134fc2925f0feffc0ad9997e9967cf"
+      },
+      "agent_registry": "source_data/v22_figures/legacy/registry.json",
+      "tex": "sections/legacy_5090_evaluation.tex",
+      "label": "legacy:fig:measured",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig05_measured_matrix_v22",
+      "caption_words": 50
+    },
+    {
+      "old_stem": "fig07_cost_and_outputs",
+      "new_stem": "fig07_cost_and_outputs_v22",
+      "panel_columns": 3,
+      "panel_rows": 1,
+      "span": "double",
+      "width_inches": 6.500000276740003,
+      "height_inches": 2.78,
+      "caption_en": "Archived cost and output audit, retaining all unfavorable cells. (a) Arithmetic mean cumulative scheduling plus nonempty result-processing time per run (five processes); colors use a logarithmic seconds scale. This is not single-cycle latency or total CPU utilization. (b) Shared-case confirmed executed positions; hatch denotes repeated positions. (c) Exact-sequence/completed counts against matched Native; the starred Native row is a reference identity, not an independent exactness test. Different sequences remain visible even when token counts agree.",
+      "interval_definition": "As explicitly identified in caption; no invented CI",
+      "exports": [
+        "figs/fig07_cost_and_outputs_v22.pdf",
+        "figs/fig07_cost_and_outputs_v22.svg",
+        "figs/fig07_cost_and_outputs_v22.png"
+      ],
+      "rows": 1,
+      "cols": 3,
+      "width_in": 6.500000276740003,
+      "height_in": 2.78,
+      "caption_plain": "Archived cost and output audit. (a) Mean cumulative scheduling plus nonempty result-processing seconds per run over five processes, on one log colour scale. (b) Shared-case confirmed positions; hatching identifies repeats. (c) Exact-sequence/completed counts against matched Native. Native* marks reference identity; differing sequences remain visible despite equal token counts.",
+      "caption_tex": "Archived cost and output audit. (a) Mean cumulative scheduling plus nonempty result-processing seconds per run over five processes, on one log colour scale. (b) Shared-case confirmed positions; hatching identifies repeats. (c) Exact-sequence/completed counts against matched Native. Native* marks reference identity; differing sequences remain visible despite equal token counts.",
+      "plot_data_path": "source_data/v22_figures/legacy/plotrows.json",
+      "source_sha256": {
+        "source_data/figure_inputs/recomputed_effect_v12_20261028.json": "ea7e0dc47cd902c5151a3b9fb693dfffa487c6a01e11d12173ad0aca290b31b5",
+        "source_data/figure_inputs/rechecked_holdout_20261028.json": "1558fb81509ca73a74f77528404ad618094bdc8e27739d833f6ebc7a5e7910f4",
+        "source_data/figure_inputs/comparison.json": "0dd37e990b1035829adf4433fdbf3e6fd0c4d6d2199a6ee0a18c00751722da45",
+        "source_data/figure_inputs/dual_engine_probe.json": "c2b080173ee7df73d8602ce56e7f80d7e73e1d7c0af28f52e217e147efb212f3",
+        "source_data/figure_inputs/arrival_trace.json": "b7be9d41d4c0102be75f95450574a787d6466f6726812322df4a5084910b655b",
+        "source_data/figure_inputs/output_receipts.jsonl": "0ebef387370e1be102e344cb73fb0fed1d7944088a5500734bea66bfab28d8ae",
+        "source_data/fig04_ownership.json": "5b7ce8062a1e64e46fd0c800adeb20ffa51468f2636b1d7c6bdb72d428bee50c",
+        "source_data/figure_inputs/fig02_hardware.json": "830d1efcff85b69c7beb92790a94988796603b6aac3f3df201b9690b895dad07",
+        "source_data/fig03_theory.json": "c97f4f7ab50b76e55dae9c99aad1c4e70345ba1fb86cf96eb97caf44760213d5",
+        "experiments/routing/results/controlled_runs.csv": "e71463b618de2bf1f36388723944f0a2d9451740a789f4a8619e377e8f38f444"
+      },
+      "figure_sha256": {
+        "pdf": "f2de39c210406104871feaad54228ad55e07b6ff9c9bfb26e750ed701a412b57",
+        "svg": "b8ddc2f1bccd631cebdb8d490a5a305b3a93e96f344ec45a500076f4ba1b9970",
+        "png": "af848c3500a59a2b0d3e749cc7ad748652cc13ce219b9013b23725c14e057143"
+      },
+      "minimum_font_pt": 8.0,
+      "asset_sha256": {
+        "pdf": "f2de39c210406104871feaad54228ad55e07b6ff9c9bfb26e750ed701a412b57",
+        "svg": "b8ddc2f1bccd631cebdb8d490a5a305b3a93e96f344ec45a500076f4ba1b9970",
+        "png": "af848c3500a59a2b0d3e749cc7ad748652cc13ce219b9013b23725c14e057143"
+      },
+      "agent_registry": "source_data/v22_figures/legacy/registry.json",
+      "tex": "sections/legacy_5090_evaluation.tex",
+      "label": "legacy:fig:cost",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig07_cost_and_outputs_v22",
+      "caption_words": 49
+    },
+    {
+      "old_stem": "fig06_holdout",
+      "new_stem": "fig06_holdout_v22",
+      "panel_columns": 3,
+      "panel_rows": 1,
+      "span": "double",
+      "width_inches": 6.500000276740003,
+      "height_inches": 2.9,
+      "caption_en": "Frozen drain-trigger comparison on 48 new identities reused across 24 processes. (a,b) Lines join each distinct input cohort under D=64 (open) and D=256 (filled); upper labels give SLO-qualified/16 counts and lower labels the cohort-time percentage change. Cohort dispersion is not repeated-run uncertainty. (c) Pooled completed requests divided by summed process time, with pressure circles and roomy squares. Four of six direct D64/D256 pairs have output differences; these are complete-configuration sensitivities, not a scheduling-only causal effect or cross-GPU balancing result.",
+      "interval_definition": "As explicitly identified in caption; no invented CI",
+      "exports": [
+        "figs/fig06_holdout_v22.pdf",
+        "figs/fig06_holdout_v22.svg",
+        "figs/fig06_holdout_v22.png"
+      ],
+      "rows": 1,
+      "cols": 3,
+      "width_in": 6.500000276740003,
+      "height_in": 2.9,
+      "caption_plain": "Frozen drain-trigger comparison: 48 input identities across 24 processes. (a,b) Cohort-paired D=64 (open) and D=256 (filled) observations; labels give SLO-qualified/16 counts and cohort-time percentage changes. (c) Completed requests divided by summed process time; circles/squares identify pressure/roomy settings. Four of six D64/D256 pairs differ in output.",
+      "caption_tex": "Frozen drain-trigger comparison: 48 input identities across 24 processes. (a,b) Cohort-paired D=64 (open) and D=256 (filled) observations; labels give SLO-qualified/16 counts and cohort-time percentage changes. (c) Completed requests divided by summed process time; circles/squares identify pressure/roomy settings. Four of six D64/D256 pairs differ in output.",
+      "plot_data_path": "source_data/v22_figures/legacy/plotrows.json",
+      "source_sha256": {
+        "source_data/figure_inputs/recomputed_effect_v12_20261028.json": "ea7e0dc47cd902c5151a3b9fb693dfffa487c6a01e11d12173ad0aca290b31b5",
+        "source_data/figure_inputs/rechecked_holdout_20261028.json": "1558fb81509ca73a74f77528404ad618094bdc8e27739d833f6ebc7a5e7910f4",
+        "source_data/figure_inputs/comparison.json": "0dd37e990b1035829adf4433fdbf3e6fd0c4d6d2199a6ee0a18c00751722da45",
+        "source_data/figure_inputs/dual_engine_probe.json": "c2b080173ee7df73d8602ce56e7f80d7e73e1d7c0af28f52e217e147efb212f3",
+        "source_data/figure_inputs/arrival_trace.json": "b7be9d41d4c0102be75f95450574a787d6466f6726812322df4a5084910b655b",
+        "source_data/figure_inputs/output_receipts.jsonl": "0ebef387370e1be102e344cb73fb0fed1d7944088a5500734bea66bfab28d8ae",
+        "source_data/fig04_ownership.json": "5b7ce8062a1e64e46fd0c800adeb20ffa51468f2636b1d7c6bdb72d428bee50c",
+        "source_data/figure_inputs/fig02_hardware.json": "830d1efcff85b69c7beb92790a94988796603b6aac3f3df201b9690b895dad07",
+        "source_data/fig03_theory.json": "c97f4f7ab50b76e55dae9c99aad1c4e70345ba1fb86cf96eb97caf44760213d5",
+        "experiments/routing/results/controlled_runs.csv": "e71463b618de2bf1f36388723944f0a2d9451740a789f4a8619e377e8f38f444"
+      },
+      "figure_sha256": {
+        "pdf": "7a6d7907b311cb24388d4aafab99206ddd122fec82068c8e49769df946cec4db",
+        "svg": "00cc355f1159a51a916c678a49320cf513ee541f3d7141dce86b69f9fc1a7dcf",
+        "png": "8a8ed1979dc40ed63e4fc016f2b257ddc9bca7a8302f034e8c4011b53f59d9ef"
+      },
+      "minimum_font_pt": 8.0,
+      "asset_sha256": {
+        "pdf": "7a6d7907b311cb24388d4aafab99206ddd122fec82068c8e49769df946cec4db",
+        "svg": "00cc355f1159a51a916c678a49320cf513ee541f3d7141dce86b69f9fc1a7dcf",
+        "png": "8a8ed1979dc40ed63e4fc016f2b257ddc9bca7a8302f034e8c4011b53f59d9ef"
+      },
+      "agent_registry": "source_data/v22_figures/legacy/registry.json",
+      "tex": "sections/legacy_5090_evaluation.tex",
+      "label": "legacy:fig:holdout",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig06_holdout_v22",
+      "caption_words": 52
+    },
+    {
+      "old_stem": "fig08_two_worker_execution",
+      "new_stem": "fig08_two_worker_execution_v22",
+      "panel_columns": 1,
+      "panel_rows": 2,
+      "span": "single",
+      "width_inches": 3.16697799916978,
+      "height_inches": 4.22,
+      "caption_en": "Two vLLM engines sharing one RTX5090, using the client observation clock. (a) Gray segments run from offered arrival to admission; worker-colored segments run from admission to final delivery. Open circles, ticks and squares identify admission, first receipt and completion; endpoint labels count delivered tokens. (b) Worker and total delivered-token staircases preserve actual batched receipts; the gold right-axis staircase counts requests at recorded final-delivery times. No internal token-execution timing is inferred. Eight requests deliver 170 tokens and finish with no outstanding rights.",
+      "interval_definition": "As explicitly identified in caption; no invented CI",
+      "exports": [
+        "figs/fig08_two_worker_execution_v22.pdf",
+        "figs/fig08_two_worker_execution_v22.svg",
+        "figs/fig08_two_worker_execution_v22.png"
+      ],
+      "rows": 2,
+      "cols": 1,
+      "width_in": 3.16697799916978,
+      "height_in": 4.22,
+      "caption_plain": "Two vLLM engines sharing one RTX5090, on the client observation clock. (a) Gray segments show arrival-to-admission waits; worker colours show admission-to-final-delivery intervals. Circles/ticks/squares mark admission/first receipt/completion; endpoints show delivered-token counts. (b) Worker/total delivered-token staircases follow batched receipts; the gold right axis counts completed requests. Eight requests deliver 170 tokens.",
+      "caption_tex": "Two vLLM engines sharing one RTX5090, on the client observation clock. (a) Gray segments show arrival-to-admission waits; worker colours show admission-to-final-delivery intervals. Circles/ticks/squares mark admission/first receipt/completion; endpoints show delivered-token counts. (b) Worker/total delivered-token staircases follow batched receipts; the gold right axis counts completed requests. Eight requests deliver 170 tokens.",
+      "plot_data_path": "source_data/v22_figures/legacy/plotrows.json",
+      "source_sha256": {
+        "source_data/figure_inputs/recomputed_effect_v12_20261028.json": "ea7e0dc47cd902c5151a3b9fb693dfffa487c6a01e11d12173ad0aca290b31b5",
+        "source_data/figure_inputs/rechecked_holdout_20261028.json": "1558fb81509ca73a74f77528404ad618094bdc8e27739d833f6ebc7a5e7910f4",
+        "source_data/figure_inputs/comparison.json": "0dd37e990b1035829adf4433fdbf3e6fd0c4d6d2199a6ee0a18c00751722da45",
+        "source_data/figure_inputs/dual_engine_probe.json": "c2b080173ee7df73d8602ce56e7f80d7e73e1d7c0af28f52e217e147efb212f3",
+        "source_data/figure_inputs/arrival_trace.json": "b7be9d41d4c0102be75f95450574a787d6466f6726812322df4a5084910b655b",
+        "source_data/figure_inputs/output_receipts.jsonl": "0ebef387370e1be102e344cb73fb0fed1d7944088a5500734bea66bfab28d8ae",
+        "source_data/fig04_ownership.json": "5b7ce8062a1e64e46fd0c800adeb20ffa51468f2636b1d7c6bdb72d428bee50c",
+        "source_data/figure_inputs/fig02_hardware.json": "830d1efcff85b69c7beb92790a94988796603b6aac3f3df201b9690b895dad07",
+        "source_data/fig03_theory.json": "c97f4f7ab50b76e55dae9c99aad1c4e70345ba1fb86cf96eb97caf44760213d5",
+        "experiments/routing/results/controlled_runs.csv": "e71463b618de2bf1f36388723944f0a2d9451740a789f4a8619e377e8f38f444"
+      },
+      "figure_sha256": {
+        "pdf": "29ea68c8d24ec6e0f6701cb0f9f738ef4e34f8a99cf402a6e79a16ddb664d128",
+        "svg": "c0558287c718fb74fbd80c7b686940e0decc7872b9676cab949d15dd8731f7cf",
+        "png": "8cdd8646149d2c57a618522f8206c4d06e880272af89eeb957083a7ed24e6e38"
+      },
+      "minimum_font_pt": 8.0,
+      "asset_sha256": {
+        "pdf": "29ea68c8d24ec6e0f6701cb0f9f738ef4e34f8a99cf402a6e79a16ddb664d128",
+        "svg": "c0558287c718fb74fbd80c7b686940e0decc7872b9676cab949d15dd8731f7cf",
+        "png": "8cdd8646149d2c57a618522f8206c4d06e880272af89eeb957083a7ed24e6e38"
+      },
+      "agent_registry": "source_data/v22_figures/legacy/registry.json",
+      "tex": "sections/legacy_5090_evaluation.tex",
+      "label": "legacy:fig:workers",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig08_two_worker_execution_v22",
+      "caption_words": 54
+    },
+    {
+      "old_stem": "fig02_hardware",
+      "new_stem": "fig02_hardware_v22",
+      "panel_columns": 1,
+      "panel_rows": 1,
+      "width_inches": 3.16697799916978,
+      "height_inches": 2.68,
+      "span": "single",
+      "minimum_font_pt": 8.0,
+      "caption": "Archived backend-latency proxies on separate hosts and configurations. Rows identify GPUs and columns model sizes; vector cells show completed-request medians in milliseconds and record counts n. A single global color scale is used. Hatched cells mean not recorded, not zero or failure. These are neither streaming TTFT/TPOT measurements nor a matched heterogeneous-serving comparison. The repeated scaling view is omitted without removing any measured cell.",
+      "assets": [
+        "figs/fig02_hardware_v22.pdf",
+        "figs/fig02_hardware_v22.svg",
+        "figs/fig02_hardware_v22.png"
+      ],
+      "fonts": "Times New Roman; math Computer Modern",
+      "intervals": "Observed sample SD or archived setting min/max, as specifically labelled; no CI.",
+      "data_scope": "Archived batch/backend latency proxies. Different runtimes/configurations; not streaming TTFT/TPOT or an end-to-end heterogeneous deployment comparison.",
+      "caption_en": "Archived backend-latency proxies on separate hosts and configurations. Rows identify GPUs and columns model sizes; vector cells show completed-request medians in milliseconds and record counts n. A single global color scale is used. Hatched cells mean not recorded, not zero or failure. These are neither streaming TTFT/TPOT measurements nor a matched heterogeneous-serving comparison. The repeated scaling view is omitted without removing any measured cell.",
+      "rows": 1,
+      "cols": 1,
+      "width_in": 3.16697799916978,
+      "height_in": 2.68,
+      "caption_plain": "Archived backend-latency proxies from separate host/configuration settings. Rows identify GPUs and columns model sizes; each cell gives the completed-request median in milliseconds and record count $n$. One global colour scale covers recorded cells; hatching identifies unrecorded combinations.",
+      "caption_tex": "Archived backend-latency proxies from separate host/configuration settings. Rows identify GPUs and columns model sizes; each cell gives the completed-request median in milliseconds and record count $n$. One global colour scale covers recorded cells; hatching identifies unrecorded combinations.",
+      "plot_data_path": "source_data/v22_figures/legacy/plotrows.json",
+      "source_sha256": {
+        "source_data/figure_inputs/recomputed_effect_v12_20261028.json": "ea7e0dc47cd902c5151a3b9fb693dfffa487c6a01e11d12173ad0aca290b31b5",
+        "source_data/figure_inputs/rechecked_holdout_20261028.json": "1558fb81509ca73a74f77528404ad618094bdc8e27739d833f6ebc7a5e7910f4",
+        "source_data/figure_inputs/comparison.json": "0dd37e990b1035829adf4433fdbf3e6fd0c4d6d2199a6ee0a18c00751722da45",
+        "source_data/figure_inputs/dual_engine_probe.json": "c2b080173ee7df73d8602ce56e7f80d7e73e1d7c0af28f52e217e147efb212f3",
+        "source_data/figure_inputs/arrival_trace.json": "b7be9d41d4c0102be75f95450574a787d6466f6726812322df4a5084910b655b",
+        "source_data/figure_inputs/output_receipts.jsonl": "0ebef387370e1be102e344cb73fb0fed1d7944088a5500734bea66bfab28d8ae",
+        "source_data/fig04_ownership.json": "5b7ce8062a1e64e46fd0c800adeb20ffa51468f2636b1d7c6bdb72d428bee50c",
+        "source_data/figure_inputs/fig02_hardware.json": "830d1efcff85b69c7beb92790a94988796603b6aac3f3df201b9690b895dad07",
+        "source_data/fig03_theory.json": "c97f4f7ab50b76e55dae9c99aad1c4e70345ba1fb86cf96eb97caf44760213d5",
+        "experiments/routing/results/controlled_runs.csv": "e71463b618de2bf1f36388723944f0a2d9451740a789f4a8619e377e8f38f444"
+      },
+      "figure_sha256": {
+        "pdf": "6b39be7e308cdf8625aab82506fab4bea135d32355148c416501463e476186b0",
+        "svg": "f4664ef49a3f5ed21974542d7744fac94e98190ebce226564b324685ca6436a9",
+        "png": "d9bd9a538d209ce518721997b76db283634fab3eb559ac4b953539c654bdaf38"
+      },
+      "asset_sha256": {
+        "pdf": "6b39be7e308cdf8625aab82506fab4bea135d32355148c416501463e476186b0",
+        "svg": "f4664ef49a3f5ed21974542d7744fac94e98190ebce226564b324685ca6436a9",
+        "png": "d9bd9a538d209ce518721997b76db283634fab3eb559ac4b953539c654bdaf38"
+      },
+      "agent_registry": "source_data/v22_figures/legacy/registry.json",
+      "tex": "sections/supporting_proposals.tex",
+      "label": "fig:hardware",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig02_hardware_v22",
+      "caption_words": 38
+    },
+    {
+      "old_stem": "fig03_theory_executed",
+      "new_stem": "fig03_theory_executed_v22",
+      "panel_columns": 3,
+      "panel_rows": 1,
+      "width_inches": 6.500000276740003,
+      "height_inches": 3.0,
+      "span": "double",
+      "minimum_font_pt": 8.0,
+      "caption": "Supporting CPU calculations and controlled policy execution, not GPU-serving benchmarks. (a) Median reserve-reduction arithmetic across archived settings; shaded bands show setting minima and maxima, not confidence intervals. (b) Actually executed routing at alpha=0.025 and zero label noise, with the expectation alpha*T/2 as a dotted reference. (c) Label-noise control at T=10,000. Panels (b,c) retain all 20 seed observations as open points and display means with sample SD. Queue, Locality, Flat collapsed and Typed no residual coincide exactly; TypedRoute and Flat sufficient coincide exactly. Coincident methods are grouped only after checking every corresponding archived record. No curve is a live heterogeneous-GPU result.",
+      "assets": [
+        "figs/fig03_theory_executed_v22.pdf",
+        "figs/fig03_theory_executed_v22.svg",
+        "figs/fig03_theory_executed_v22.png"
+      ],
+      "fonts": "Times New Roman; math Computer Modern",
+      "intervals": "Observed sample SD or archived setting min/max, as specifically labelled; no CI.",
+      "data_scope": "Controlled CPU arithmetic and executed routing; no GPU measurement. Identical method groups verified recordwise.",
+      "caption_en": "Supporting CPU calculations and controlled policy execution, not GPU-serving benchmarks. (a) Median reserve-reduction arithmetic across archived settings; shaded bands show setting minima and maxima, not confidence intervals. (b) Actually executed routing at alpha=0.025 and zero label noise, with the expectation alpha*T/2 as a dotted reference. (c) Label-noise control at T=10,000. Panels (b,c) retain all 20 seed observations as open points and display means with sample SD. Queue, Locality, Flat collapsed and Typed no residual coincide exactly; TypedRoute and Flat sufficient coincide exactly. Coincident methods are grouped only after checking every corresponding archived record. No curve is a live heterogeneous-GPU result.",
+      "rows": 1,
+      "cols": 3,
+      "width_in": 6.500000276740003,
+      "height_in": 3.0,
+      "caption_plain": "Supporting CPU calculations and controlled policy execution. (a) Median reserve reduction across archived settings; shading spans setting minima/maxima. (b) Executed routing at $\\alpha=0.025$, zero label noise and reference $\\alpha T/2$ (dotted). (c) Label-noise control at $T=10{,}000$. Panels (b,c) retain all 20 seed observations, means and sample SD; coincident methods share legend groups.",
+      "caption_tex": "Supporting CPU calculations and controlled policy execution. (a) Median reserve reduction across archived settings; shading spans setting minima/maxima. (b) Executed routing at $\\alpha=0.025$, zero label noise and reference $\\alpha T/2$ (dotted). (c) Label-noise control at $T=10{,}000$. Panels (b,c) retain all 20 seed observations, means and sample SD; coincident methods share legend groups.",
+      "plot_data_path": "source_data/v22_figures/legacy/plotrows.json",
+      "source_sha256": {
+        "source_data/figure_inputs/recomputed_effect_v12_20261028.json": "ea7e0dc47cd902c5151a3b9fb693dfffa487c6a01e11d12173ad0aca290b31b5",
+        "source_data/figure_inputs/rechecked_holdout_20261028.json": "1558fb81509ca73a74f77528404ad618094bdc8e27739d833f6ebc7a5e7910f4",
+        "source_data/figure_inputs/comparison.json": "0dd37e990b1035829adf4433fdbf3e6fd0c4d6d2199a6ee0a18c00751722da45",
+        "source_data/figure_inputs/dual_engine_probe.json": "c2b080173ee7df73d8602ce56e7f80d7e73e1d7c0af28f52e217e147efb212f3",
+        "source_data/figure_inputs/arrival_trace.json": "b7be9d41d4c0102be75f95450574a787d6466f6726812322df4a5084910b655b",
+        "source_data/figure_inputs/output_receipts.jsonl": "0ebef387370e1be102e344cb73fb0fed1d7944088a5500734bea66bfab28d8ae",
+        "source_data/fig04_ownership.json": "5b7ce8062a1e64e46fd0c800adeb20ffa51468f2636b1d7c6bdb72d428bee50c",
+        "source_data/figure_inputs/fig02_hardware.json": "830d1efcff85b69c7beb92790a94988796603b6aac3f3df201b9690b895dad07",
+        "source_data/fig03_theory.json": "c97f4f7ab50b76e55dae9c99aad1c4e70345ba1fb86cf96eb97caf44760213d5",
+        "experiments/routing/results/controlled_runs.csv": "e71463b618de2bf1f36388723944f0a2d9451740a789f4a8619e377e8f38f444"
+      },
+      "figure_sha256": {
+        "pdf": "917c1bb105986bf51651104663ace02a961e59892e27db17a34c3008905b46c9",
+        "svg": "40be280cde3e5be28fcbff91c6c735910d7610bdf60c380f9ab712ee65c3b558",
+        "png": "86ecd1b64a3207e6187b2813446b7becd4a52f421b0deddb336a8d34ca81bdcf"
+      },
+      "asset_sha256": {
+        "pdf": "917c1bb105986bf51651104663ace02a961e59892e27db17a34c3008905b46c9",
+        "svg": "40be280cde3e5be28fcbff91c6c735910d7610bdf60c380f9ab712ee65c3b558",
+        "png": "86ecd1b64a3207e6187b2813446b7becd4a52f421b0deddb336a8d34ca81bdcf"
+      },
+      "agent_registry": "source_data/v22_figures/legacy/registry.json",
+      "tex": "sections/supporting_proposals.tex",
+      "label": "fig:theory",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig03_theory_executed_v22",
+      "caption_words": 59
+    },
+    {
+      "old_stem": "fig05_C_single_column",
+      "new_stem": "fig05_C_single_column_v22",
+      "panel_columns": 1,
+      "panel_rows": 2,
+      "span": "single",
+      "width_inches": 3.16697799916978,
+      "height_inches": 3.1,
+      "caption_en": "Constructed ownership diagnostic from six 12-request runs. (a) Points give gain/recorded-snapshot percentages; connecting segments span the two measured settings and are not uncertainty intervals. (b) Exact numerators and denominators preserve unequal snapshot counts. The 58 correlated gain observations represent 11 distinct positive rank-labeled states; no independent-snapshot inference is made. All 72 requests, including the 36 EOS-enabled requests, stop at their caps.",
+      "interval_definition": "As explicitly identified in caption; no invented CI",
+      "exports": [
+        "figs/fig05_C_single_column_v22.pdf",
+        "figs/fig05_C_single_column_v22.svg",
+        "figs/fig05_C_single_column_v22.png"
+      ],
+      "rows": 2,
+      "cols": 1,
+      "width_in": 3.16697799916978,
+      "height_in": 3.1,
+      "caption_plain": "Constructed ownership diagnostic: six 12-request runs. (a) Gain/recorded-snapshot percentages, with segments joining two measured settings. (b) Exact numerators and denominators retain unequal snapshot counts. The 58 gain observations cover 11 distinct positive rank-labelled states. All 72 requests, including 36 with EOS enabled, reach their caps.",
+      "caption_tex": "Constructed ownership diagnostic: six 12-request runs. (a) Gain/recorded-snapshot percentages, with segments joining two measured settings. (b) Exact numerators and denominators retain unequal snapshot counts. The 58 gain observations cover 11 distinct positive rank-labelled states. All 72 requests, including 36 with EOS enabled, reach their caps.",
+      "plot_data_path": "source_data/v22_figures/legacy/plotrows.json",
+      "source_sha256": {
+        "source_data/figure_inputs/recomputed_effect_v12_20261028.json": "ea7e0dc47cd902c5151a3b9fb693dfffa487c6a01e11d12173ad0aca290b31b5",
+        "source_data/figure_inputs/rechecked_holdout_20261028.json": "1558fb81509ca73a74f77528404ad618094bdc8e27739d833f6ebc7a5e7910f4",
+        "source_data/figure_inputs/comparison.json": "0dd37e990b1035829adf4433fdbf3e6fd0c4d6d2199a6ee0a18c00751722da45",
+        "source_data/figure_inputs/dual_engine_probe.json": "c2b080173ee7df73d8602ce56e7f80d7e73e1d7c0af28f52e217e147efb212f3",
+        "source_data/figure_inputs/arrival_trace.json": "b7be9d41d4c0102be75f95450574a787d6466f6726812322df4a5084910b655b",
+        "source_data/figure_inputs/output_receipts.jsonl": "0ebef387370e1be102e344cb73fb0fed1d7944088a5500734bea66bfab28d8ae",
+        "source_data/fig04_ownership.json": "5b7ce8062a1e64e46fd0c800adeb20ffa51468f2636b1d7c6bdb72d428bee50c",
+        "source_data/figure_inputs/fig02_hardware.json": "830d1efcff85b69c7beb92790a94988796603b6aac3f3df201b9690b895dad07",
+        "source_data/fig03_theory.json": "c97f4f7ab50b76e55dae9c99aad1c4e70345ba1fb86cf96eb97caf44760213d5",
+        "experiments/routing/results/controlled_runs.csv": "e71463b618de2bf1f36388723944f0a2d9451740a789f4a8619e377e8f38f444"
+      },
+      "figure_sha256": {
+        "pdf": "6c14affd70e4e65901ba298066028875e09eab8cab86f91816653cdbbefd6e06",
+        "svg": "1865f9aa2a573a2373f1669bc304fa0a771de6b8560c5fb215c07c0d74a271e4",
+        "png": "9a1dd0eb5732b5524c8552fd02300a34b28dd87eda2c18a91f02a3c77f47f2cb"
+      },
+      "minimum_font_pt": 8.0,
+      "asset_sha256": {
+        "pdf": "6c14affd70e4e65901ba298066028875e09eab8cab86f91816653cdbbefd6e06",
+        "svg": "1865f9aa2a573a2373f1669bc304fa0a771de6b8560c5fb215c07c0d74a271e4",
+        "png": "9a1dd0eb5732b5524c8552fd02300a34b28dd87eda2c18a91f02a3c77f47f2cb"
+      },
+      "agent_registry": "source_data/v22_figures/legacy/registry.json",
+      "tex": "sections/ownership_snapshot_archive.tex",
+      "label": "fig:ownership-observations",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig05_C_single_column_v22",
+      "caption_words": 46
+    },
+    {
+      "old_stem": "fig06_a800_confirmation",
+      "new_stem": "fig06_a800_confirmation_v22",
+      "rows": 2,
+      "cols": 1,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 5.3,
+      "minimum_font_pt": 8.0,
+      "caption": "Earlier A800 confirmation, with all nine shared-prefix scenarios and three process pairs per scenario. Rows retain front/interleaved/back arrivals for each document pair. Open points are paired process ratios; diamonds are geometric means, thick segments empirical interquartile ranges and thin segments observed minima/maxima. Right-hand values give geometric means. Shading identifies document-pair groups. The dashed line denotes equal time to production C0; no confidence interval or workload-population inference is shown.",
+      "caption_plain": "Earlier A800 confirmation: nine shared-prefix scenarios, three paired processes per scenario. Rows retain each document pair's front/interleaved/back arrivals. Open points show process ratios; diamonds geometric means, thick segments empirical IQR and thin segments observed extrema. Shading groups document pairs; dashed equality and right-hand means use production C0 as reference.",
+      "caption_tex": "Earlier A800 confirmation: nine shared-prefix scenarios, three paired processes per scenario. Rows retain each document pair's front/interleaved/back arrivals. Open points show process ratios; diamonds geometric means, thick segments empirical IQR and thin segments observed extrema. Shading groups document pairs; dashed equality and right-hand means use production C0 as reference.",
+      "plot_data": "source_data/v22_figures/modern/fig06_a800_confirmation_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig06_a800_confirmation_plotrows.json",
+      "plot_data_sha256": "436357230f1ef97e2c273368d742b1693334bba1d1096e17f79de9ab290de1b3",
+      "source_sha256": {
+        "source_data/a800_verified/all36_primary_pairs.csv": "a45b46321e885a109faed6fc2eef99a9415434c1da4636b899a3375c4b29d15e",
+        "source_data/a800_verified/all18_Native_rows.csv": "2ea8689e332a0a9e495bada8f12c09cc459970402b529b9eb695d2adb3809ecb",
+        "source_data/a800_verified/all9_mechanism_pairs.csv": "8593baf2d4d85ad03ca55a00370a5826a75c6e5d469442bbf6377758686b361c",
+        "source_data/a800_verified/all108_service_rows.csv": "5e47136be354e445e9c4a7b037fed8d6f843b936ca864dfa9d0f0c7c8598f23c",
+        "source_data/a800_verified/FINAL_NUMERIC_CHECK.json": "c27d8d826398231b28f98c2100c10b15c4cf22c6f8ec2564b8d95de44c863846"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig06_a800_confirmation_v22.pdf",
+          "sha256": "0ff91b4b2445299d6d1ec8f7c7785639e2c8d29c9de4d67cfbc5542ece526c34"
+        },
+        "svg": {
+          "path": "figs/fig06_a800_confirmation_v22.svg",
+          "sha256": "6dc26c7e368bb7b21bd83d934a99a3739a9954f56928b95e151235cc2cbd3baa"
+        },
+        "png": {
+          "path": "figs/fig06_a800_confirmation_v22.png",
+          "sha256": "c6a3121a86eceb9997d8f6fbfd1c7b7ab3de56d5f59d9cdb25a525a03e718e4e"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "0ff91b4b2445299d6d1ec8f7c7785639e2c8d29c9de4d67cfbc5542ece526c34",
+        "svg": "6dc26c7e368bb7b21bd83d934a99a3739a9954f56928b95e151235cc2cbd3baa",
+        "png": "c6a3121a86eceb9997d8f6fbfd1c7b7ab3de56d5f59d9cdb25a525a03e718e4e"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/baseline_development_archive.tex",
+      "label": "baseline:fig:measured",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig06_a800_confirmation_v22",
+      "caption_words": 51
+    },
+    {
+      "old_stem": "fig07_a800_native",
+      "new_stem": "fig07_a800_native_v22",
+      "rows": 2,
+      "cols": 1,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 4.5,
+      "minimum_font_pt": 8.0,
+      "caption": "Earlier A800 Native comparisons. Panel (a) retains all 18 paired observations: circles are shared-prefix inputs and squares instruction inputs; filled markers denote exact agreement for all 16 output sequences. The pale region marks fewer executed model positions than Native; the dashed axes mark equal work and equal cohort time. Saved positions are not FLOPs or GPU-time savings. Panel (b) is a vector matrix of exact matches out of 16, ordered by document pair/arrival for prefix inputs and by cohort/repetition for instructions. Every comparison and adverse time ratio is retained.",
+      "caption_plain": "Earlier A800 comparisons with Native. (a) All 18 paired work/time observations: circles denote prefixes, squares instructions; filled markers identify agreement of all 16 output sequences. Pale shading marks fewer confirmed model positions; dashed axes mark equality. (b) Exact sequence matches out of 16, ordered by document/arrival or instruction cohort/repetition.",
+      "caption_tex": "Earlier A800 comparisons with Native. (a) All 18 paired work/time observations: circles denote prefixes, squares instructions; filled markers identify agreement of all 16 output sequences. Pale shading marks fewer confirmed model positions; dashed axes mark equality. (b) Exact sequence matches out of 16, ordered by document/arrival or instruction cohort/repetition.",
+      "plot_data": "source_data/v22_figures/modern/fig07_a800_native_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig07_a800_native_plotrows.json",
+      "plot_data_sha256": "42f0afbed868c0e6f3ce31785f42bcf8bbf05f350a2589daf726cbddc7d3516c",
+      "source_sha256": {
+        "source_data/a800_verified/all36_primary_pairs.csv": "a45b46321e885a109faed6fc2eef99a9415434c1da4636b899a3375c4b29d15e",
+        "source_data/a800_verified/all18_Native_rows.csv": "2ea8689e332a0a9e495bada8f12c09cc459970402b529b9eb695d2adb3809ecb",
+        "source_data/a800_verified/all9_mechanism_pairs.csv": "8593baf2d4d85ad03ca55a00370a5826a75c6e5d469442bbf6377758686b361c",
+        "source_data/a800_verified/all108_service_rows.csv": "5e47136be354e445e9c4a7b037fed8d6f843b936ca864dfa9d0f0c7c8598f23c",
+        "source_data/a800_verified/FINAL_NUMERIC_CHECK.json": "c27d8d826398231b28f98c2100c10b15c4cf22c6f8ec2564b8d95de44c863846"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig07_a800_native_v22.pdf",
+          "sha256": "244d071efeb27e6a8b7a09daf73f0b4083133f06a33b4b273c1975772030e767"
+        },
+        "svg": {
+          "path": "figs/fig07_a800_native_v22.svg",
+          "sha256": "11c00f46cb42c8e38126b9624e4210dacd0cabe5745860081b39065df1ceccdb"
+        },
+        "png": {
+          "path": "figs/fig07_a800_native_v22.png",
+          "sha256": "d35bbaba055adffad398a22241ee8b2a0768e092c5829320e0fcc14be8acc48a"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "244d071efeb27e6a8b7a09daf73f0b4083133f06a33b4b273c1975772030e767",
+        "svg": "11c00f46cb42c8e38126b9624e4210dacd0cabe5745860081b39065df1ceccdb",
+        "png": "d35bbaba055adffad398a22241ee8b2a0768e092c5829320e0fcc14be8acc48a"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/baseline_development_archive.tex",
+      "label": "baseline:fig:cost",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig07_a800_native_v22",
+      "caption_words": 52
+    },
+    {
+      "old_stem": "fig08_a800_mechanism_alpaca",
+      "new_stem": "fig08_a800_mechanism_alpaca_v22",
+      "rows": 2,
+      "cols": 1,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 5.3,
+      "minimum_font_pt": 8.0,
+      "caption": "Earlier matched-information-cost control and instruction-family comparison. Panel (a) reports each single matched full-C1/full-C0 service pair for all nine document/arrival cells, for both cohort and brief completion. Cell colors use one symmetric log2-ratio scale centered at equality at 1 (blue below, ochre above); annotations retain raw ratios. Panel (b) retains three process pairs in each instruction cohort: open points, geometric-mean markers, empirical interquartile segments and observed ranges. Both full views pay the same checking contract; single-pair mechanism cells are not repeated-run distributions.",
+      "caption_plain": "Earlier matched-information and instruction controls. (a) One full-C1/full-C0 pair per nine document/arrival cells, for cohort and brief time; colours use a symmetric log2 scale centred at one (blue below, ochre above). (b) Three pairs per instruction cohort: raw points, geometric means, empirical IQR and observed extrema. Both full views share the checking contract.",
+      "caption_tex": "Earlier matched-information and instruction controls. (a) One full-C1/full-C0 pair per nine document/arrival cells, for cohort and brief time; colours use a symmetric log2 scale centred at one (blue below, ochre above). (b) Three pairs per instruction cohort: raw points, geometric means, empirical IQR and observed extrema. Both full views share the checking contract.",
+      "plot_data": "source_data/v22_figures/modern/fig08_a800_mechanism_alpaca_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig08_a800_mechanism_alpaca_plotrows.json",
+      "plot_data_sha256": "5ad54dcf9a2afbb33d7657c354a7765b309e11a2682622c144fff24e0edff6f1",
+      "source_sha256": {
+        "source_data/a800_verified/all36_primary_pairs.csv": "a45b46321e885a109faed6fc2eef99a9415434c1da4636b899a3375c4b29d15e",
+        "source_data/a800_verified/all18_Native_rows.csv": "2ea8689e332a0a9e495bada8f12c09cc459970402b529b9eb695d2adb3809ecb",
+        "source_data/a800_verified/all9_mechanism_pairs.csv": "8593baf2d4d85ad03ca55a00370a5826a75c6e5d469442bbf6377758686b361c",
+        "source_data/a800_verified/all108_service_rows.csv": "5e47136be354e445e9c4a7b037fed8d6f843b936ca864dfa9d0f0c7c8598f23c",
+        "source_data/a800_verified/FINAL_NUMERIC_CHECK.json": "c27d8d826398231b28f98c2100c10b15c4cf22c6f8ec2564b8d95de44c863846"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig08_a800_mechanism_alpaca_v22.pdf",
+          "sha256": "7fdc05bfe13b9ac89dfd9a84907191b0a40dc958a17b9171412db56c44ea877e"
+        },
+        "svg": {
+          "path": "figs/fig08_a800_mechanism_alpaca_v22.svg",
+          "sha256": "6538e7ac05cb0e65b2cf36d5365782bf562fd9e15ed5ed912a22e3f3f19eb413"
+        },
+        "png": {
+          "path": "figs/fig08_a800_mechanism_alpaca_v22.png",
+          "sha256": "80dd6e2591b3b84fac3758ab37ae46ffb4beb487395abf970c468ed649cc78ff"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "7fdc05bfe13b9ac89dfd9a84907191b0a40dc958a17b9171412db56c44ea877e",
+        "svg": "6538e7ac05cb0e65b2cf36d5365782bf562fd9e15ed5ed912a22e3f3f19eb413",
+        "png": "80dd6e2591b3b84fac3758ab37ae46ffb4beb487395abf970c468ed649cc78ff"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/baseline_development_archive.tex",
+      "label": "baseline:fig:holdout",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig08_a800_mechanism_alpaca_v22",
+      "caption_words": 55
+    },
+    {
+      "old_stem": "fig09_runtime_diagnostics",
+      "new_stem": "fig09_runtime_diagnostics_v22",
+      "rows": 1,
+      "cols": 3,
+      "span": "double",
+      "width_in": 6.500000276740003,
+      "height_in": 2.65,
+      "minimum_font_pt": 8.0,
+      "caption": "Historical diagnosis from separately scoped studies. Panel (a) is an exact empirical cumulative batch-size distribution from the four profiled diagnostic services; P/I denote prefix/instruction inputs. It is not an efficacy timing comparison. Panel (b) shows all six matched process ratios for each full-versus-incremental and refusal-cache control: three pairs in each of two fixed inputs. Geometric means weight the inputs equally; thick segments are empirical interquartile ranges and thin segments observed ranges. Panel (c) retains the single earlier full-C1/full-C0 brief-completion ratio for each interleaved document pair. The three panels are distinct populations and are not pooled or interpreted as a causal CPU/GPU decomposition.",
+      "caption_plain": "Historical, separately scoped diagnostics. (a) Exact empirical batch-size CDFs from four profiled services; P/I denote prefixes/instructions. (b) Full/incremental and refusal-cache controls, each with three process pairs per input: all six ratios, equal-input geometric means, empirical IQR and observed ranges. (c) One earlier interleaved full-C1/full-C0 brief-time ratio per document pair.",
+      "caption_tex": "Historical, separately scoped diagnostics. (a) Exact empirical batch-size CDFs from four profiled services; P/I denote prefixes/instructions. (b) Full/incremental and refusal-cache controls, each with three process pairs per input: all six ratios, equal-input geometric means, empirical IQR and observed ranges. (c) One earlier interleaved full-C1/full-C0 brief-time ratio per document pair.",
+      "plot_data": "source_data/v22_figures/modern/fig09_runtime_diagnostics_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig09_runtime_diagnostics_plotrows.json",
+      "plot_data_sha256": "15c38e94b35dfd9bf293da3155b6b42056ee3a8b2b7152d5f8617ac8b6aef68d",
+      "source_sha256": {
+        "source_data/v15_verified_updates/DIAGNOSTIC_READOUT_INTERPRETED.json": "aaea56c5895b4b57fc0baacb587a39227297ac357a7c9b81578cf6d96f2ccba2",
+        "experiments/new_verified_evidence/study_scripts/W37/all_primary_pairs.csv": "fb9f389e4b97d539fb727d750602a880e0b8f5648f4d5bc8210b61706e425658",
+        "experiments/new_verified_evidence/study_scripts/W40/all_primary_pairs.csv": "981f915d31cb33864c595c0ba84d7f1ea5127fa3cc34844c5f562ccc7345aaff",
+        "source_data/a800_verified/all108_service_rows.csv": "5e47136be354e445e9c4a7b037fed8d6f843b936ca864dfa9d0f0c7c8598f23c"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig09_runtime_diagnostics_v22.pdf",
+          "sha256": "efb6a5995371b5ea62f40df33999768e8fd347998c6b5b21b9ba7d29a680d0b4"
+        },
+        "svg": {
+          "path": "figs/fig09_runtime_diagnostics_v22.svg",
+          "sha256": "03ecfe1570d695535ca1f18722afd5fb66a0f6922ec317034214b1de7cf6371f"
+        },
+        "png": {
+          "path": "figs/fig09_runtime_diagnostics_v22.png",
+          "sha256": "2758c7e461c2aa364e011abe39b37bd7db8b9b54c0fa5e06628eed3fb1c48c85"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "efb6a5995371b5ea62f40df33999768e8fd347998c6b5b21b9ba7d29a680d0b4",
+        "svg": "03ecfe1570d695535ca1f18722afd5fb66a0f6922ec317034214b1de7cf6371f",
+        "png": "2758c7e461c2aa364e011abe39b37bd7db8b9b54c0fa5e06628eed3fb1c48c85"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/baseline_development_archive.tex",
+      "label": "baseline:fig:runtime-diagnosis",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig09_runtime_diagnostics_v22",
+      "caption_words": 53
+    },
+    {
+      "old_stem": "fig_sensitivity_v16",
+      "new_stem": "fig_sensitivity_v16_v22",
+      "rows": 2,
+      "cols": 3,
+      "span": "double",
+      "width_in": 6.500000276740003,
+      "height_in": 4.65,
+      "minimum_font_pt": 8.0,
+      "caption": "Historical six-level admission sensitivity on the two exposed inputs. Rows separate prefix and instruction cohorts; columns report cohort time relative to same-block Native, brief completion relative to Native, and actual mean requests per positive model batch. All three process repetitions at each measured gate values 1/2/3/4/6/8 are shown. Ratio centers are geometric means and batch-width centers arithmetic means. Curves connect measured centers only; shading is the observed minimum-to-maximum process range, not a confidence band. Ochre references are the measured gate-off deployment, with its observed range. Dashed equality at 1 applies only to the two ratio columns. No unmeasured parameter optimum or workload-population inference is implied.",
+      "caption_plain": "Historical admission sensitivity on two exposed inputs. Rows separate inputs; columns show Native-normalized cohort/brief time and requests per positive batch. All three repetitions at gates 1/2/3/4/6/8 are shown. Ratio centres are geometric means; batch-width centres arithmetic means. Lines join measured centres; shading spans observed extrema. Ochre marks measured gate-off references. Dashed equality applies to ratio columns.",
+      "caption_tex": "Historical admission sensitivity on two exposed inputs. Rows separate inputs; columns show Native-normalized cohort/brief time and requests per positive batch. All three repetitions at gates 1/2/3/4/6/8 are shown. Ratio centres are geometric means; batch-width centres arithmetic means. Lines join measured centres; shading spans observed extrema. Ochre marks measured gate-off references. Dashed equality applies to ratio columns.",
+      "plot_data": "source_data/v22_figures/modern/fig_sensitivity_v16_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig_sensitivity_v16_plotrows.json",
+      "plot_data_sha256": "ad4ede07111313550d16e8fe57c9e870daee0fa3f5f3b3db6b8d7fcccb161097",
+      "source_sha256": {
+        "source_data/v16_verified/w52_services.csv": "a7060a7523809fa73a17c85848863da93ee9febfb97c19242b2070987e0e31aa",
+        "source_data/v16_verified/w52_final.json": "3e76a8daae50317f5a8e19e37874e80ed6fd24f57fc2b1eb430fac6c9aa7824e"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig_sensitivity_v16_v22.pdf",
+          "sha256": "37fb09202c53215b7d5f3c12dbb2cebf87fae77258072c7076139f246bb43b0e"
+        },
+        "svg": {
+          "path": "figs/fig_sensitivity_v16_v22.svg",
+          "sha256": "2b3fd4657a7b6789bf5ea5d83879f65ee330af72ae552641c47f70a43c4b39e2"
+        },
+        "png": {
+          "path": "figs/fig_sensitivity_v16_v22.png",
+          "sha256": "0c7e6777ed6b67132d8cae2b16526f5b08724a59c7fb18f19c1cd3cead8a6ac1"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "37fb09202c53215b7d5f3c12dbb2cebf87fae77258072c7076139f246bb43b0e",
+        "svg": "2b3fd4657a7b6789bf5ea5d83879f65ee330af72ae552641c47f70a43c4b39e2",
+        "png": "0c7e6777ed6b67132d8cae2b16526f5b08724a59c7fb18f19c1cd3cead8a6ac1"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/sensitivity_verified.tex",
+      "label": "fig:sensitivity-main",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig_sensitivity_v16_v22",
+      "caption_words": 62
+    },
+    {
+      "old_stem": "fig_quota_v17",
+      "new_stem": "fig_quota_v17_v22",
+      "rows": 2,
+      "cols": 3,
+      "span": "double",
+      "width_in": 6.500000276740003,
+      "height_in": 4.4,
+      "minimum_font_pt": 8.0,
+      "caption": "Earlier adaptive-development operating region, with the three measured quotas as columns and the two exposed inputs as rows. Each marker is one of four same-card process comparisons to Native; larger markers are coordinatewise geometric means. Translucent rectangles bound the observed paired cohort/brief outcomes, not confidence regions or a Pareto frontier. Equality lines identify the Native reference; pale left-hand regions indicate lower cohort time. All methods, raw pairs and adverse outcomes are retained. This development timing population is separate from frozen new-input confirmation and projection-reuse studies.",
+      "caption_plain": "Earlier adaptive-development operating region: input rows and quota columns. Small markers show four same-card process comparisons to Native; large markers give coordinatewise geometric means of cohort/brief ratios. Translucent rectangles bound observed paired outcomes. Equality lines mark Native; pale left-hand regions indicate lower cohort time.",
+      "caption_tex": "Earlier adaptive-development operating region: input rows and quota columns. Small markers show four same-card process comparisons to Native; large markers give coordinatewise geometric means of cohort/brief ratios. Translucent rectangles bound observed paired outcomes. Equality lines mark Native; pale left-hand regions indicate lower cohort time.",
+      "plot_data": "source_data/v22_figures/modern/fig_quota_v17_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig_quota_v17_plotrows.json",
+      "plot_data_sha256": "56e863eb5787e363c9f817d609a18a8ecf118f814ff68c5417b356e3b2f4a062",
+      "source_sha256": {
+        "source_data/v17_verified/development_all_services.csv": "6b6f2011c280f5b1856446af5027a19f7a218946109671bd1b33d926fe93a720"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig_quota_v17_v22.pdf",
+          "sha256": "973171bcf3eb7fa985565a0e378e262e4cb099aa59eff99b980ca2e7237d3211"
+        },
+        "svg": {
+          "path": "figs/fig_quota_v17_v22.svg",
+          "sha256": "89f5d66bf4a4be0c970e39cd925664f89c6575223ef3df8b4b0666ae95bac8ed"
+        },
+        "png": {
+          "path": "figs/fig_quota_v17_v22.png",
+          "sha256": "1c50aed4aa4bfdd0c905254b3b9e8bc2db98b22dca81ca2af045e7bde9da7f29"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "973171bcf3eb7fa985565a0e378e262e4cb099aa59eff99b980ca2e7237d3211",
+        "svg": "89f5d66bf4a4be0c970e39cd925664f89c6575223ef3df8b4b0666ae95bac8ed",
+        "png": "1c50aed4aa4bfdd0c905254b3b9e8bc2db98b22dca81ca2af045e7bde9da7f29"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/final_supplement_protocol.tex",
+      "label": "fig:adaptive-development-historical",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig_quota_v17_v22",
+      "caption_words": 45
+    },
+    {
+      "old_stem": "fig_confirmation_v17",
+      "new_stem": "fig_confirmation_v17_v22",
+      "rows": 2,
+      "cols": 3,
+      "span": "double",
+      "width_in": 6.500000276740003,
+      "height_in": 5.2,
+      "minimum_font_pt": 8.0,
+      "caption": "Frozen eight-scenario adaptive confirmation. Rows separate base and fourfold quotas; the three substantive columns report cohort time, brief completion and positive model-batch counts, each relative to its same-block INC or Fixed INC-Q reference. All four process-pair observations are retained in every cell. Diamonds/triangles give geometric means; thick segments are empirical interquartile ranges and thin segments observed minima/maxima. H1/H2 identify document pairs, F/I/B arrivals and A1/A2 instruction cohorts; shading groups instruction rows. No confidence interval or global throughput bound is inferred from the batch-count comparison.",
+      "caption_plain": "Frozen eight-scenario confirmation: quota rows and cohort/brief/batch-count columns, normalized to same-block INC or Fixed INC-Q. Every cell retains four process pairs. Diamonds/triangles show geometric means, thick segments empirical IQR and thin segments observed extrema. H1/H2 identify document pairs, F/I/B arrivals and A1/A2 instructions; shading groups instruction rows.",
+      "caption_tex": "Frozen eight-scenario confirmation: quota rows and cohort/brief/batch-count columns, normalized to same-block INC or Fixed INC-Q. Every cell retains four process pairs. Diamonds/triangles show geometric means, thick segments empirical IQR and thin segments observed extrema. H1/H2 identify document pairs, F/I/B arrivals and A1/A2 instructions; shading groups instruction rows.",
+      "plot_data": "source_data/v22_figures/modern/fig_confirmation_v17_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig_confirmation_v17_plotrows.json",
+      "plot_data_sha256": "b84559dc4b2dc728ca225018899c3559463061760ef1ded991555ab6cf3cf2f4",
+      "source_sha256": {
+        "source_data/v17_verified/confirmation_all_primary_pairs.csv": "0e67f79390545b18c2b81af7ad994f827d79e33ac69daf8f83bd94fa7d359bcb"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig_confirmation_v17_v22.pdf",
+          "sha256": "34f0ca5ab50663e2c675362ccadd5b5c975a182c6e57f5cd4029b931628b7e49"
+        },
+        "svg": {
+          "path": "figs/fig_confirmation_v17_v22.svg",
+          "sha256": "f67224cd2cc60b06ab07d477f12033a3cdc609a51eed69fbfe66bc5c730f4115"
+        },
+        "png": {
+          "path": "figs/fig_confirmation_v17_v22.png",
+          "sha256": "d284bd0eaeacde633bf871e084633321ec349013bed435829323fab03dc1747d"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "34f0ca5ab50663e2c675362ccadd5b5c975a182c6e57f5cd4029b931628b7e49",
+        "svg": "f67224cd2cc60b06ab07d477f12033a3cdc609a51eed69fbfe66bc5c730f4115",
+        "png": "d284bd0eaeacde633bf871e084633321ec349013bed435829323fab03dc1747d"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/closeout_archive.tex",
+      "label": "fig:confirmation-closeout",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig_confirmation_v17_v22",
+      "caption_words": 54
+    },
+    {
+      "old_stem": "fig_width_ready_v19",
+      "new_stem": "fig_width_ready_v19_v22",
+      "rows": 2,
+      "cols": 1,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 4.75,
+      "minimum_font_pt": 8.0,
+      "caption": "Ready demand and funded growth in the two base-quota final-deployment functional audits. The panels contain 697 and 1,346 comparable settled cuts, respectively. Marker coordinates count resident requests needing one new page and actual positive-growth width; the latter equals the ready-restricted fixed-witness bound at every plotted cut. Labels give exact cut counts and marker area is logarithmic in count. The dashed diagonal funds every ready request; the ochre region marks positive ready demand left unfunded, not a confidence region. Instruction cuts include 339 zero-width observations with positive free capacity. Cuts are dependent audit observations, not independent timing repeats or a global admission optimum.",
+      "caption_plain": "Ready demand and funded growth across 697/1,346 comparable settled cuts in two base-quota functional audits. Coordinates count ready requests and actual positive-growth width, which attains the ready-restricted bound. Labels give cut counts; marker area is logarithmic in count. The diagonal funds all ready requests; ochre marks unmet ready demand. Instructions include 339 zero-width cuts with positive free capacity.",
+      "caption_tex": "Ready demand and funded growth across 697/1,346 comparable settled cuts in two base-quota functional audits. Coordinates count ready requests and actual positive-growth width, which attains the ready-restricted bound. Labels give cut counts; marker area is logarithmic in count. The diagonal funds all ready requests; ochre marks unmet ready demand. Instructions include 339 zero-width cuts with positive free capacity.",
+      "plot_data": "source_data/v22_figures/modern/fig_width_ready_v19_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig_width_ready_v19_plotrows.json",
+      "plot_data_sha256": "73142fceea9616b92820a05c6c5b7c17a5ff52340e91d1a768cced017cd849d2",
+      "source_sha256": {
+        "source_data/v19_closeout/width/width_all_cuts.csv": "aba798efd2538d287abe15c9b2a9a1d2145bdf87dacdc885ec6d2754ce7aa9f8"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig_width_ready_v19_v22.pdf",
+          "sha256": "56d6c4881bd95c6ef4ba9b8c985a68d878c3a489284079474d4aa7c7963c5fab"
+        },
+        "svg": {
+          "path": "figs/fig_width_ready_v19_v22.svg",
+          "sha256": "f3aa7e54a2e894dd7896392d108c16dfd58dfa443f8a481cd4dd3259950e79aa"
+        },
+        "png": {
+          "path": "figs/fig_width_ready_v19_v22.png",
+          "sha256": "c900b0e8591860c7907f1f189dec2e462812dad21c747548cb5c730989c1cac3"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "56d6c4881bd95c6ef4ba9b8c985a68d878c3a489284079474d4aa7c7963c5fab",
+        "svg": "f3aa7e54a2e894dd7896392d108c16dfd58dfa443f8a481cd4dd3259950e79aa",
+        "png": "c900b0e8591860c7907f1f189dec2e462812dad21c747548cb5c730989c1cac3"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/closeout_width.tex",
+      "label": "fig:width-ready-v19",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig_width_ready_v19_v22",
+      "caption_words": 60
+    },
+    {
+      "old_stem": "fig_projection_reuse_v19",
+      "new_stem": "fig_projection_reuse_v19_v22",
+      "rows": 2,
+      "cols": 3,
+      "span": "double",
+      "width_in": 6.500000276740003,
+      "height_in": 4.8,
+      "minimum_font_pt": 8.0,
+      "caption": "Bounded projection reuse in two separate 7B timing populations. Rows are development and independently frozen fresh-input confirmation; columns give cohort time and brief completion relative to the same-block Native process, then recorded mean scheduling milliseconds per call. P/I denote prefix/instruction inputs and suffixes the measured quotas. Every cell retains all six matched process observations, with faint segments pairing reuse off/on. Large markers are geometric means, thick segments empirical interquartile ranges and thin segments observed ranges. Green points in the scheduling column are the six Native call-time averages. The scheduling ledger is not an Authority/ACK/kernel causal decomposition; stages are not pooled and no 14B reuse result is implied.",
+      "caption_plain": "Projection reuse in separate development and fresh-input confirmation populations. Columns show Native-normalized cohort/brief time and scheduling milliseconds per call; P/I and suffixes identify inputs/quotas. Cells retain six process pairs; faint segments join off/on. Large markers show geometric means, thick segments empirical IQR and thin segments observed ranges. Green scheduling points show six Native averages.",
+      "caption_tex": "Projection reuse in separate development and fresh-input confirmation populations. Columns show Native-normalized cohort/brief time and scheduling milliseconds per call; P/I and suffixes identify inputs/quotas. Cells retain six process pairs; faint segments join off/on. Large markers show geometric means, thick segments empirical IQR and thin segments observed ranges. Green scheduling points show six Native averages.",
+      "plot_data": "source_data/v22_figures/modern/fig_projection_reuse_v19_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig_projection_reuse_v19_plotrows.json",
+      "plot_data_sha256": "20a50bf9d44d68fe66bd98c52930bc298633aa44245cb9e21676811288f3acdd",
+      "source_sha256": {
+        "source_data/v19_projection/development/all_services.csv": "1ae5ea279cc1b5934534504cdbe8e19e5e5d32c27407e56ae6066015637be6e0",
+        "source_data/v19_projection/confirmation/all_services.csv": "8137d150a7ae31f22131dc96995b8e2c60b96ee15bcf3304938988c95dcbf5a7"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig_projection_reuse_v19_v22.pdf",
+          "sha256": "347592f57be005291666c60c7bb5f499d54eac2597a6773720b21022b75dddab"
+        },
+        "svg": {
+          "path": "figs/fig_projection_reuse_v19_v22.svg",
+          "sha256": "a1dc782e761156a3a55f54821bf5205fbb65ea7c47d7adc52bd19e3a36777de0"
+        },
+        "png": {
+          "path": "figs/fig_projection_reuse_v19_v22.png",
+          "sha256": "00ef7208c4e7101f95c198170c7b5bc8092cdd1facfe27f761d94f57c9b391e8"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "347592f57be005291666c60c7bb5f499d54eac2597a6773720b21022b75dddab",
+        "svg": "a1dc782e761156a3a55f54821bf5205fbb65ea7c47d7adc52bd19e3a36777de0",
+        "png": "00ef7208c4e7101f95c198170c7b5bc8092cdd1facfe27f761d94f57c9b391e8"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/projection_reuse_verified.tex",
+      "label": "fig:projection-reuse-v19",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig_projection_reuse_v19_v22",
+      "caption_words": 58
+    },
+    {
+      "old_stem": "fig_diagnosis_v17",
+      "new_stem": "fig_diagnosis_v17_v22",
+      "rows": 2,
+      "cols": 1,
+      "span": "single",
+      "width_in": 3.16697799916978,
+      "height_in": 4.6,
+      "minimum_font_pt": 8.0,
+      "caption": "Earlier headroom-development batch counts and wall-time accounting. Panel (a) is a vector matrix of arithmetic mean positive model-batch counts over four process repetitions; P/I and1/2/4 identify input and quota. A shared logarithmic blue scale encodes actual counts, annotated numerically. Panel (b) partitions each measured mean service interval at4-times quota into recorded scheduler time and its nonnegative remainder. Open markers and thin ranges retain all four total-time observations. These components are an accounting identity, not GPU/kernel timers or a causal decomposition. All per-process batch counts and interval components accompany the figure data.",
+      "caption_plain": "Earlier headroom-development accounting. (a) Mean positive-batch counts across four processes, with P/I input groups and quota factors 1/2/4; numerical cells share a logarithmic blue scale. (b) Mean 4$\\times$ service time partitioned into recorded scheduling and its arithmetic remainder. Open markers and thin ranges retain all four total-time observations.",
+      "caption_tex": "Earlier headroom-development accounting. (a) Mean positive-batch counts across four processes, with P/I input groups and quota factors 1/2/4; numerical cells share a logarithmic blue scale. (b) Mean 4$\\times$ service time partitioned into recorded scheduling and its arithmetic remainder. Open markers and thin ranges retain all four total-time observations.",
+      "plot_data": "source_data/v22_figures/modern/fig_diagnosis_v17_plotrows.json",
+      "plot_data_path": "source_data/v22_figures/modern/fig_diagnosis_v17_plotrows.json",
+      "plot_data_sha256": "ef941f027096c0856212577981e5e2d3cd6eb5327a44ec4a595016edfd90c30e",
+      "source_sha256": {
+        "source_data/v17_verified/development_all_services.csv": "6b6f2011c280f5b1856446af5027a19f7a218946109671bd1b33d926fe93a720"
+      },
+      "outputs": {
+        "pdf": {
+          "path": "figs/fig_diagnosis_v17_v22.pdf",
+          "sha256": "d098b0b98ac4c2186b214ab067d159ca48b1ef19ead2e0ff99e10fbc5228f628"
+        },
+        "svg": {
+          "path": "figs/fig_diagnosis_v17_v22.svg",
+          "sha256": "4143d8b3ea05a7c97843558db39418e8ed950c0deaa2fd9263711cc2eb70d3d4"
+        },
+        "png": {
+          "path": "figs/fig_diagnosis_v17_v22.png",
+          "sha256": "b6464236882ee92a6e693a9a425bc2c5c6f517d4658b42c28cf4f97182f85161"
+        }
+      },
+      "figure_sha256": {
+        "pdf": "d098b0b98ac4c2186b214ab067d159ca48b1ef19ead2e0ff99e10fbc5228f628",
+        "svg": "4143d8b3ea05a7c97843558db39418e8ed950c0deaa2fd9263711cc2eb70d3d4",
+        "png": "b6464236882ee92a6e693a9a425bc2c5c6f517d4658b42c28cf4f97182f85161"
+      },
+      "recipe_sha256": "e9f2318b4ca4d68c4100a640a5abbe61d0ba4ac151318c5b18ccd96c8d293f29",
+      "fixed_geometry": true,
+      "vector_PDF": true,
+      "live_text_SVG": true,
+      "native_PPT_claim": false,
+      "agent_registry": "source_data/v22_figures/modern/layout_captions_registry.json",
+      "tex": "sections/review_runtime_statistics.tex",
+      "label": "fig:archived-runtime-diagnosis",
+      "document": "supplementary.tex",
+      "parent_v22_stem": "fig_diagnosis_v17_v22",
+      "caption_words": 52
+    }
+  ]
+}

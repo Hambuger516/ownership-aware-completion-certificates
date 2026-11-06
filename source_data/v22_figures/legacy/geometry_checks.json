@@ -1,0 +1,27 @@
+[
+  {
+    "figure": "fig05_measured_matrix_v22",
+    "text_outside_canvas": [],
+    "minimum_text_pt": 8.0
+  },
+  {
+    "figure": "fig07_cost_and_outputs_v22",
+    "text_outside_canvas": [],
+    "minimum_text_pt": 8.0
+  },
+  {
+    "figure": "fig06_holdout_v22",
+    "text_outside_canvas": [],
+    "minimum_text_pt": 8.0
+  },
+  {
+    "figure": "fig08_two_worker_execution_v22",
+    "text_outside_canvas": [],
+    "minimum_text_pt": 8.0
+  },
+  {
+    "figure": "fig05_C_single_column_v22",
+    "text_outside_canvas": [],
+    "minimum_text_pt": 8.0
+  }
+]

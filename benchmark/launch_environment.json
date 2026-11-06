@@ -1,0 +1,30 @@
+{
+  "common": {
+    "PRC_MEASURE_EXECUTION": "1",
+    "PRC_EXECUTION_ALL_REQUESTS": "1",
+    "PRC_MEASURE_EXECUTION_PHASES": "1",
+    "VLLM_BATCH_INVARIANT": "1",
+    "PYTHONHASHSEED": "0",
+    "W37_OBSERVE": "1",
+    "W37_PROFILE": "0",
+    "PRC_PROFILE": "0",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "audit": {
+    "PRC_FAST_STATE": "0",
+    "PRC_VERIFY_CACHE": "1"
+  },
+  "timing": {
+    "PRC_FAST_STATE": "1",
+    "PRC_VERIFY_CACHE": "0"
+  },
+  "per_arm": {
+    "reuse": {
+      "PRC_ZERO_PROJECTION_REUSE": "1"
+    },
+    "all_other_arms": {
+      "PRC_ZERO_PROJECTION_REUSE": "0"
+    }
+  },
+  "scope": "Exact measurement/phase feature flags from the original runtime driver. Cache and library search paths must be configured locally; private cluster paths are omitted."
+}

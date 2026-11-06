@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using this research implementation."
+title: "Ownership-Aware Completion Certificates for Autoregressive Serving"
+type: software
+authors:
+  - family-names: Ma
+    given-names: Hanbo
+  - family-names: Li
+    given-names: Zhongguo
+  - family-names: Wang
+    given-names: Junan
+  - family-names: Ding
+    given-names: Zhengtao
+version: 1.0.0

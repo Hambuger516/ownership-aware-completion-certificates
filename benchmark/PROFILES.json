@@ -1,0 +1,95 @@
+{
+  "baselines": {
+    "cases": [
+      "fresh00_interleave",
+      "alpaca_new00_interleave"
+    ],
+    "arms": [
+      "adaptive",
+      "banker_c0",
+      "hard_reserve",
+      "native"
+    ],
+    "factors": [
+      1,
+      2,
+      4
+    ],
+    "repetitions": 4,
+    "runtime_variant": "original"
+  },
+  "ownership": {
+    "cases": [
+      "confirm00_front",
+      "confirm00_interleave",
+      "confirm00_back",
+      "confirm01_front",
+      "confirm01_interleave",
+      "confirm01_back",
+      "confirm02_front",
+      "confirm02_interleave",
+      "confirm02_back"
+    ],
+    "arms": [
+      "full_c0",
+      "full_c1"
+    ],
+    "factors": [
+      1
+    ],
+    "repetitions": 4,
+    "runtime_variant": "original"
+  },
+  "scale14b": {
+    "cases": [
+      "fresh00_interleave",
+      "alpaca_new00_interleave"
+    ],
+    "arms": [
+      "inc",
+      "fixed",
+      "adaptive",
+      "native"
+    ],
+    "factors": [
+      1,
+      4
+    ],
+    "repetitions": 4,
+    "runtime_variant": "original"
+  },
+  "projection-development": {
+    "cases": [
+      "fresh00_interleave",
+      "alpaca_new00_interleave"
+    ],
+    "arms": [
+      "adaptive",
+      "reuse",
+      "native"
+    ],
+    "factors": [
+      2,
+      4
+    ],
+    "repetitions": 6,
+    "runtime_variant": "projection"
+  },
+  "projection-confirmation": {
+    "cases": [
+      "confirm_prefix65_interleave",
+      "confirm_instruction65_interleave"
+    ],
+    "arms": [
+      "adaptive",
+      "reuse",
+      "native"
+    ],
+    "factors": [
+      1,
+      4
+    ],
+    "repetitions": 6,
+    "runtime_variant": "projection"
+  }
+}
