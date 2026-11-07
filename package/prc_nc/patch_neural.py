@@ -1,7 +1,7 @@
 """Neural PATCH, ported from the historical GraphGPS/Transformer architecture.
 
 Source: code/PATCH_source/PATCH_Experiment_Code_v1.0/code/{model,config}.py
-in the preserved TPAMI workspace. Historical files are never imported or edited.
+in the archived source used by this TSMC artifact. Those files are never imported.
 The original dimensions and optimizer defaults are retained. Unlike that source,
 preference hypernetwork adapters are actually connected, path marginals use a
 true forward/backward DAG calculation, and losses remain connected to parameters.

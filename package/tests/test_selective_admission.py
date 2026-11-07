@@ -246,9 +246,8 @@ class AdmissionWarmupSchemaTests(unittest.TestCase):
     def test_reviewed_native_assignment_uses_exact_eight_lowercase_hex_chars(self):
         import ast
         from pathlib import Path
-        roots=Path(__file__).resolve().parents
-        native=next(r/'NC_2026/07_code/external/vllm_0.29.0/vllm/v1/engine/input_processor.py' for r in roots
-                    if (r/'NC_2026/07_code/external/vllm_0.29.0/vllm/v1/engine/input_processor.py').is_file())
+        from native_source_fixture import native_source
+        native=native_source('vllm/v1/engine/input_processor.py')
         tree=ast.parse(native.read_text());cls=next(n for n in tree.body if isinstance(n,ast.ClassDef) and n.name=='InputProcessor')
         method=next(n for n in cls.body if isinstance(n,ast.FunctionDef) and n.name=='assign_request_id')
         method.decorator_list=[]
@@ -258,7 +257,7 @@ class AdmissionWarmupSchemaTests(unittest.TestCase):
         exec(compile(ast.fix_missing_locations(ast.Module(body=[method],type_ignores=[])),str(native),'exec'),env)
         req=NS(request_id='warmup',external_req_id=None);env['assign_request_id'](req)
         self.assertEqual(req.request_id,'warmup-8d123bc7');self.assertEqual(req.external_req_id,'warmup')
-        utility=(native.parents[2]/'utils/__init__.py').read_text()
+        utility=native_source('vllm/utils/__init__.py').read_text()
         self.assertIn('uuid.uuid4().int & MASK_64_BITS:016x',utility)
 
     def test_real_suffix_warmup_receipts_survive_full_summarize(self):

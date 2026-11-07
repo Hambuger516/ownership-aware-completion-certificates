@@ -1409,5 +1409,7 @@
       "scope": "none"
     }
   ],
-  "no_original_private_values_or_redaction_lookup_in_release": true
+  "no_original_private_values_or_redaction_lookup_in_release": true,
+  "scope": "Historical initial public export; original file/hash records retained. v1.1.1 subsequent changes are recorded in PORTABLE_TEST_RELEASE.json.",
+  "current_release_exceptions_manifest": "provenance/PORTABLE_TEST_RELEASE.json"
 }

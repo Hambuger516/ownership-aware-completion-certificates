@@ -10,10 +10,10 @@ from prc_nc.analysis import _verify_cohort_certified_batches,_verify_ordinary_pr
 from test_active_drain_admission import active_fixture,actual_observer_with_terminals,finish_all
 from test_head_funded_segments import replay_events
 from test_witness_preserving_batch import namespace,SOURCE
+from native_source_fixture import native_source
 
-ROOT=next(p for p in SOURCE.parents if (p/'NC_2026/07_code/external/vllm_0.29.0/vllm/v1/core/sched/scheduler.py').is_file())
-VENDOR=ROOT/'NC_2026/07_code/external/vllm_0.29.0/vllm/v1/core/sched/scheduler.py'
-KV=VENDOR.parents[1]/'kv_cache_manager.py'
+VENDOR=native_source('vllm/v1/core/sched/scheduler.py')
+KV=native_source('vllm/v1/core/kv_cache_manager.py')
 
 
 class Request(NS):

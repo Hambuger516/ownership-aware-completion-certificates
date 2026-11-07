@@ -14,6 +14,7 @@ from prc_nc.drain_batching import fixed_witness_check, fixed_witness_pair, head_
 from prc_nc.model import State, Group, apply_private_growth, valid_witness
 from prc_nc.runtime import AllocationAuthority
 from test_adapter_metadata import fixture, namespace, SOURCE
+from native_source_fixture import native_source
 
 namespace.update(fixed_witness_pair=fixed_witness_pair, head_first_running=head_first_running)
 
@@ -57,11 +58,7 @@ def native_running_fixture(a, *, budget=2, fail_allocation=False):
     execute its unchanged running-loop prefix using CPU physical-page fixtures.
     Full waiting-loop execution, engine outputs and CUDA are outside this test.
     """
-    roots=Path(__file__).resolve().parents
-    native_path=next((r/"NC_2026/07_code/external/vllm_0.29.0/vllm/v1/core/sched/scheduler.py"
-                      for r in roots if (r/"NC_2026/07_code/external/vllm_0.29.0/vllm/v1/core/sched/scheduler.py").is_file()), None)
-    if native_path is None:
-        raise RuntimeError("reviewed local vLLM source required for native hook fixture")
+    native_path=native_source("vllm/v1/core/sched/scheduler.py")
     native_text=native_path.read_text()
     native_tree=ast.parse(native_text)
     cls=next(n for n in native_tree.body if isinstance(n,ast.ClassDef) and n.name=="Scheduler")

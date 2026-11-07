@@ -1,0 +1,56 @@
+{
+  "release": "v1.1.1",
+  "base_tag": "v1.1.0",
+  "base_commit": "0d9fc4bf570659fe7b7bc070b694f26443812722",
+  "purpose": "TSMC artifact portability: bundle the exact native source that CPU tests previously found through author-workspace ancestors.",
+  "baseline_unrelated_clone": {
+    "package_tests_discovered": 357,
+    "package_errors": 63,
+    "reviewed_source_RuntimeErrors": 61,
+    "other_errors": 2,
+    "verification_tests": 32,
+    "verification_errors": 0,
+    "optional_torch_skips": 13
+  },
+  "fixed_unrelated_clone": {
+    "package_tests": 363,
+    "verification_tests": 32,
+    "total_tests": 395,
+    "passed": 382,
+    "optional_torch_skips": 13,
+    "errors": 0,
+    "failures": 0,
+    "empty_python_venv": true,
+    "numpy_or_torch_installed": false,
+    "caller_cwd_outside_checkout": true
+  },
+  "historical_package_files": 84,
+  "original_files_byte_identical": 80,
+  "current_package_python_files": 85,
+  "changed_historical_files": {
+    "package/tests/test_witness_preserving_batch.py": {
+      "base_sha256": "6a7689b62096757b52709582f2b5eaab5a658205997515ecb23fe4991dfe6ef7",
+      "release_sha256": "f973650f136d300d7465b81ff97c7a7bf0cb3fd83dc746c2e55f93fb4c3ae368",
+      "change": "test fixture resolution only; original assertions and skips retained"
+    },
+    "package/tests/test_active_admission_lifecycle_revision.py": {
+      "base_sha256": "5b2d077901a92be24a53ec083d8a13f7ad2d031c1ed2d5af246638e936a7e55a",
+      "release_sha256": "16177e60437114fc0a66cfd9a044dcf571d3dca761ff5be066e870a350e389c4",
+      "change": "test fixture resolution only; original assertions and skips retained"
+    },
+    "package/tests/test_selective_admission.py": {
+      "base_sha256": "b30bcd7d6fe4ddcaa154f81a5a7c2dbeff6642e6327954f1b70c4d4a5c594bbe",
+      "release_sha256": "86685a06211c14f7521493b2b4b491d3ed2d594a77833cae0f88ab345bd53fb2",
+      "change": "test fixture resolution only; original assertions and skips retained"
+    },
+    "package/prc_nc/patch_neural.py": {
+      "base_sha256": "4a0a25860a832220c829a2f2b35211bd3a1ec79863b28c1bca6c050d520c871c",
+      "release_sha256": "bc7a1a26a3e5a386fde08987af40596dd72a223984f787704d50d5e53163e6ed",
+      "change": "module docstring only; executable AST identical"
+    }
+  },
+  "additional_test_helper": "package/tests/native_source_fixture.py",
+  "upstream_fixture_manifest": "native_runtime_reference/MANIFEST.json",
+  "runtime_behavior_or_measurement_changes": false,
+  "public_export_transformations_original_records_preserved": true
+}

@@ -1,0 +1,42 @@
+{
+  "purpose": "TSMC CPU AST compatibility fixtures; not a runnable or installed vLLM engine",
+  "upstream_repository": "https://github.com/vllm-project/vllm",
+  "upstream_tag": "v0.29.0",
+  "upstream_commit": "98dff2a81d747d1dba01a47f939f48c3526d4206",
+  "license": "Apache-2.0",
+  "license_file": "LICENSE",
+  "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "files": {
+    "vllm/v1/core/sched/scheduler.py": {
+      "file": "scheduler.py",
+      "sha256": "abca7134821e2fb5cc8572df5c4a0b570ecf702646254327bc786fc452074983",
+      "upstream_url": "https://github.com/vllm-project/vllm/blob/98dff2a81d747d1dba01a47f939f48c3526d4206/vllm/v1/core/sched/scheduler.py",
+      "modifications": "none; complete verbatim file"
+    },
+    "vllm/v1/core/sched/request_queue.py": {
+      "file": "request_queue.py",
+      "sha256": "4b8d938e5fb8152fe61030b8aa991f983fcac9a405c37ed8908045e05e82ae5e",
+      "upstream_url": "https://github.com/vllm-project/vllm/blob/98dff2a81d747d1dba01a47f939f48c3526d4206/vllm/v1/core/sched/request_queue.py",
+      "modifications": "none; complete verbatim file"
+    },
+    "vllm/v1/core/kv_cache_manager.py": {
+      "file": "kv_cache_manager.py",
+      "sha256": "2213a68ea1a2f05b1d99de25a3f1daf4040d8d7fdd0e271d80b7ba9e1977a08d",
+      "upstream_url": "https://github.com/vllm-project/vllm/blob/98dff2a81d747d1dba01a47f939f48c3526d4206/vllm/v1/core/kv_cache_manager.py",
+      "modifications": "none; complete verbatim file"
+    },
+    "vllm/v1/engine/input_processor.py": {
+      "file": "input_processor.py",
+      "sha256": "91dde56a548c09613ee9aaef8c43631481d12dc1bd439fddc12c6569f5e2e799",
+      "upstream_url": "https://github.com/vllm-project/vllm/blob/98dff2a81d747d1dba01a47f939f48c3526d4206/vllm/v1/engine/input_processor.py",
+      "modifications": "none; complete verbatim file"
+    },
+    "vllm/utils/__init__.py": {
+      "file": "utils.py",
+      "sha256": "c58b3f45deeb98bccca22c945526fd15d483a2f5eb8a3c62cf7df218b081885f",
+      "upstream_url": "https://github.com/vllm-project/vllm/blob/98dff2a81d747d1dba01a47f939f48c3526d4206/vllm/utils/__init__.py",
+      "modifications": "none; complete verbatim file; utils/__init__.py stored as utils.py"
+    }
+  },
+  "upstream_notice_file": "No NOTICE file is present at this upstream commit. SPDX notices are retained in every complete source file."
+}

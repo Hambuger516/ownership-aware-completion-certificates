@@ -10,6 +10,31 @@ the first reports failures, and the exit status remains nonzero if either suite
 fails. `CPU_TEST_SUMMARY` records test/error/failure/skip counts and the Python
 version. No installed copy of `prc_nc` is accepted in place of this checkout.
 
+The five exact upstream vLLM source fixtures are bundled; CPU tests do not require
+an installed vLLM package, an author workspace, or network access. Their complete
+upstream files, commit, hashes and license are listed in
+`native_runtime_reference/MANIFEST.json`. Three tests use the fixed checkout-local
+resolver `package/tests/native_source_fixture.py`; missing or altered fixtures
+fail instead of searching elsewhere. No original test assertions or skips were
+removed.
+
+To verify portability outside any existing project tree, use a new unrelated
+folder and an empty Python 3.12+ environment, for example:
+
+```bash
+git clone --branch v1.1.1 --single-branch https://github.com/Hambuger516/ownership-aware-completion-certificates.git /tmp/tsmc-portability/repo
+python3.12 -m venv /tmp/tsmc-portability/venv
+cd /tmp
+env -u PYTHONPATH -u PYTHONHOME PYTHONNOUSERSITE=1 /tmp/tsmc-portability/venv/bin/python /tmp/tsmc-portability/repo/scripts/run_cpu_tests.py
+```
+
+Without PyTorch, the unchanged 13 optional-PyTorch tests skip; the remaining 382
+pass (395 discovered across the 363-test package suite and 32-test verification
+suite). No installation or optional skip is required for the native-source AST
+fixtures. The prior v1.1.0 ancestor-source lookup could hide a missing dependency
+when the clone was placed inside the authors' project tree; that test setup is
+not a portability check.
+
 ## 2. Published numerical comparisons
 
 `python analysis/reproduce_numbers.py --output results/reproduced_numbers.json` recomputes matched geometric means from the included analysis-ready per-process tables. This is independent arithmetic on published rows, not a new replay of the absent physical event archives. It retains the Native gap and unfavorable cells.

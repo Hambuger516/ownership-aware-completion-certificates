@@ -1,7 +1,7 @@
 {
   "variant": "projection-reuse package",
   "Python_files": 84,
-  "all_byte_identical_to_measured_package": true,
+  "all_byte_identical_to_measured_package": false,
   "files_sha256": {
     "tools/summarize_effect.py": "90021139c6021253e53f12ec30535cdf1c7b6b427cf4ddef73f2c50d43560fb0",
     "prc_nc/protocol_probe.py": "3f7ea206e8dbf19c42c9497330e27d56d40fa4737b697ca662a7f512866aa93c",
@@ -89,5 +89,7 @@
     "prc_nc/adapters/fault_scheduler.py": "746d08456dd17dc02587f1b217a4fdf6779879ea84d20b079cdc8ce8b164cf1b"
   },
   "original_106_file_package_sha256": "28af09e48e48669e6608d316088bb91fc03d2d3f999c68f7790b4348df8c29a4",
-  "omitted_development_metadata_does_not_change_Python_source": true
+  "omitted_development_metadata_does_not_change_Python_source": true,
+  "hash_scope": "Historical measured projection package:84 original hashes retained; current v1.1.1 exceptions and additional test helper are recorded separately.",
+  "current_release_exceptions_manifest": "provenance/PORTABLE_TEST_RELEASE.json"
 }
