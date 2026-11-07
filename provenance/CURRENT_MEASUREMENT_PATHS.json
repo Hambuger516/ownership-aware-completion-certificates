@@ -1,5 +1,5 @@
 {
-  "release": "1.2.0",
+  "release": "1.2.1",
   "previous_release": "v1.1.1",
   "relocated_measurements": {
     "experiments/v20_review/runtime_statistics/output/RUNTIME_ACCOUNTING.json": {

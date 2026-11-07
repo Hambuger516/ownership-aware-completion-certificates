@@ -1,6 +1,6 @@
 # Ownership-Aware Completion Control for LLM Serving with Shared KV Memory
 
-Artifact version **1.2.0** accompanies the TSMC manuscript by Hanbo Ma, Zhongguo Li, Junan Wang, and Zhengtao Ding.
+Artifact version **1.2.1** accompanies the TSMC manuscript by Hanbo Ma, Zhongguo Li, Junan Wang, and Zhengtao Ding.
 
 The implementation certifies finite retained-state request cohorts using joint last-owner release, maintains a completion witness during growth, and accounts for unsettled execution rights. The artifact includes cap-aware admission, matched baseline profiles, projection reuse, CPU correctness tests, and the analysis-ready measurements supporting the current main paper and supplement.
 
@@ -51,4 +51,4 @@ This compact artifact supplies source, selected tokenized inputs, analysis-ready
 
 ## Rights and attribution
 
-Author code is source-available under [LICENSE](LICENSE). Dolly-derived data retains CC BY-SA 3.0; Alpaca-derived inputs retain CC BY-NC 4.0. The five complete vLLM reference files retain Apache-2.0 notices and the exact upstream license. Model and external dependency terms remain applicable. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [DATA_PROVENANCE.md](DATA_PROVENANCE.md), and [DISCLOSURE.md](DISCLOSURE.md).
+Author code is source-available under [LICENSE](LICENSE). Dolly-derived data retains CC BY-SA 3.0; Alpaca-derived inputs retain CC BY-NC 4.0. The five complete vLLM reference files retain Apache-2.0 notices and the exact upstream license. Model and external dependency terms remain applicable. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [DATA_PROVENANCE.md](DATA_PROVENANCE.md).

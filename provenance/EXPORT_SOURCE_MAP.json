@@ -1,5 +1,5 @@
 {
-  "release": "1.2.0",
+  "release": "1.2.1",
   "source_archive": {
     "url": "https://github.com/Hambuger516/ownership-aware-completion-certificates/blob/v1.1.1/provenance/EXPORT_TRANSFORMATIONS.json",
     "sha256": "a958141f755e374cbc9216255f21460464e5b3ee822434bac4275264b13727ff"

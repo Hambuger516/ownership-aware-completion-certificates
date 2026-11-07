@@ -1,5 +1,5 @@
 {
-  "release": "1.2.0",
+  "release": "1.2.1",
   "scope": "Current TSMC article and supplement only. Four main experimental figures and three supplementary experimental figures.",
   "base_archive": {
     "repository": "Hambuger516/ownership-aware-completion-certificates",
