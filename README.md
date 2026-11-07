@@ -1,6 +1,6 @@
-# Ownership-Aware Completion Certificates
+# Ownership-Aware Completion Control for LLM Serving with Shared KV Memory
 
-Research implementation and analysis-ready measurements accompanying **Ownership-Aware Completion Certificates for Autoregressive Serving** by Hanbo Ma, Zhongguo Li, Junan Wang, and Zhengtao Ding.
+Research implementation and analysis-ready measurements accompanying **Ownership-Aware Completion Control for LLM Serving with Shared KV Memory** by Hanbo Ma, Zhongguo Li, Junan Wang, and Zhengtao Ding.
 
 The controller certifies finite retained-state cohorts using joint last-owner release, maintains a completion witness during growth, and charges unsettled execution rights. The repository also includes cap-aware admission, matched baseline profiles, and authorization-preserving zero-page projection reuse. The guarantees concern finite retained-state cohorts.
 
@@ -13,6 +13,12 @@ python scripts/run_cpu_tests.py
 python analysis/reproduce_numbers.py --output results/reproduced_numbers.json
 python scripts/verify_release.py
 ```
+
+The test entry point also works when invoked by its absolute path from another
+working directory. It loads the package from this checkout, runs both suites in
+separate interpreters, and prints a machine-readable `CPU_TEST_SUMMARY` with
+failures, errors and optional-dependency skips. The protocol suite requires
+permission to bind a localhost socket; it does not contact an external service.
 
 For the figure recipes, install the optional dependencies and a properly licensed Times New Roman font for the publication typography:
 

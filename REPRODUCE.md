@@ -2,7 +2,13 @@
 
 ## 1. CPU properties
 
-`python scripts/run_cpu_tests.py` runs the original core tests and additional existing adapter-AST controls. They cover closure, margins, allocation rights, settlement, observation joins, cap/headroom truth tables, state reuse and native queue transfer. The 13 tests requiring the installed vendor runtime are skipped when that runtime is absent; a skip is not a pass.
+`python scripts/run_cpu_tests.py` runs the original core tests and additional existing adapter-AST controls. They cover closure, margins, allocation rights, settlement, observation joins, cap/headroom truth tables, state reuse and native queue transfer. The neural PATCH tests require optional PyTorch; the runner preserves and reports their skips when PyTorch is absent. A skip is not a pass. The protocol probe binds only a localhost socket, so a sandbox that prohibits loopback binding cannot execute that test.
+
+The entry point requires Python 3.12 or later and uses absolute checkout paths,
+including when called from another working directory. Both suites run even if
+the first reports failures, and the exit status remains nonzero if either suite
+fails. `CPU_TEST_SUMMARY` records test/error/failure/skip counts and the Python
+version. No installed copy of `prc_nc` is accepted in place of this checkout.
 
 ## 2. Published numerical comparisons
 
