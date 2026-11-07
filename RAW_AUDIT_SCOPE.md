@@ -1,7 +1,7 @@
-# Original raw audit scope
+# Data availability and replay scope
 
-Included: actual implementation and CPU tests; original selected tokenized input traces and scientific configuration templates; source hashes; analysis-ready same-block per-process measurements; exact derived figure trajectories; source/population maps; scope and exclusion descriptions.
+This artifact contains the serving implementation, CPU tests, selected tokenized inputs and configuration templates, measured-source hashes, analysis-ready paired service tables, and endpoint records for the seven current experimental figures.
 
-Not included: the large original per-action allocator/Authority streams, complete GPU telemetry, original model-output archives, local deployment journals, private cluster paths, model weights, or the entire research workspace. Three large legacy client event files are replaced in the plot layer by their exact already-derived client-clock trajectory; no replacement raw events are synthesized.
+The complete original per-action allocator/Authority streams, GPU telemetry and model-output archives are retained by the authors and scheduled for release upon acceptance. Model weights, credentials, private deployment files and local research journals are excluded.
 
-The original raw archives remain in the authors' local research archive. There is currently no asserted public download URL for them. A reviewer can recompute the published arithmetic from this repository; an independent event-level physical/source/resource/output audit additionally requires those original archives and their original hash/seal chain. The public derived measurements must not be presented as that stronger raw audit. No invented or unverified raw-release link is provided.
+The public scripts reproduce numerical summaries and figures from the included service tables. Independent event-level verification of physical ownership, grants/settlement, resource qualification and exact outputs also requires the original raw archives and their source/hash bindings. This distinction applies to all measurement populations. No public raw-archive URL is asserted before that release.

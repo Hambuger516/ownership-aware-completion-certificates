@@ -1,0 +1,39 @@
+{
+  "release": "1.2.0",
+  "scope": "Current TSMC article and supplement only. Four main experimental figures and three supplementary experimental figures.",
+  "base_archive": {
+    "repository": "Hambuger516/ownership-aware-completion-certificates",
+    "tag": "v1.1.1",
+    "commit": "0c64bdfe2cb410bed5dfb798162b4944e962fe67",
+    "URL": "https://github.com/Hambuger516/ownership-aware-completion-certificates/tree/v1.1.1"
+  },
+  "retained_populations": [
+    "Repeated ownership intervention",
+    "7B standard baselines",
+    "14B transfer",
+    "Eight-scenario confirmation",
+    "Admission sensitivity",
+    "Ready-growth width audit",
+    "Projection reuse development and fresh confirmation",
+    "Runtime accounting and fixed-input uncertainty",
+    "Bounded-cap perturbation"
+  ],
+  "omitted_unreferenced_groups": [
+    "Superseded 108-service deployment matrix and prior diagnostic-control figures",
+    "Earlier controlled CPU routing and hardware/theory presentation records",
+    "Two-worker client-observation timeline and prior holdout presentation summaries",
+    "Superseded figure-layout/QA records and historical plotting entry points"
+  ],
+  "omission_basis": "Not referenced by the current article or supplement, CPU tests, numeric reproduction or the seven-figure default. The complete prior release remains at the unchanged archive reference. No omitted observations were removed from retained comparisons.",
+  "core_package_tests_and_native_reference_bytes_unchanged": true,
+  "measurement_bytes_changed": false,
+  "runtime_path_mapping": "provenance/CURRENT_MEASUREMENT_PATHS.json",
+  "frozen_current_figure_endpoints": {
+    "main": "source_data/plot_endpoints/main.json",
+    "supplementary": "source_data/plot_endpoints/supplementary.json"
+  },
+  "original_export_mapping": "provenance/EXPORT_SOURCE_MAP.json",
+  "generated_output_directory": "results/figure_build",
+  "new_GPU_services": 0,
+  "tuning_changes": false
+}

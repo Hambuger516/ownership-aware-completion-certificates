@@ -1,54 +1,70 @@
-# Reproduction levels
+# Reproduction guide
 
-## 1. CPU properties
-
-`python scripts/run_cpu_tests.py` runs the original core tests and additional existing adapter-AST controls. They cover closure, margins, allocation rights, settlement, observation joins, cap/headroom truth tables, state reuse and native queue transfer. The neural PATCH tests require optional PyTorch; the runner preserves and reports their skips when PyTorch is absent. A skip is not a pass. The protocol probe binds only a localhost socket, so a sandbox that prohibits loopback binding cannot execute that test.
-
-The entry point requires Python 3.12 or later and uses absolute checkout paths,
-including when called from another working directory. Both suites run even if
-the first reports failures, and the exit status remains nonzero if either suite
-fails. `CPU_TEST_SUMMARY` records test/error/failure/skip counts and the Python
-version. No installed copy of `prc_nc` is accepted in place of this checkout.
-
-The five exact upstream vLLM source fixtures are bundled; CPU tests do not require
-an installed vLLM package, an author workspace, or network access. Their complete
-upstream files, commit, hashes and license are listed in
-`native_runtime_reference/MANIFEST.json`. Three tests use the fixed checkout-local
-resolver `package/tests/native_source_fixture.py`; missing or altered fixtures
-fail instead of searching elsewhere. No original test assertions or skips were
-removed.
-
-To verify portability outside any existing project tree, use a new unrelated
-folder and an empty Python 3.12+ environment, for example:
+## 1. CPU correctness
 
 ```bash
-git clone --branch v1.1.1 --single-branch https://github.com/Hambuger516/ownership-aware-completion-certificates.git /tmp/tsmc-portability/repo
-python3.12 -m venv /tmp/tsmc-portability/venv
-cd /tmp
-env -u PYTHONPATH -u PYTHONHOME PYTHONNOUSERSITE=1 /tmp/tsmc-portability/venv/bin/python /tmp/tsmc-portability/repo/scripts/run_cpu_tests.py
+python scripts/run_cpu_tests.py
 ```
 
-Without PyTorch, the unchanged 13 optional-PyTorch tests skip; the remaining 382
-pass (395 discovered across the 363-test package suite and 32-test verification
-suite). No installation or optional skip is required for the native-source AST
-fixtures. The prior v1.1.0 ancestor-source lookup could hide a missing dependency
-when the clone was placed inside the authors' project tree; that test setup is
-not a portability check.
+Python 3.12 or later is required. Both suites run in separate interpreters and report their outcomes in `CPU_TEST_SUMMARY`; the command exits unsuccessfully if either suite fails. The checkout supplies the implementation and all five hash-pinned vLLM AST fixtures. No vLLM installation, model, GPU or network access is required. The protocol test needs permission to bind a localhost socket. The 13 neural PATCH tests require optional PyTorch and remain reported as skips when it is absent; they are separate from the native-source fixtures.
 
-## 2. Published numerical comparisons
+For an independent check, place the artifact in a directory outside any existing project tree and select the exact commit identified by the manuscript. Replace `COMMIT_FROM_PAPER` below with the full commit SHA in the printed repository URL:
 
-`python analysis/reproduce_numbers.py --output results/reproduced_numbers.json` recomputes matched geometric means from the included analysis-ready per-process tables. This is independent arithmetic on published rows, not a new replay of the absent physical event archives. It retains the Native gap and unfavorable cells.
+```bash
+git clone https://github.com/Hambuger516/ownership-aware-completion-certificates.git /tmp/tsmc-reproduction/repo
+git -C /tmp/tsmc-reproduction/repo checkout --detach COMMIT_FROM_PAPER
+python3.12 -m venv /tmp/tsmc-reproduction/venv
+cd /tmp
+env -u PYTHONPATH -u PYTHONHOME PYTHONNOUSERSITE=1 /tmp/tsmc-reproduction/venv/bin/python /tmp/tsmc-reproduction/repo/scripts/run_cpu_tests.py
+```
 
-## 3. Figures
+The unchanged CPU suites discover 363 package tests and 32 verification tests. Without PyTorch, 382 pass and 13 skip. The fixture resolver fails on missing or altered bundled source rather than searching outside the checkout.
 
-`python scripts/reproduce_figures.py` rebuilds the scientific PDF/SVG/PNG figures using measured data and exact derived trajectories. It does not run an algorithm or generate observations. Figure metadata/output hashes are newly generated build artifacts. The compact two-worker timeline uses exact derived client-observation times and cumulative counts rather than reconstructed or invented raw events. The independent appendix figures keep their historical populations.
+## 2. Numerical comparisons
 
-The current two main matrices can also be rebuilt alone with `python figure_source/redesign_main_matrices_v24.py --manuscript-root .`. Their 60 endpoint groups and 240 paired ratios are retained in `source_data/v24_checks/matrices/`; observed ranges describe the four process repetitions and are not confidence intervals.
+```bash
+python analysis/reproduce_numbers.py --output results/reproduced_numbers.json
+```
+
+The script recomputes ownership ratios, baseline comparisons, projection-reuse comparisons and recorded-time accounting from the included process tables. Within-block ratios, scenario/input-family weighting and source populations are retained. This check verifies arithmetic on analysis-ready measurements; event-level qualification additionally uses the original raw archives described in [RAW_AUDIT_SCOPE.md](RAW_AUDIT_SCOPE.md).
+
+## 3. Seven current experimental figures
+
+```bash
+python -m pip install -r requirements-figures.txt
+python scripts/reproduce_figures.py
+```
+
+The default figure entry point rebuilds these seven PDF/SVG/PNG figures under `results/figure_build/figures/`. It writes generated readouts to `results/figure_build/main/` and `results/figure_build/supplementary/`, and the build registry to `results/figure_build/registry.json`. Bundled publication outputs in `figs/` and frozen expected endpoints in `source_data/plot_endpoints/` remain unchanged.
+
+| Paper location | Figure stem | Measurement population |
+|---|---|---|
+| Main Fig. 3 | `fig_ownership_repeated_v30` | Repeated full-C1/full-C0 ownership intervention |
+| Main Fig. 4 | `fig_fair_baselines_v30` | Matched 7B standard baselines |
+| Main Fig. 5 | `fig_scale14b_v30` | Matched 14B model transfer |
+| Main Fig. 6 | `fig_runtime_ledger_v30` | Fresh-input fourfold-quota runtime ledger |
+| Supplement Fig. S1 | `fig_sensitivity_v16_v22` | Six-level admission sensitivity |
+| Supplement Fig. S2 | `fig_width_ready_v19_v22` | Ready-growth width audit |
+| Supplement Fig. S3 | `fig_projection_reuse_v19_v22` | Separate development and fresh-input reuse populations |
+
+The registry in `provenance/PAPER_FIGURE_REGISTRY.json` binds the bundled publication figures to their measurement inputs; `results/figure_build/registry.json` records the new build and its endpoint comparisons. Endpoint comparisons retain process pairing, all displayed observations and the recorded summary statistics. Rendering is a presentation step and does not create experimental observations. Main matrices share the `(1/64, 1, 4)` colour range. The optional licensed Times New Roman font enables publication typography; a fallback-font build should be identified as such.
 
 ## 4. New GPU runs
 
-`python scripts/materialize_runtime.py --variant original --output runtime_original` reconstructs the unoptimized serving source. `--variant projection` reconstructs the zero-page reuse source. Do not use the optimized source to retroactively attribute the original fair-baseline or 14B timings.
+```bash
+python scripts/materialize_runtime.py --variant original --output runtime_original
+python scripts/materialize_runtime.py --variant projection --output runtime_projection
+python benchmark/make_plan.py --study projection-confirmation --model /your/local/model --output new_plan
+```
 
-`python benchmark/make_plan.py --study projection-confirmation --model /your/local/model --output new_plan` prepares the original same-input profile and balanced order without starting a GPU. The output is explicitly a new unexecuted plan. Model acquisition and GPU execution are opt-in subsequent operations under the frozen adapter's `--execute-gpu` interface. No private cluster addresses, credentials or SSH dispatcher are supplied.
+Runtime materialization preserves the original/projection distinction. The original baseline, ownership and 14B timings belong to the original variant. Reuse timings belong to the projection variant, with their recorded off/on flags. The export contains the preserved test helper; running exported tests also requires the repository's bundled reference directory.
 
-A strict reproduction additionally needs the matched model bytes, tokenizer/weight hashes, resource/telemetry capture, terminal allocator/rights checks, exact outputs and source binding described in the supplement. Neither a new plan nor the bundled derived tables proves those conditions for a new run. Current raw-archive availability is detailed in RAW_AUDIT_SCOPE.md.
+`make_plan.py` prepares new configurations and balanced method order without starting a GPU. Model acquisition and GPU execution are explicit subsequent operations through `--execute-gpu`. An independent experiment must also match the model/tokenizer bytes, caps, quotas, source variant, observation settings, exact outputs and resource/terminal checks specified in the supplement. A newly executed plan is a new measurement population.
+
+## 5. File integrity
+
+```bash
+python scripts/verify_release.py
+```
+
+This command checks the release file hashes and scans the listed text files for private deployment paths, hosts, keys and credential tokens. It complements the CPU, numerical and figure checks.

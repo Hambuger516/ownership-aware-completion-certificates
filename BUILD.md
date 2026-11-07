@@ -1,14 +1,27 @@
-# Build and environment
+# Build and execution environment
 
-CPU implementation/tests: Python >=3.12, standard library only. The public staging validation used Python 3.13; the measured GPU environment used Python 3.12.13.
+## CPU checks
+
+The CPU implementation and test runner require Python 3.12 or later. Core tests and numerical aggregation use the standard library; 13 neural PATCH tests additionally require optional PyTorch. The bundled vLLM source fixtures support AST compatibility checks without an installed vLLM engine.
 
 ```bash
-python -m pip install -e package
 python scripts/run_cpu_tests.py
+python analysis/reproduce_numbers.py --output results/reproduced_numbers.json
 ```
 
-Optional figures: `python -m pip install -r requirements-figures.txt`. Exact publication typography additionally requires a licensed local Times New Roman font; it is not redistributed. Figure data reproduction does not need a model or CUDA.
+## Scientific figures
 
-Measured GPU stack: Linux, A800-SXM4-80GB, Python 3.12.13, vLLM 0.29.0, PyTorch 2.13.0+cu130, CUDA 13.0, Transformers 5.17.0. `package/requirements-gpu.lock.txt` records the complete observed environment, including packages not required by the controller. It is an environment record, not a minimal installer. Start from the GPU stack's official installation instructions, then check `PYTHONPATH=package python -m prc_nc doctor --gpu`. A successful software check is not a GPU-kernel, memory-isolation or experimental qualification test.
+```bash
+python -m pip install -r requirements-figures.txt
+python scripts/reproduce_figures.py
+```
 
-The runtime validates its supported engine API and rejects incompatible configurations. No new GPU execution, package installation on a GPU host, weight download or deployment was performed while preparing this release.
+Bundled publication figures are in `figs/`. Rebuilt figures, readouts and the build registry are written under `results/figure_build/`, leaving release hashes and frozen measurement/endpoint files unchanged.
+
+The figure recipe uses Matplotlib, NumPy and pypdf. Publication typography uses a licensed local Times New Roman font, which is not redistributed, and Computer Modern mathematics. The compatible STIXGeneral fallback preserves numerical data; main figures gain vertical padding for its font metrics and are marked as fallback builds. It does not assert identical publication typography. Set TSMC_FONT_DIR to a directory containing licensed Times New Roman .ttf files when they are not installed. Neither plotting nor numerical aggregation requires a model or CUDA.
+
+## Recorded GPU environment
+
+The measured stack is Linux on A800-SXM4-80GB, Python 3.12.13, vLLM 0.29.0, PyTorch 2.13.0+cu130, CUDA 13.0 and Transformers 5.17.0. `package/requirements-gpu.lock.txt` records the observed environment, including packages not required by the controller; it is not a minimal installation specification.
+
+For a new deployment, follow the dependencies' official installation instructions and run `PYTHONPATH=package python -m prc_nc doctor --gpu`. Software/API compatibility is checked separately from GPU-kernel execution, memory isolation and experimental resource qualification. Model acquisition, GPU execution and resource capture are explicit experiment steps.

@@ -23,7 +23,7 @@ for stage in ['development','confirmation']:
     x={arm:lookup[case,q,rep,arm]for arm in ['reuse','adaptive','native']};vals.append(float(x['reuse']['M_s'])/float(x['adaptive']['M_s']));nat.append(float(x['reuse']['M_s'])/float(x['native']['M_s']));off.append(float(x['adaptive']['M_s'])/float(x['native']['M_s']))
    assert len(vals)==6;cells[case]={'on_off_M':gm(vals),'on_Native_M':gm(nat),'off_Native_M':gm(off),'paired_processes':6}
   pr[stage][q]={'cells':cells,'equal_family':{k:gm(v[k]for v in cells.values())for k in ['on_off_M','on_Native_M','off_Native_M']}}
-r=[x for x in read('experiments/v20_review/runtime_statistics/output/runtime_factor4_per_service.csv')if x['stage']=='confirmation'];key={(x['case'],x['repeat'],x['arm']):x for x in r};ledger={}
+r=[x for x in read('source_data/runtime_accounting/runtime_factor4_per_service.csv')if x['stage']=='confirmation'];key={(x['case'],x['repeat'],x['arm']):x for x in r};ledger={}
 for case in sorted({x['case']for x in r}):
  vals=[]
  for rep in sorted({x['repeat']for x in r if x['case']==case}):

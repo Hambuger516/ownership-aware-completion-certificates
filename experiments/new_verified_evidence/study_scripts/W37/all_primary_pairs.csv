@@ -1,7 +1,0 @@
-case,repeat,target,baseline,M_ratio,brief_ratio,matched_requests,all16_outputs_equal
-confirm02_back,0,inc,full,0.9932106836879233,0.9915521959123581,16,True
-confirm02_back,1,inc,full,0.9992497580921906,1.0003516967985557,16,True
-confirm02_back,2,inc,full,0.9957516798942851,0.9930312624281414,16,True
-alpaca00_interleave,0,inc,full,0.9999132817656313,1.001941172980006,16,True
-alpaca00_interleave,1,inc,full,0.9656890862440461,0.972653017361457,16,True
-alpaca00_interleave,2,inc,full,1.0000889613458095,0.9984210317993648,16,True

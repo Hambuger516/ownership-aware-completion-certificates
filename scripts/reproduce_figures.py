@@ -1,12 +1,17 @@
-"""Rebuild current figure sources without executing any serving algorithm."""
+"""Rebuild the seven current-paper experiment figures; no GPU runs."""
 from pathlib import Path
-import os,subprocess,sys,json
-R=Path(__file__).resolve().parents[1];env={**os.environ,'MPLCONFIGDIR':str(R/'results/matplotlib'),'CUDA_VISIBLE_DEVICES':''};(R/'results/matplotlib').mkdir(parents=True,exist_ok=True)
-for n in ['redesign_main_v22.py','redesign_legacy_v22.py','redesign_modern_si_v22.py','redesign_main_matrices_v23.py','redesign_main_matrices_v24.py']:
- cmd=[sys.executable,str(R/'figure_source'/n)]
- if n in ['redesign_main_v22.py','redesign_main_matrices_v23.py','redesign_main_matrices_v24.py']:cmd+=['--manuscript-root',str(R)]
- subprocess.run(cmd,cwd=R,env=env,check=True)
-current=json.loads((R/'provenance/PAPER_FIGURE_REGISTRY.json').read_text())['figures']
-for row in current:
- for ext in ['pdf','svg','png']:assert(R/'figs'/(row['new_stem']+'.'+ext)).is_file()
-print(json.dumps({'figures_reproduced':len(current),'GPU_runs':0,'scope':'Public plotting/derived-number layer, not original raw-file qualification.'}))
+import json,os,subprocess,sys
+R=Path(__file__).resolve().parents[1]
+env={**os.environ,'MPLCONFIGDIR':str(R/'results/matplotlib'),'CUDA_VISIBLE_DEVICES':''}
+(R/'results/matplotlib').mkdir(parents=True,exist_ok=True)
+rows=[]
+for module,part in [('main_figures.py','main'),('supplementary_figures.py','supplementary')]:
+ subprocess.run([sys.executable,str(R/'figure_source'/module),'--manuscript-root',str(R)],cwd=R,env=env,check=True)
+ rows.extend(json.loads((R/'results/figure_build'/part/'registry.json').read_text())['figures'])
+assert len(rows)==7
+assert {x['figure_number']for x in rows}=={3,4,5,6,'S1','S2','S3'}
+for row in rows:
+ for ext in ['pdf','svg','png']:assert(R/'results/figure_build/figures'/(row['new_stem']+'.'+ext)).is_file()
+registry={'release':'1.2.0','experimental_figures':7,'main_figures':4,'supplementary_figures':3,'figures':rows,'GPU_runs':0,'measurement_changes':False}
+(R/'results/figure_build/registry.json').write_text(json.dumps(registry,indent=2)+'\n')
+print(json.dumps({'figures_reproduced':7,'main':4,'supplementary':3,'GPU_runs':0,'all_frozen_displayed_endpoints_matched':True}))

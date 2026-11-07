@@ -31,5 +31,6 @@
     }
   },
   "projection_adapter_sha256": "8525369c20edc5c6617ff14424c304d77e8d3276707292f40787f394632d1db2",
-  "serving_algorithm_edits_for_public_release": []
+  "serving_algorithm_edits_for_public_release": [],
+  "population_key_scope": "Historical identifiers for sealed measured packages; these keys are not asserted directories in the current public artifact."
 }

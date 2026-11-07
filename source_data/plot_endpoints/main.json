@@ -1,0 +1,2272 @@
+{
+  "displayed": {
+    "fig_ownership_repeated_v30": [
+      {
+        "study": "ownership",
+        "case": "confirm00_front",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.7305032985432695,
+          0.7298150181843943,
+          0.7338305012114523,
+          0.7324199880818176
+        ],
+        "GM": 0.7316404885340922,
+        "minimum": 0.7298150181843943,
+        "maximum": 0.7338305012114523
+      },
+      {
+        "study": "ownership",
+        "case": "confirm00_interleave",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          1.013843574742115,
+          1.0150634321513954,
+          1.008748432968043,
+          1.0203967020914206
+        ],
+        "GM": 1.0145045841124425,
+        "minimum": 1.008748432968043,
+        "maximum": 1.0203967020914206
+      },
+      {
+        "study": "ownership",
+        "case": "confirm00_back",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.999353523048419,
+          0.9988881005207964,
+          1.0001581000181565,
+          0.9966344603303341
+        ],
+        "GM": 0.9987576892023224,
+        "minimum": 0.9966344603303341,
+        "maximum": 1.0001581000181565
+      },
+      {
+        "study": "ownership",
+        "case": "confirm01_front",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          1.0062591677659956,
+          1.005846587246956,
+          0.9932063687396621,
+          1.0011204885459628
+        ],
+        "GM": 1.0015943373707341,
+        "minimum": 0.9932063687396621,
+        "maximum": 1.0062591677659956
+      },
+      {
+        "study": "ownership",
+        "case": "confirm01_interleave",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.965565713795745,
+          0.9675675656304598,
+          0.9686202224194858,
+          0.9674439509266414
+        ],
+        "GM": 0.9672987370890973,
+        "minimum": 0.965565713795745,
+        "maximum": 0.9686202224194858
+      },
+      {
+        "study": "ownership",
+        "case": "confirm01_back",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          1.0000851786711853,
+          1.0007806164539457,
+          0.9969210680680852,
+          1.0067336331096448
+        ],
+        "GM": 1.001123848255494,
+        "minimum": 0.9969210680680852,
+        "maximum": 1.0067336331096448
+      },
+      {
+        "study": "ownership",
+        "case": "confirm02_front",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.8291784072083362,
+          0.8262872116595823,
+          0.8325766719247404,
+          0.8272624612664438
+        ],
+        "GM": 0.828822710848444,
+        "minimum": 0.8262872116595823,
+        "maximum": 0.8325766719247404
+      },
+      {
+        "study": "ownership",
+        "case": "confirm02_interleave",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.9978967607488477,
+          0.9939206334332089,
+          0.9969607424004505,
+          0.9990765797079988
+        ],
+        "GM": 0.9969618476169334,
+        "minimum": 0.9939206334332089,
+        "maximum": 0.9990765797079988
+      },
+      {
+        "study": "ownership",
+        "case": "confirm02_back",
+        "metric": "M_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.9991024451711188,
+          1.0008884637720683,
+          0.9976313662662225,
+          1.0066973561623964
+        ],
+        "GM": 1.0010740004691736,
+        "minimum": 0.9976313662662225,
+        "maximum": 1.0066973561623964
+      },
+      {
+        "study": "ownership",
+        "case": "confirm00_front",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          1.0249957085690622,
+          1.0176785956869798,
+          1.026771878644113,
+          1.0302447992671426
+        ],
+        "GM": 1.0249124553796056,
+        "minimum": 1.0176785956869798,
+        "maximum": 1.0302447992671426
+      },
+      {
+        "study": "ownership",
+        "case": "confirm00_interleave",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.08703303543884834,
+          0.08755005567070737,
+          0.08612938657564476,
+          0.08820754490466232
+        ],
+        "GM": 0.08722669379015335,
+        "minimum": 0.08612938657564476,
+        "maximum": 0.08820754490466232
+      },
+      {
+        "study": "ownership",
+        "case": "confirm00_back",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.9992490820930581,
+          0.9986380789029523,
+          1.0004857110427041,
+          0.9968239201961985
+        ],
+        "GM": 0.9987983249732364,
+        "minimum": 0.9968239201961985,
+        "maximum": 1.0004857110427041
+      },
+      {
+        "study": "ownership",
+        "case": "confirm01_front",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          1.0111269236783236,
+          1.0138511873902192,
+          0.9967733957418103,
+          1.006880813711739
+        ],
+        "GM": 1.0071371084307212,
+        "minimum": 0.9967733957418103,
+        "maximum": 1.0138511873902192
+      },
+      {
+        "study": "ownership",
+        "case": "confirm01_interleave",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.05646589282967274,
+          0.05702077199932236,
+          0.05727034503301695,
+          0.056516312492965425
+        ],
+        "GM": 0.05681731773541549,
+        "minimum": 0.05646589282967274,
+        "maximum": 0.05727034503301695
+      },
+      {
+        "study": "ownership",
+        "case": "confirm01_back",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          1.0001360323947162,
+          1.000995635686969,
+          0.9966398515573642,
+          1.0066979331398356
+        ],
+        "GM": 1.001110856229484,
+        "minimum": 0.9966398515573642,
+        "maximum": 1.0066979331398356
+      },
+      {
+        "study": "ownership",
+        "case": "confirm02_front",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          1.0114447998496905,
+          0.9993519319498267,
+          0.9909711102562521,
+          1.0008734624498978
+        ],
+        "GM": 1.0006338781777635,
+        "minimum": 0.9909711102562521,
+        "maximum": 1.0114447998496905
+      },
+      {
+        "study": "ownership",
+        "case": "confirm02_interleave",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.9512173259142703,
+          0.9486678676906303,
+          0.9420087123346326,
+          0.9486109959591383
+        ],
+        "GM": 0.9476200787459474,
+        "minimum": 0.9420087123346326,
+        "maximum": 0.9512173259142703
+      },
+      {
+        "study": "ownership",
+        "case": "confirm02_back",
+        "metric": "brief_ratio",
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "raw_ratios": [
+          0.9988190596689838,
+          1.0016279149130893,
+          0.9978405082900985,
+          1.007319757237274
+        ],
+        "GM": 1.0013950281877537,
+        "minimum": 0.9978405082900985,
+        "maximum": 1.007319757237274
+      }
+    ],
+    "fig_fair_baselines_v30": [
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          0.5868128799830374,
+          0.5871255244745353,
+          0.5922948252058262,
+          0.5854987572712557
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.5879273024976436,
+        "minimum": 0.5854987572712557,
+        "maximum": 0.5922948252058262
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          0.936615044668956,
+          0.9439726239286279,
+          0.9342416145367658,
+          0.9395055080594082
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.938576696307118,
+        "minimum": 0.9342416145367658,
+        "maximum": 0.9439726239286279
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          0.9200784219794507,
+          0.9089346609124512,
+          0.9171866150215762,
+          0.9199973255608006
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.9165379371479356,
+        "minimum": 0.9089346609124512,
+        "maximum": 0.9200784219794507
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          0.5892127029246039,
+          0.5922513133367777,
+          0.5989642357552212,
+          0.5923212089568324
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.5931766912086882,
+        "minimum": 0.5892127029246039,
+        "maximum": 0.5989642357552212
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          0.4960360953278179,
+          0.5030281855179659,
+          0.4997896962468572,
+          0.49274584772391505
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.4978849147762711,
+        "minimum": 0.49274584772391505,
+        "maximum": 0.5030281855179659
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          0.659834162925365,
+          0.6553967590583981,
+          0.6672313962747973,
+          0.6624302152114488
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.661209254570617,
+        "minimum": 0.6553967590583981,
+        "maximum": 0.6672313962747973
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          1.6919809146830025,
+          1.7004936914758315,
+          1.711789101301854,
+          1.696975532003768
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.7002942283899471,
+        "minimum": 1.6919809146830025,
+        "maximum": 1.711789101301854
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          1.4655913664308025,
+          1.4656983916609152,
+          1.4661340052962086,
+          1.4427583504926582
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.460011219609886,
+        "minimum": 1.4427583504926582,
+        "maximum": 1.4661340052962086
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          1.3159883537925494,
+          1.307673744644084,
+          1.3260900602918735,
+          1.3209997787084322
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.3176704411445974,
+        "minimum": 1.307673744644084,
+        "maximum": 1.3260900602918735
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          0.7734595022137223,
+          0.7709856417902714,
+          0.7710593295527901,
+          0.7708156573984662
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.7715792654708504,
+        "minimum": 0.7708156573984662,
+        "maximum": 0.7734595022137223
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          0.9837089240040752,
+          0.9873118020325728,
+          0.9804833959872236,
+          0.9765339859267622
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.9820014666470691,
+        "minimum": 0.9765339859267622,
+        "maximum": 0.9873118020325728
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          0.9759357681483877,
+          0.9747249108200045,
+          0.9922455986632426,
+          0.9815599176064401
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.9810922030955013,
+        "minimum": 0.9747249108200045,
+        "maximum": 0.9922455986632426
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          0.5129575779288622,
+          0.5103916351758832,
+          0.5106318620011946,
+          0.5091655910686735
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.5107848279359934,
+        "minimum": 0.5091655910686735,
+        "maximum": 0.5129575779288622
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          0.5708169620859437,
+          0.5758067978785024,
+          0.5689837896097819,
+          0.5610360097420054
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.5691360194151788,
+        "minimum": 0.5610360097420054,
+        "maximum": 0.5758067978785024
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          1.036451975979679,
+          1.026211882317966,
+          1.0274454632331358,
+          1.0347204295983072
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0311978678724658,
+        "minimum": 1.026211882317966,
+        "maximum": 1.036451975979679
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          2.105228228004352,
+          2.096133353840462,
+          2.108466720622024,
+          2.093195634647632
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 2.100746584142046,
+        "minimum": 2.093195634647632,
+        "maximum": 2.108466720622024
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.1058377459881792,
+          1.0992395328274591,
+          1.082063655119648,
+          1.0897012124966858
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0941730109578056,
+        "minimum": 1.082063655119648,
+        "maximum": 1.1058377459881792
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.0717427299381181,
+          1.0676112179266262,
+          1.090420595678064,
+          1.0724914921295743
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0755309046056516,
+        "minimum": 1.0676112179266262,
+        "maximum": 1.090420595678064
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          0.08867488595406474,
+          0.08826119092149813,
+          0.08879549845252671,
+          0.08838942592046055
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.08852999121237368,
+        "minimum": 0.08826119092149813,
+        "maximum": 0.08879549845252671
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          0.9315125623736952,
+          0.9339189448924312,
+          0.9253226817734005,
+          0.9142912974402597
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.9262301715312335,
+        "minimum": 0.9142912974402597,
+        "maximum": 0.9339189448924312
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          0.9075804365507801,
+          0.9038566350603033,
+          0.9142856488797233,
+          0.9222476979317099
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.9119657743302999,
+        "minimum": 0.9038566350603033,
+        "maximum": 0.9222476979317099
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          0.04950435005478408,
+          0.04956269112844296,
+          0.049984677522916014,
+          0.04979115956984265
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.04971035268620245,
+        "minimum": 0.04950435005478408,
+        "maximum": 0.049984677522916014
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          0.15351777626386426,
+          0.15428443134956923,
+          0.1533258821266251,
+          0.15036695759387259
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.15286644465160137,
+        "minimum": 0.15036695759387259,
+        "maximum": 0.15428443134956923
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          0.25734697616790914,
+          0.25725621584834396,
+          0.2617635521326796,
+          0.2633422914979014
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.25991340759454057,
+        "minimum": 0.25725621584834396,
+        "maximum": 0.2633422914979014
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          0.19176876235014018,
+          0.19164627512579355,
+          0.19232377611749302,
+          0.1921779243678937
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.19197898047184594,
+        "minimum": 0.19164627512579355,
+        "maximum": 0.19232377611749302
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          1.3180373523287028,
+          1.307786775029373,
+          1.3054635240255406,
+          1.2774195683177954
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.302089214088582,
+        "minimum": 1.2774195683177954,
+        "maximum": 1.3180373523287028
+      },
+      {
+        "study": "baselines",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          1.2736697922550313,
+          1.280184705250998,
+          1.29439919353591,
+          1.306248886060996
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.2885637585206178,
+        "minimum": 1.2736697922550313,
+        "maximum": 1.306248886060996
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          0.9439676972878032,
+          0.9405794966501083,
+          0.9536585367327176,
+          0.9323919516031541
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.9426186199209495,
+        "minimum": 0.9323919516031541,
+        "maximum": 0.9536585367327176
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          0.9610566678754927,
+          0.9604948366412016,
+          0.9614719058751224,
+          0.9478407400285378
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.957698925739915,
+        "minimum": 0.9478407400285378,
+        "maximum": 0.9614719058751224
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "banker_c0",
+        "row_label": "Banker C0",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          0.9513662000172606,
+          0.957179745421291,
+          0.9770753629138239,
+          0.9713777733493241
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.9641938578765022,
+        "minimum": 0.9513662000172606,
+        "maximum": 0.9770753629138239
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          0.018244222360639707,
+          0.01804769737369526,
+          0.018298603698043647,
+          0.01807204529320925
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.018165322128527624,
+        "minimum": 0.01804769737369526,
+        "maximum": 0.018298603698043647
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          0.06197753780023494,
+          0.06254012668999852,
+          0.06179102243285166,
+          0.06098995301540309
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.06182216201593964,
+        "minimum": 0.06098995301540309,
+        "maximum": 0.06254012668999852
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "hard_reserve",
+        "row_label": "Hard res.",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          0.2939179241663319,
+          0.29163059098600286,
+          0.29288357119699265,
+          0.2951541060821396
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.29339367535975713,
+        "minimum": 0.29163059098600286,
+        "maximum": 0.2951541060821396
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.0630122701388858,
+          1.0531692890304682,
+          1.0709921929017696,
+          1.0533284994269063
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0600995519081031,
+        "minimum": 1.0531692890304682,
+        "maximum": 1.0709921929017696
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 2,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.126603938806134,
+          1.1185942240655655,
+          1.1070726259227588,
+          1.1105407052266942
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.1156773284361137,
+        "minimum": 1.1070726259227588,
+        "maximum": 1.126603938806134
+      },
+      {
+        "study": "baselines",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Native",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.1044795486332473,
+          1.1047915273280882,
+          1.1338333899299058,
+          1.1093901820655248
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.113058251250378,
+        "minimum": 1.1044795486332473,
+        "maximum": 1.1338333899299058
+      }
+    ],
+    "fig_scale14b_v30": [
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "inc",
+        "baseline": "native",
+        "row_label": "INC",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          2.7123413318169716,
+          2.73216901681899,
+          2.7326413849061266,
+          2.735678266263434
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 2.7281917505196636,
+        "minimum": 2.7123413318169716,
+        "maximum": 2.735678266263434
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "inc",
+        "baseline": "native",
+        "row_label": "INC",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          1.2252031345861776,
+          1.2322453192641003,
+          1.23005087568283,
+          1.2348272080476121
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.2305765510864446,
+        "minimum": 1.2252031345861776,
+        "maximum": 1.2348272080476121
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "fixed",
+        "baseline": "native",
+        "row_label": "Fixed",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          1.9123768865965407,
+          1.914858535436063,
+          1.9134677774134297,
+          1.9202744576685513
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.915242012800099,
+        "minimum": 1.9123768865965407,
+        "maximum": 1.9202744576685513
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "fixed",
+        "baseline": "native",
+        "row_label": "Fixed",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          3.6705772422091925,
+          3.6743477973168077,
+          3.6943722978510576,
+          3.6717768091555816
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 3.6777558153296033,
+        "minimum": 3.6705772422091925,
+        "maximum": 3.6943722978510576
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Adaptive",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          1.9118758580598287,
+          1.9142133889577388,
+          1.9203684530256648,
+          1.9213480531292169
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.9169472471385638,
+        "minimum": 1.9118758580598287,
+        "maximum": 1.9213480531292169
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Adaptive",
+        "panel_row": 0,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          1.219677953550552,
+          1.2340546959034147,
+          1.2310910927133298,
+          1.2148636877348158
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.2248963224507818,
+        "minimum": 1.2148636877348158,
+        "maximum": 1.2340546959034147
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "inc",
+        "baseline": "native",
+        "row_label": "INC",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          2.22424726958761,
+          2.2244825362694836,
+          2.2151305629438087,
+          2.213004495535169
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 2.2192101140313567,
+        "minimum": 2.213004495535169,
+        "maximum": 2.2244825362694836
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "inc",
+        "baseline": "native",
+        "row_label": "INC",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          1.0360997207385603,
+          1.0421076390625241,
+          1.0346078401506664,
+          1.0374544554442569
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.037563619115436,
+        "minimum": 1.0346078401506664,
+        "maximum": 1.0421076390625241
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "fixed",
+        "baseline": "native",
+        "row_label": "Fixed",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          1.8690105946345121,
+          1.8709648146088218,
+          1.8558367566711547,
+          1.8599844055880421
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.8639386535928,
+        "minimum": 1.8558367566711547,
+        "maximum": 1.8709648146088218
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "fixed",
+        "baseline": "native",
+        "row_label": "Fixed",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          2.111350156937811,
+          2.116933216839884,
+          2.107266004011362,
+          2.1166588681052274
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 2.1130482472694356,
+        "minimum": 2.107266004011362,
+        "maximum": 2.116933216839884
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Adaptive",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.8678887708381748,
+          1.8658156155108556,
+          1.8696235900565414,
+          1.8614798302609181
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.8661994718751973,
+        "minimum": 1.8614798302609181,
+        "maximum": 1.8696235900565414
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "M_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Adaptive",
+        "panel_row": 0,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.0383501524002694,
+          1.038728781263321,
+          1.0336679042782493,
+          1.0412393451082245
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0379929397577954,
+        "minimum": 1.0336679042782493,
+        "maximum": 1.0412393451082245
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "inc",
+        "baseline": "native",
+        "row_label": "INC",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          0.16404360337605187,
+          0.16646315752035562,
+          0.16597298175994504,
+          0.16523864648607622
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.16542708361713754,
+        "minimum": 0.16404360337605187,
+        "maximum": 0.16646315752035562
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "inc",
+        "baseline": "native",
+        "row_label": "INC",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 0,
+        "raw_ratios": [
+          1.1741733576532496,
+          1.1852437202201505,
+          1.184427838340824,
+          1.1860508972603774
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.1824640730724938,
+        "minimum": 1.1741733576532496,
+        "maximum": 1.1860508972603774
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "fixed",
+        "baseline": "native",
+        "row_label": "Fixed",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          0.11489522908375699,
+          0.11517973713667244,
+          0.1162847153517536,
+          0.11488352812541161
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.1153093752867485,
+        "minimum": 0.11488352812541161,
+        "maximum": 0.1162847153517536
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "fixed",
+        "baseline": "native",
+        "row_label": "Fixed",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 1,
+        "raw_ratios": [
+          1.0258888691699803,
+          1.0297568012571656,
+          1.0356438181814782,
+          1.0375747905969832
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0322055832123371,
+        "minimum": 1.0258888691699803,
+        "maximum": 1.0375747905969832
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Adaptive",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          0.11457862444814262,
+          0.11553967653331051,
+          0.11535052755078498,
+          0.11507795459147309
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 0.11513612734016487,
+        "minimum": 0.11457862444814262,
+        "maximum": 0.11553967653331051
+      },
+      {
+        "study": "scale14b",
+        "case": "fresh00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Adaptive",
+        "panel_row": 1,
+        "panel_column": 0,
+        "method_row": 2,
+        "raw_ratios": [
+          1.1775227646263189,
+          1.184482011480554,
+          1.1899748416730835,
+          1.1676490383774805
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.1798776425849822,
+        "minimum": 1.1676490383774805,
+        "maximum": 1.1899748416730835
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "inc",
+        "baseline": "native",
+        "row_label": "INC",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          1.060958830797018,
+          1.069519894079445,
+          1.058197400332072,
+          1.0647803111182237
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0633556068897259,
+        "minimum": 1.058197400332072,
+        "maximum": 1.069519894079445
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "inc",
+        "baseline": "native",
+        "row_label": "INC",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 0,
+        "raw_ratios": [
+          1.0697228685326534,
+          1.0770542954419735,
+          1.083232629287462,
+          1.0802761513872794
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.077559722637737,
+        "minimum": 1.0697228685326534,
+        "maximum": 1.083232629287462
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "fixed",
+        "baseline": "native",
+        "row_label": "Fixed",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          1.0319000458011567,
+          1.03084153980951,
+          1.0284812454889969,
+          1.0323220887407776
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0308851529885004,
+        "minimum": 1.0284812454889969,
+        "maximum": 1.0323220887407776
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "fixed",
+        "baseline": "native",
+        "row_label": "Fixed",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 1,
+        "raw_ratios": [
+          1.0239017721029675,
+          1.0315219195705554,
+          1.0317823913956323,
+          1.028584478248609
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0289427429568487,
+        "minimum": 1.0239017721029675,
+        "maximum": 1.0317823913956323
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 1,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Adaptive",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.0335829155617047,
+          1.0327014680995008,
+          1.0362049849387032,
+          1.0423585331059415
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0362051106960495,
+        "minimum": 1.0327014680995008,
+        "maximum": 1.0423585331059415
+      },
+      {
+        "study": "scale14b",
+        "case": "alpaca_new00_interleave",
+        "metric": "brief_s",
+        "quota": 4,
+        "target": "adaptive",
+        "baseline": "native",
+        "row_label": "Adaptive",
+        "panel_row": 1,
+        "panel_column": 1,
+        "method_row": 2,
+        "raw_ratios": [
+          1.0717783589674454,
+          1.075737663615582,
+          1.0758029984717192,
+          1.0872084673130233
+        ],
+        "repeat": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "GM": 1.0776165028023699,
+        "minimum": 1.0717783589674454,
+        "maximum": 1.0872084673130233
+      }
+    ],
+    "fig_runtime_ledger_v30": [
+      {
+        "family": "prefix",
+        "arm": "native",
+        "repeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "process_M_s": [
+          9.741202888078988,
+          9.793393986299634,
+          9.756197198294103,
+          9.77005509659648,
+          9.741733640432358,
+          9.752169506624341
+        ],
+        "process_schedule_s": [
+          0.047082626,
+          0.048460839,
+          0.047693598,
+          0.047576179,
+          0.046708802,
+          0.048948238
+        ],
+        "process_ms_per_call": [
+          0.1906179190283401,
+          0.19619772874493926,
+          0.1930914898785425,
+          0.1926161093117409,
+          0.18910446153846153,
+          0.19817100404858298
+        ],
+        "mean_M_s": 9.759125386054317,
+        "mean_schedule_s": 0.047745047,
+        "mean_ms_per_call": 0.1932997854251012,
+        "displayed_ms_per_call": "0.193"
+      },
+      {
+        "family": "prefix",
+        "arm": "adaptive",
+        "repeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "process_M_s": [
+          13.586118975654244,
+          14.036456897854805,
+          13.697296096943319,
+          13.661113629117608,
+          13.614825489930809,
+          13.645038415677845
+        ],
+        "process_schedule_s": [
+          3.702828301,
+          4.140207774,
+          3.772007464,
+          3.765913416,
+          3.712612878,
+          3.757042331
+        ],
+        "process_ms_per_call": [
+          14.991207696356275,
+          16.76197479352227,
+          15.271285279352227,
+          15.246613020242915,
+          15.030821368421051,
+          15.210697696356275
+        ],
+        "mean_M_s": 13.706808250863105,
+        "mean_schedule_s": 3.8084353606666665,
+        "mean_ms_per_call": 15.41876664237517,
+        "displayed_ms_per_call": "15.419"
+      },
+      {
+        "family": "prefix",
+        "arm": "reuse",
+        "repeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "process_M_s": [
+          11.337670181877911,
+          11.313922542147338,
+          11.31970529910177,
+          11.285587913356721,
+          11.314616679213941,
+          11.311498710885644
+        ],
+        "process_schedule_s": [
+          1.423832061,
+          1.401627913,
+          1.400187756,
+          1.395145765,
+          1.398672226,
+          1.39880419
+        ],
+        "process_ms_per_call": [
+          5.76450227125506,
+          5.6746069352226725,
+          5.668776340080972,
+          5.648363421052632,
+          5.662640591093117,
+          5.663174858299595
+        ],
+        "mean_M_s": 11.313833554430554,
+        "mean_schedule_s": 1.4030449851666666,
+        "mean_ms_per_call": 5.680344069500674,
+        "displayed_ms_per_call": "5.680"
+      },
+      {
+        "family": "instruction",
+        "arm": "native",
+        "repeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "process_M_s": [
+          20.463797244243324,
+          20.47615534439683,
+          20.403781629167497,
+          20.54324494395405,
+          20.505302189849317,
+          20.490501057356596
+        ],
+        "process_schedule_s": [
+          0.057411335,
+          0.062555218,
+          0.056038859,
+          0.066457052,
+          0.061545642,
+          0.063015633
+        ],
+        "process_ms_per_call": [
+          0.11169520428015564,
+          0.1217027587548638,
+          0.10902501750972764,
+          0.12929387548638133,
+          0.11973860311284047,
+          0.12259850778210117
+        ],
+        "mean_M_s": 20.480463734827936,
+        "mean_schedule_s": 0.06117062316666667,
+        "mean_ms_per_call": 0.11900899448767835,
+        "displayed_ms_per_call": "0.119"
+      },
+      {
+        "family": "instruction",
+        "arm": "adaptive",
+        "repeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "process_M_s": [
+          22.069484328851104,
+          21.964001099579036,
+          22.244856540113688,
+          21.993116290308535,
+          22.100036837160587,
+          22.066809268668294
+        ],
+        "process_schedule_s": [
+          1.499187311,
+          1.457975231,
+          1.546935669,
+          1.46945888,
+          1.505174149,
+          1.497076211
+        ],
+        "process_ms_per_call": [
+          2.9167068307393,
+          2.8365276867704283,
+          3.0096024688715954,
+          2.8588694163424124,
+          2.9283543754863812,
+          2.91259963229572
+        ],
+        "mean_M_s": 22.073050727446873,
+        "mean_schedule_s": 1.4959679085,
+        "mean_ms_per_call": 2.910443401750973,
+        "displayed_ms_per_call": "2.910"
+      },
+      {
+        "family": "instruction",
+        "arm": "reuse",
+        "repeat": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "process_M_s": [
+          21.47826524823904,
+          21.328640468418598,
+          21.53219677042216,
+          21.439264630898833,
+          21.522226189263165,
+          21.350830589421093
+        ],
+        "process_schedule_s": [
+          0.834891914,
+          0.807112911,
+          0.85068327,
+          0.834633424,
+          0.847119409,
+          0.80435607
+        ],
+        "process_ms_per_call": [
+          1.6243033346303501,
+          1.5702585817120625,
+          1.6550258171206225,
+          1.6238004357976654,
+          1.6480922354085603,
+          1.5648950778210116
+        ],
+        "mean_M_s": 21.44190398277715,
+        "mean_schedule_s": 0.8297994996666667,
+        "mean_ms_per_call": 1.6143959137483788,
+        "displayed_ms_per_call": "1.614"
+      }
+    ]
+  },
+  "derived_summaries": {
+    "ownership_overall": [
+      {
+        "metric": "M_ratio",
+        "paired_process_blocks": 36,
+        "fixed_scenarios": 9,
+        "GM": 0.9439059546735752,
+        "displayed_GM": "0.944",
+        "summary_has_range": false,
+        "definition": "geometric mean over all 36 matched process ratios; scenarios equally represented"
+      },
+      {
+        "metric": "brief_ratio",
+        "paired_process_blocks": 36,
+        "fixed_scenarios": 9,
+        "GM": 0.5532623950255188,
+        "displayed_GM": "0.553",
+        "summary_has_range": false,
+        "definition": "geometric mean over all 36 matched process ratios; scenarios equally represented"
+      }
+    ],
+    "runtime_gap_accounting": [
+      {
+        "family": "prefix",
+        "mean_reuse_on_minus_native_M_s": 1.5547081683762372,
+        "mean_reuse_on_minus_native_schedule_s": 1.3552999381666666,
+        "recorded_schedule_share_of_gap": 0.8717391248945223,
+        "displayed_share": "87.2%",
+        "definition": "difference of recorded schedule means / difference of recorded cohort means; accounting, not causal attribution"
+      },
+      {
+        "family": "instruction",
+        "mean_reuse_on_minus_native_M_s": 0.9614402479492128,
+        "mean_reuse_on_minus_native_schedule_s": 0.7686288765,
+        "recorded_schedule_share_of_gap": 0.7994556896692369,
+        "displayed_share": "79.9%",
+        "definition": "difference of recorded schedule means / difference of recorded cohort means; accounting, not causal attribution"
+      }
+    ]
+  }
+}

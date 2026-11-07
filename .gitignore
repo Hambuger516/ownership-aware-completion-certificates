@@ -13,6 +13,6 @@ __pycache__/
 *.tar.gz
 *.zip
 new_plan*/
-runtime_*/
+/runtime_*/
 results/
 .DS_Store

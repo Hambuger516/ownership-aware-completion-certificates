@@ -1,12 +1,12 @@
 # Ownership-Aware Completion Control for LLM Serving with Shared KV Memory
 
-Version **1.1.1** of the research artifact and analysis-ready measurements accompanying the TSMC manuscript **Ownership-Aware Completion Control for LLM Serving with Shared KV Memory** by Hanbo Ma, Zhongguo Li, Junan Wang, and Zhengtao Ding.
+Artifact version **1.2.0** accompanies the TSMC manuscript by Hanbo Ma, Zhongguo Li, Junan Wang, and Zhengtao Ding.
 
-The controller certifies finite retained-state cohorts using joint last-owner release, maintains a completion witness during growth, and charges unsettled execution rights. The repository also includes cap-aware admission, matched baseline profiles, and authorization-preserving zero-page projection reuse. The guarantees concern finite retained-state cohorts.
+The implementation certifies finite retained-state request cohorts using joint last-owner release, maintains a completion witness during growth, and accounts for unsettled execution rights. The artifact includes cap-aware admission, matched baseline profiles, projection reuse, CPU correctness tests, and the analysis-ready measurements supporting the current main paper and supplement.
 
-## Quick start (CPU only)
+## CPU and numerical reproduction
 
-Python 3.12 or later is sufficient for the core tests and numerical reproduction; no model or GPU is loaded by these commands.
+Use Python 3.12 or later from the repository root:
 
 ```bash
 python scripts/run_cpu_tests.py
@@ -14,60 +14,41 @@ python analysis/reproduce_numbers.py --output results/reproduced_numbers.json
 python scripts/verify_release.py
 ```
 
-The test entry point also works when invoked by its absolute path from another
-working directory. It loads the package from this checkout, runs both suites in
-separate interpreters, and prints a machine-readable `CPU_TEST_SUMMARY` with
-failures, errors and optional-dependency skips. The protocol suite requires
-permission to bind a localhost socket; it does not contact an external service.
+The CPU runner loads this checkout and reports both suites in `CPU_TEST_SUMMARY`. With no PyTorch installed, its 395 tests comprise 382 passes and 13 optional-PyTorch skips. Native-source AST fixtures are bundled and hash-pinned in [native_runtime_reference/MANIFEST.json](native_runtime_reference/MANIFEST.json). The protocol test binds a localhost socket. [REPRODUCE.md](REPRODUCE.md) gives the independent-directory procedure and the scope of each check.
 
-All native-source AST fixtures are bundled in `native_runtime_reference/` and
-pinned to the official vLLM v0.29.0 commit in its [manifest](native_runtime_reference/MANIFEST.json).
-The CPU suites neither install vLLM nor search parent directories for its source.
-Version 1.1.1 fixes the undeclared ancestor-directory dependency in three tests;
-it does not change the serving algorithm or the measured data. In a pure Python
-3.12 environment without PyTorch, discovery finds 395 tests: 382 pass and the
-13 existing optional-PyTorch tests skip. See the unrelated-directory procedure
-in [REPRODUCE.md](REPRODUCE.md).
-
-For the figure recipes, install the optional dependencies and a properly licensed Times New Roman font for the publication typography:
+## Current paper figures
 
 ```bash
 python -m pip install -r requirements-figures.txt
 python scripts/reproduce_figures.py
 ```
 
-The current main matrices show geometric means only, on a shared equality-centred ratio scale from 1/64 to 4. All four paired observations and observed minimum/maximum ranges remain in [the companion CSVs](source_data/v24_checks/matrices/README.txt).
+The bundled publication figures are in `figs/`. Rebuilds write figures to `results/figure_build/figures/`, generated readouts to `results/figure_build/main/` and `results/figure_build/supplementary/`, and a build registry to `results/figure_build/registry.json`. Frozen expected endpoints are retained in `source_data/plot_endpoints/`; rebuilding leaves the bundled figures and measurement files unchanged.
 
-Computer Modern is used for mathematics. A machine without Times New Roman can produce fallback-font figures, which do not claim identical typography.
+The default rebuild produces exactly **seven** experimental figures: four main-paper figures for ownership, standard baselines, 14B transfer and runtime accounting; and three supplementary figures for admission sensitivity, ready-growth width and projection reuse. [provenance/PAPER_FIGURE_REGISTRY.json](provenance/PAPER_FIGURE_REGISTRY.json) maps each figure to its measurement inputs and endpoint checks.
 
-## Repository contents
+The two main matrices share the equality-centred ratio scale `(1/64, 1, 4)`. Their cells show geometric means; the accompanying measurements retain every process pair and its observed range. Ratios are recomputed from measured service endpoints before plotting. Publication typography uses a licensed local Times New Roman font and Computer Modern mathematics. A fallback-font rebuild reproduces the data but does not assert identical typography. Times New Roman is not distributed.
+
+## Artifact contents
 
 | Path | Contents |
 |---|---|
-| `package/prc_nc/` | Actual serving controller, allocation authority, ownership accounting, execution measurement and vLLM adapter |
-| `package/tests/`, `verification/` | Existing CPU correctness, lifecycle, cap/headroom, reuse and native-queue controls |
-| `benchmark/` | Exact tokenized inputs, frozen configuration templates, profiles and source/population map |
-| `source_data/` | Analysis-ready same-block measurements and exact derived figure trajectories |
-| `figure_source/` | Rebuildable scientific figure recipes; live-text SVG/vector PDF outputs |
-| `analysis/` | Paired-log aggregation and runtime-accounting reproduction |
-| `provenance/` | File hashes, source comparison and public-export transformations |
+| `package/prc_nc/` | Serving controller, allocation authority, ownership accounting, execution measurement and vLLM adapter |
+| `package/tests/`, `verification/` | CPU correctness and native-source compatibility controls |
+| `benchmark/` | Tokenized inputs, configuration templates, profiles and source/population records |
+| `source_data/` | Matched service measurements and current figure records |
+| `figure_source/` | Rebuildable sources for the seven experimental figures |
+| `analysis/` | Numerical aggregation and recorded-time accounting |
+| `provenance/` | Release hashes, measured-source mapping and figure endpoint checks |
 
-The unoptimized original implementation and the projection-reuse implementation are distinct source variants. The historical variants differ only in the adapter among their 84 Python implementation/test files; the portable release records its test-path and documentation-only adjustments separately. `scripts/materialize_runtime.py` reconstructs either variant. The original fair-baseline, ownership-intervention and 14B results must not be attributed to the optimized variant. See [SOURCE_MAP.md](SOURCE_MAP.md).
+`prc_nc` is the preserved internal compatibility namespace. The original deployment and projection-reuse implementation are distinct measured source variants. Their relationship and the applicable measurements are specified in [SOURCE_MAP.md](SOURCE_MAP.md); `scripts/materialize_runtime.py` exports either runtime variant.
 
-## What the measurements show
+## Measurement scope and access
 
-The original deployment reduces cohort time against the conservative Banker and hard-reservation implementations on the two matched tight-quota baseline scenarios. It remains slower than Native in whole-cohort time. Brief-request benefits are input-conditional: instruction inputs and wider quotas do not show uniform gains. On separately frozen fresh inputs at fourfold quota, reuse reduces time relative to the same-block off implementation, while retaining approximately 10.2% overhead to Native. All adverse outcomes remain in the measurement tables.
+The experiments use constructed closed cohorts on homogeneous A800 GPUs. The original deployment improves cohort time against Banker C0 and hard reservation in the matched tight-quota scenarios. Brief-request benefits depend on input and quota; whole-cohort time remains longer than Native. Projection reuse is evaluated separately on frozen inputs. The tables retain all measured outcomes, including unfavorable comparisons.
 
-The measurements use constructed closed cohorts on homogeneous A800 GPUs. Executed-position counts measure repeated model work; fixed-input process repetitions describe process variation.
+This compact artifact supplies source, selected tokenized inputs, analysis-ready paired measurements and figure records. Complete raw allocator/event/telemetry archives are scheduled for release upon acceptance; model weights are acquired separately. [RAW_AUDIT_SCOPE.md](RAW_AUDIT_SCOPE.md) distinguishes public numerical reproduction from original event-level replay.
 
-## Reproduce and extend
+## Rights and attribution
 
-[REPRODUCE.md](REPRODUCE.md) describes each executable layer and its limits. [BUILD.md](BUILD.md) records the observed software environment. `benchmark/make_plan.py` creates new portable local configurations without starting a GPU; a new run is not a replay of the original resource qualification.
-
-The public release includes implementation, analysis-ready paired measurements and figure sources. Large original allocator/event/telemetry archives and model weights are **not included**. The original raw archives are retained locally by the authors; no public raw-archive download is asserted here. [RAW_AUDIT_SCOPE.md](RAW_AUDIT_SCOPE.md) distinguishes derived-number reproduction from independent physical/raw validation.
-
-## Data and rights
-
-Author implementation is source-available; no general open-source license has been granted for it. See [LICENSE](LICENSE). Databricks Dolly-derived data remains CC BY-SA 3.0; Stanford Alpaca-derived inputs remain CC BY-NC 4.0. The five vendored vLLM reference files retain Apache-2.0 notices and the exact upstream license. Models and other external packages retain their own licenses. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [DATA_PROVENANCE.md](DATA_PROVENANCE.md).
-
-[DISCLOSURE.md](DISCLOSURE.md) describes AI assistance. The authors remain responsible for the implementation, verification and interpretation.
+Author code is source-available under [LICENSE](LICENSE). Dolly-derived data retains CC BY-SA 3.0; Alpaca-derived inputs retain CC BY-NC 4.0. The five complete vLLM reference files retain Apache-2.0 notices and the exact upstream license. Model and external dependency terms remain applicable. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), [DATA_PROVENANCE.md](DATA_PROVENANCE.md), and [DISCLOSURE.md](DISCLOSURE.md).

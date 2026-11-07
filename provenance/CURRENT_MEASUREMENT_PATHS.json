@@ -1,0 +1,23 @@
+{
+  "release": "1.2.0",
+  "previous_release": "v1.1.1",
+  "relocated_measurements": {
+    "experiments/v20_review/runtime_statistics/output/RUNTIME_ACCOUNTING.json": {
+      "path": "source_data/runtime_accounting/RUNTIME_ACCOUNTING.json",
+      "sha256": "66619b97358d087ebe4df0b1658d901b09d86c24d938f1d0a8696349e52c84c6"
+    },
+    "experiments/v20_review/runtime_statistics/output/runtime_factor4_per_service.csv": {
+      "path": "source_data/runtime_accounting/runtime_factor4_per_service.csv",
+      "sha256": "a6d3b0d154b8e8b745d254cde4e94b526036ef7db7f438dc8206b3839f4fa743"
+    },
+    "experiments/v20_review/runtime_statistics/output/conditional_cell_uncertainty.csv": {
+      "path": "source_data/runtime_accounting/conditional_cell_uncertainty.csv",
+      "sha256": "9330c4856e00d6ebf71ed7701de873a0ac43e6528eedfa658616885f2c72a1a9"
+    },
+    "experiments/v20_review/runtime_statistics/output/CONDITIONAL_UNCERTAINTY.json": {
+      "path": "source_data/runtime_accounting/CONDITIONAL_UNCERTAINTY.json",
+      "sha256": "08bd9f925f881dd67688e27bf04ef23b516722f66ee68ffc43080ded18d6eb3b"
+    }
+  },
+  "measurement_bytes_changed": false
+}
